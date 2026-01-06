@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<body>
-		<h1>Hello World</h1>
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <title>IML 400 Current</title>
+    <script>
+        var step = true;
+
+        function animate(whatever) {
+            if ( step ){
+                whatever.style.color="crimson";
+            }
+            else{
+                whatever.style.color="gold";
+            }
+            step = !step;
+            setTimeout(function () {
+                animate(whatever);
+            }, 4000);
+        }
+
+        window.onload = function () {
+            var mydiv = document.getElementById("hello");
+            animate(mydiv);
+        }
+    </script>
+</head>
+
+<body>
+		<h1 id="hello">
+			Hello World
+		</h1>
+</body>
 </html>

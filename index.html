@@ -2,16 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>IML 400 Current</title>
+    <title>Luis Blackaller Home</title>
     <script>
         var step = true;
 
         function animate(whatever) {
             if ( step ){
-                whatever.style.color="crimson";
+                whatever.style.color="dodgerblue";
             }
             else{
-                whatever.style.color="teal";
+                whatever.style.color= "#cdcdcd";
             }
             step = !step;
             setTimeout(function () {
@@ -25,14 +25,20 @@
         }
     </script>
     <style>
+    	body{
+            margin:0;
+            color: #222;
+            background: #cdcdcd;
+            /*min-width:1220px;*/
+        }
     	.hi{
             text-align:center;
-            margin:40px;
+            margin:80px;
         }
     	#hello{
             font-weight: bold;
-            font-size: 5em;
-            color: crimson;
+            font-size: 8em;
+            color: dodgerblue;
             -webkit-transition: color 4s; /* For Safari 3.1 to 6.0 */
             transition: color 4s;
         }

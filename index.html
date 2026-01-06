@@ -11,7 +11,7 @@
                 whatever.style.color="crimson";
             }
             else{
-                whatever.style.color="gold";
+                whatever.style.color="teal";
             }
             step = !step;
             setTimeout(function () {
@@ -24,6 +24,15 @@
             animate(mydiv);
         }
     </script>
+    <style>
+    	#hello{
+            font-weight: bold;
+            font-size: 5em;
+            color: crimson;
+            -webkit-transition: color 4s; /* For Safari 3.1 to 6.0 */
+            transition: color 4s;
+        }
+    </style>
 </head>
 
 <body>

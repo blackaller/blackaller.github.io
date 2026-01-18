@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+WORK IN PROGRESS. DOESNT MAKE MUCH SENSE YET.
+-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+      #controls{
+        position:fixed;
+        bottom:0;
+        left:0;
+        background:rgba(0,0,0,0.7);
+        width:100%;
+        color:white;
+        padding:20px;
+      }
+      #controls form{
+        display:inline-block;
+      }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lFfLe6M8ZfLtBZuxO82402e1ATUu5iM&sensor=true">
+    </script>
+    <script type="text/javascript">
+    var addresses = ["3470 mcclintock ave los angeles ca", "900 west 34th street los angeles ca", "Watt Way Los Angeles, CA 90007"];
+
+    var inputAddress = addresses[2];
+    console.log(addresses);
+    var addressCoordinates = "";
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({
+        "address": inputAddress
+    }, function (results) {
+        console.log(results[0].geometry.location); //LatLng
+        console.log("agh");
+    });
+
+
+
+    function initialize() {
+        var mapOptions = {
+            //center: new google.maps.LatLng(33.998752, -118.472362), // Wemolab 
+            center: new google.maps.LatLng(34.023991, -118.287474), // USC MAP
+            zoom: 18,
+            //https://developers.google.com/maps/documentation/javascript/maptypes
+            //mapTypeId: google.maps.MapTypeId.SATELLITE //options MapTypeId.TERRAIN MapTypeId.HYBRID MapTypeId.ROADMAP
+            //mapTypeId: google.maps.MapTypeId.TERRAIN
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            map: map,
+            animation: google.maps.Animation.DROP,
+            //title: "WemoLab: " + map.center.d.toString() + ", " + map.center.e.toString()
+            title: addresses[0]
+        });
+
+        console.log(map.getCenter());
+        console.log("addressCoordinates");
+        console.log(addressCoordinates);
+
+        var addressmarker1 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.0233381, -118.28719849999999),
+            map: map,
+            animation: google.maps.Animation.DROP,
+            //title: "WemoLab: " + map.center.d.toString() + ", " + map.center.e.toString()
+            title: addresses[1]
+        });
+
+        var addressmarker2 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.0219989, -118.28671529999997),
+            map: map,
+            animation: google.maps.Animation.DROP,
+            //title: "WemoLab: " + map.center.d.toString() + ", " + map.center.e.toString()
+            title: addresses[2]
+        });
+
+        
+    }
+
+    function showAddress(address) {
+      alert("agh");
+ 
+      document.getElementById("lat").innerHTML = "34.0233381";
+      document.getElementById("lng").innerHTML = "-118.28719849999999";
+    };
+
+    
+
+    
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+
+    <div id="map-canvas"></div>
+
+    <div id="controls">
+      <form action="#" onsubmit="showAddress(this.address.value); return false">
+      
+          <input type="text" size="60" name="address" value="550 Rose ave Venice CA 90291" />
+          <input type="submit" value="Enter location" />
+
+      </form>
+      <span>Latitude</span> <span id="lat">?</span>
+      <span>Longitude</span> <span id="lng">?</span>
+    </div>
+  </body>
+</html>

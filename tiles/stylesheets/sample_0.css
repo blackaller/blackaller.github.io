@@ -1,0 +1,85 @@
+<style type="text/css" media="screen">
+	body {
+		font-family: Arial;
+		font-size: 21px;
+		letter-spacing: -1px;
+		margin: 20px;
+		color: black;
+	}
+	
+	a {
+		color: black;
+		background-color: #FFFF00;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		background-color: #FF00FF;
+		text-decoration: none;
+	}
+	
+	a img {
+		background-color: white;
+	}
+	
+	div#title {
+		float: left;
+		font-size: 30px;
+		letter-spacing: -2px;
+		margin-bottom: 10px;
+		padding: 10px 0;
+		padding-bottom: 10px;
+		border-top: 4px solid black;
+		border-bottom: 4px solid black;
+		line-height: 34px;
+		width: 450px;
+	}
+	
+	div#intro {
+		float: left;
+		font-size: 18px;
+		letter-spacing: -1px;
+		border-top: 4px solid black;
+		padding-top: 10px;
+	}
+	
+	div#class-pict {
+		float: left;
+	}
+	
+	div#column-left {
+		float: left;
+		width: 450px;
+		font-size: 40px;
+		letter-spacing: -2px;
+		margin-bottom: 10px;
+	}
+	
+	div#work {
+		float: left;
+		padding: 10px 0;
+		border-top: 4px solid black;
+		border-bottom: 4px solid black;
+		font-size: 21px;
+		letter-spacing: -1px;
+		width: 450px;
+	}
+	
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		clear: both;
+	}
+	
+	#footer {
+		float: left;
+		clear: both;
+		letter-spacing: -1px;
+		font-size: 14px;
+	}
+	
+	#footer a {
+		background-color: white;
+	}
+</style>

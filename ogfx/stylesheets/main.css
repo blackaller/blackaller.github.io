@@ -1,0 +1,221 @@
+/******************************************************************************
+
+PROJECT:    oGFx
+FILE:       main.css
+DATE:       01/12/2009
+
+Copyright (c) 2007 by Luis Blackaller.
+All rights reserved.
+
+Developed by Luis Blackaller
+Cambridge, Massachusetts.
+http://black.mitplw.com
+
+
+Permission to use, copy, or modify this software and its documentation for
+educational and research purposes only and without fee is hereby granted,
+provided that this copyright notice and the original authors' names appear on
+all copies and supporting documentation. If individual files are separated from
+this distribution directory structure, this copyright notice must be included.
+For any other uses of this software, in original or modified form, including
+but not limited to distribution in whole or in part, specific prior permission
+must be obtained from MITPLW. These programs shall not be used, rewritten, or
+adapted as the basis of a commercial software or hardware product without
+first obtaining appropriate licenses from MITPLW. MITPLW makes no representations
+about the suitability of this software for any purpose. It is provided "as is"
+without express or implied warranty.
+  
+******************************************************************************/
+
+
+body {
+	margin:0px;
+	font: 14px/18px Monospace, Verdana, Geneva, Arial, sans-serif;
+	font-family: Monospace, Verdana, Geneva, Arial, sans-serif;
+	//background-image: url("/images/bg.png");
+	background-color: #ffffff;
+	font-weight: normal;
+	//letter-spacing: -1px;
+	color: #111;
+	//text-align: center; /*for ie*/
+}
+
+h1{
+	//text-align: center;
+	color:#111;
+	background-color:white;
+	padding:0px;
+	padding-left:16px;
+	padding-right:16px;
+	font-weight: normal;
+}
+
+h2{
+	font: 14px/18px Monospace, Verdana, Geneva, Arial, sans-serif;
+	font-family: Monospace, Verdana, Geneva, Arial, sans-serif;
+	font-weight: normal;
+	color:#111;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	margin:0px;
+}
+
+ul{
+	list-style:none;
+}
+
+li{
+}
+
+pre{
+	font: 12px/14px Monospace, Verdana, Geneva, Arial, sans-serif;
+	font-family: Monospace, Verdana, Geneva, Arial, sans-serif;
+	margin:0 0 0 0;
+	padding:0px 0px 0px 10px;
+	color:#ff0000;
+	border-bottom: 1px dashed black;	
+}
+
+strong{
+	//padding:0px 10px 2px 10px;
+	//background-color:yellow;
+	color:#111;
+}
+p{
+	margin:0 0 0 0;
+	padding:6px 0px 10px 10px;
+}
+.media {
+	margin:0 0 0 0;
+	padding:0px 0px 0px 0px;
+}
+
+.cabezas{
+	//background-color:#eee;
+	margin:0 0 0 0;
+	padding:6px 0px 6px 10px;
+}
+
+.texto
+{
+	//background-color:yellow;
+	margin:0 0 0 0;
+	padding:6px 10px 10px 10px;
+	border-bottom: 1px dashed black;
+}
+
+
+
+
+img{
+	padding:0px;
+	margin:0px;
+}
+
+
+a {
+	color:dodgerblue;
+	background-color: none;
+	padding:2px;
+	padding-left:5px;
+	padding-right:5px;
+	text-decoration: underline;
+}
+a:hover {
+	color:white;
+	background-color: #111;
+	text-decoration: underline;
+}
+
+a.head {
+	color:dodgerblue;
+	background-color: none;
+	padding:2px;
+	padding-left:5px;
+	padding-right:5px;
+	text-decoration: underline;
+}
+
+a.head:hover {
+	color:white;
+	background-color: #111;
+	text-decoration: underline;
+}
+
+a.foot {
+	color:white;
+	background-color: none;
+	padding:2px;
+	padding-left:5px;
+	padding-right:5px;
+	text-decoration: underline;
+}
+
+a.slider {
+	background-color: white;
+}
+
+a.slider:hover {
+	background-color: white;
+	background-color: #111;
+}
+
+a.foot:hover {
+	color:#111;
+	background-color: dodgerblue;
+	text-decoration: underline;
+}
+
+#wrapper{
+	position:relative;
+	top:70px;
+	padding:0px;
+	margin:0px;
+	width: 680px;
+}
+
+#content {
+	margin:0px;
+	margin-left: 40px;
+	background-color: none;
+	padding:0px;
+	border: 0px solid black;
+}
+
+#sidebar {
+	position:absolute;
+	top:70px;
+	margin-left: 720px;
+	width:270px;
+	background-color: none;
+	border-bottom: 1px dashed black;
+	padding:0px;
+	padding-bottom:10px;
+}
+
+
+#header {
+	//background: white url("/images/bg.png");
+	background-color: white;
+	width:3000px;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom:8px;
+	padding-left: 40px;
+	border-bottom: 1px dashed black;
+	position: fixed;
+	z-index:2;
+}
+
+#footer {
+	background-color: dodgerblue;
+	text-align: left;
+	padding: 2px;
+	padding-left: 20px;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	width:3000px;
+	z-index:2;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Piles of Tiles</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="blackaller" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="black at mit.edu" />
+
+<meta name="Author"		content="Luis Blackaller, Kyle Buza, Justin Mazzola Paluska" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="MIT 6.891 Spring 2007 Class Project" />
+<meta name="Keywords" content="symbolic, programing, plane, tilings, scheme" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link rel='shortcut icon' type='image/x-icon' href='images/tile2.ico' />
+</head>
+
+
+<body>
+
+
+
+	<div id="content-wrapper">
+		<div id="sidebar">
+			<ul>
+				<h2 class="menu">- Project</h2>
+				<li><a href="cover.html">-cover</a></li>				
+				<li><a href="intro.html">-introduction</a></li>
+				<li><a href="bathroom.html">-the bathroom problem</a></li>
+				<li><a href="periodic.html">-periodic tilings</a></li>
+				<li><a href="aperiodic.html">-aperiodic tilings</a></li>
+				<li><a href="theorems.html">-three tiling theorems</a></li>
+				<br />
+
+					<h2 class="menu">- Strategy</h2>
+					<li><a href="strategy.html">-overview</a></li>
+
+					<br />
+							<h2 class="menu">- Implementation</h2>
+							<li><a href="shape.html">-shape representation</a></li>
+							<li><a href="operations.html">-flip and fuse</a></li>
+							<li><a href="primitives.html">-shape primitives</a></li>
+							<li><a href="shaper.html">-shaper</a></li>
+							<li><a href="tiler.html">-tiler</a></li>
+							<li><a href="visualization.html">-visualization</a></li>
+
+					<br />
+
+						<h2 class="menu">- Results</h2>	
+						<li><a href="gallery.html">-gallery</a></li>
+						<li><a href="downloads.html">-downloads</a></li>
+						<br />
+
+				<h2 class="menu">- Other</h2></li>
+				<li><a href="references.html">-references/links</a></li>
+				<li><a href="conclusion.html">-conclusion</a></li>
+			
+				<br />
+			</ul>
+		</div>
+
+	<div id="page">
+		<div id="header">
+			<h1><strong>Piles of Tiles</strong></h1>
+			<a href="http://cartoondistortion.com" target="_blank">Luis Blackaller </a> - <a href="http://plwclassic.media.mit.edu/people/buza/" target="_blank">Kyle Buza </a> - <a href="http://www.mit.edu/~jmp/" target="_blank">Justin Mazzola Paluska</a> <br/>
+			Advanced Symbolic Programming<a href="http://swiss.csail.mit.edu/classes/symbolic/spring07/"> [ 6.891 Spring 2007 ] </a> Final Project
+		</div>
+
+
+		<div id="content">
+			<div id="header">
+<!--*******************	THIS IS WHERE YOU WORK ********************-->
+				<h1><strong>Periodic Tilings</strong></h1>
+			</div>
+				<p> 
+					From the construction worker's point of view, there are mostly periodic tilings. He will only face the possibility of laying out non-periodic tilings when pushed to do it by an unusually extravagant client. We will talk about non-periodic and aperiodic tilings later. If a tiling is periodic, it essentially means that there is not much thinking to do when placing the tiles on the wall. It might be a little tricky at first, but there will always be a way to arrange a small set of the original tiles into a bigger shape, that will tile the wall by displacing it over over its length on a couple of given directions, just like the square and the regular hexagon do. These displacement motions are called translations, and we will say that the arranged set of original tiles will tile the plane periodically.
+														
+				</p>
+				<p> 
+					<img src="images/square_hexagon.png" />
+				</p>
+				<h3>Chair Translations</h3>
+				<p> 
+					A simple example that is not as trivial as the square and the hexagon is the chair family of polyominoes. Chairs are not symmetric as the square and the regular hexagon are, and still they manage to tile the plane in the same simple way, just by translating them in two different directions.								
+				</p>
+				
+				<p> 
+					<img src="images/chairs.png" />
+				</p>
+				<p> 
+					<img src="images/chair_translation.png" />
+				</p>
+				<h3>Regular Triangle Mesh</h3>
+				<p> 
+					Other shapes that tile the plane periodically, even some with perfect symmetry like the equilateral triangle, fail to tile the plane just by translations. Different kinds of motion, like rotations and reflections, are needed in order to build a composite shape, that will tile the plane by translations. In the case of the equilateral triangle, the composite shape is called a diamond.  							
+				</p>
+				
+				<p> 
+					<img src="images/triangle_1.png" />
+				</p>
+				<h3>Triangular Pentagon</h3>
+				<p> 
+					Sometimes, a clever combination of different rotations and/or reflections will need to be found in order to make things work. In the case of this irregular pentagon, two different rotations on three different centers were used before the eighteen sided polygon that tiles the plane periodically could be found.								
+				</p>
+				<p> 
+					<img src="images/triangular_pentagon_1.png" />
+				</p>
+				<p> 
+				A tile that will seem hard to deal with at a first may be turned into an easy task once the bigger shape that tiles periodically is found.
+				</p> 
+				<p> 
+					<img src="images/triangular_pentagon_2.png" />
+				</p>
+<!--*******************	THIS IS WHERE YOU WORK ********************-->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

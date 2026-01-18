@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Piles of Tiles</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="blackaller" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="black at mit.edu" />
+
+<meta name="Author"		content="Luis Blackaller, Kyle Buza, Justin Mazzola Paluska" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="MIT 6.891 Spring 2007 Class Project" />
+<meta name="Keywords" content="symbolic, programing, plane, tilings, scheme" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link rel='shortcut icon' type='image/x-icon' href='images/tile2.ico' />
+</head>
+
+
+<body>
+
+
+
+	<div id="content-wrapper">
+		<div id="sidebar">
+			<ul>
+				<h2 class="menu">- Project</h2>
+				<li><a href="cover.html">-cover</a></li>				
+				<li><a href="intro.html">-introduction</a></li>
+				<li><a href="bathroom.html">-the bathroom problem</a></li>
+				<li><a href="periodic.html">-periodic tilings</a></li>
+				<li><a href="aperiodic.html">-aperiodic tilings</a></li>
+				<li><a href="theorems.html">-three tiling theorems</a></li>
+				<br />
+
+					<h2 class="menu">- Strategy</h2>
+					<li><a href="strategy.html">-overview</a></li>
+
+					<br />
+							<h2 class="menu">- Implementation</h2>
+							<li><a href="shape.html">-shape representation</a></li>
+							<li><a href="operations.html">-flip and fuse</a></li>
+							<li><a href="primitives.html">-shape primitives</a></li>
+							<li><a href="shaper.html">-shaper</a></li>
+							<li><a href="tiler.html">-tiler</a></li>
+							<li><a href="visualization.html">-visualization</a></li>
+
+					<br />
+
+						<h2 class="menu">- Results</h2>	
+						<li><a href="gallery.html">-gallery</a></li>
+						<li><a href="downloads.html">-downloads</a></li>
+						<br />
+
+				<h2 class="menu">- Other</h2></li>
+				<li><a href="references.html">-references/links</a></li>
+				<li><a href="conclusion.html">-conclusion</a></li>
+			
+				<br />
+			</ul>
+		</div>
+
+	<div id="page">
+		<div id="header">
+			<h1><strong>Piles of Tiles</strong></h1>
+			<a href="http://cartoondistortion.com" target="_blank">Luis Blackaller </a> - <a href="http://plwclassic.media.mit.edu/people/buza/" target="_blank">Kyle Buza </a> - <a href="http://www.mit.edu/~jmp/" target="_blank">Justin Mazzola Paluska</a> <br/>
+			Advanced Symbolic Programming<a href="http://swiss.csail.mit.edu/classes/symbolic/spring07/"> [ 6.891 Spring 2007 ] </a> Final Project
+		</div>
+
+
+		<div id="content">
+			<div id="header">
+<!--*******************	THIS IS WHERE YOU WORK ********************-->
+				<h1><strong>The Bathroom Problem</strong></h1>
+			</div>
+				<p> 
+				The study of the geometry of tilings requires the understanding of sophisticated mathematical concepts. However, tiles are shapes that people can play with, and even with a very limited understanding of the rules that put a complicated tiling together, an average person can do very well when having to cover a given area with an arbitrary set of tiles. The average person will perhaps approach the task not as a problem of science, but as a sort of craft, where expertise will come from experience, and understanding will be revealed not as theory, but	as practice.								
+				</p>
+				
+				<p> 
+				A construction worker might be used to work on bathrooms, pasting tiles to the walls. He would mostly deal with square tiles that can easily be put next to each other over a grid, but occasionally he would have to deal with slightly more complicated forms, like hexagonal tiles or square tiles with printed patterns on them, that would force him to arrange them in a constrained manner. In general, we might assume that he would never be forced to face a situation where the tiles given to him don't fit against each other, unless we maliciously offer him a box full of eccentric (maybe pentagonal) tiles to cover the walls of our bathroom. Not an expert in geometry, he might not notice that pentagonal tiles won't work until he has put a few of them together, and then, maybe concerned about getting his job done before dinner, he will not worry much about the gaps and keep working, taking care of arranging the gaps between tiles in a visually pleasant manner.				
+				</p>
+				<p> 
+					Inspired by this idea, we wanted to write a system that would deal with the problem of tiling the plane from the construction worker's approach, instead of solving it from the traditional mathematical perspective. Instead of looking at the symmetry properties of the plane as a whole, we wanted to figure out ways of making decisions by understanding very local and minimal information around the boundary of the last tile we placed, keeping track of whether it fits or how much it didn't entirely fit. We were interested in writing a system what would deal more with commonsense notions of composition and harmony, searching for potential ways of covering the walls of our bathroom with a variety of shapes. 								
+				</p>
+				
+				<p> 
+					<img src="images/bathroom_1.png" />
+				</p>
+					<p> 
+						<img src="images/pentagonal_pentagon.png" />
+					</p>
+<!--*******************	THIS IS WHERE YOU WORK ********************-->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

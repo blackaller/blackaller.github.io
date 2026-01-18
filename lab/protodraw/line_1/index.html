@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html>
+<head>
+<title>LineBresenham_0c : Built with Processing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+
+body {
+  margin: 0px 0px 0px 0px;
+  font-family: verdana, geneva, arial, helvetica, sans-serif; 
+  font-size: 11px; 
+  background-color: #DDDDCC; 
+  text-decoration: none; 
+  font-weight: normal; 
+  line-height: normal; 
+}
+ 
+A 	       { color: #FF3300; font-style: bold; }
+A:link	   { color: #FF3300; font-style: bold; text-decoration: none; }
+A:visited  { color: #FF3300; font-style: bold; text-decoration: none; }
+A:active   { color: #FF3300; font-style: bold; text-decoration: none; }
+A:hover	   { color: #FF3300; font-style: bold; text-decoration: none; }
+
+#content {
+  position: absolute;
+  left: 55px;
+  top: 0px;
+}
+
+-->
+</style>
+ 
+</head>
+
+<body>
+
+<div id="content">
+	
+	<p>
+	<a href="/lab/protodraw/tiny.html">go back</a><br />
+	Illustration of Bresenham's line algorithm from 1962.<br /> 
+	Click and drag the mouse to trace a line.<br /> 
+	Bresenham's algorithm will appear as you release the mouse.<br />
+	spacebar clears the canvas.<br />
+	</p>
+ 
+<div>
+<applet code="LineBresenham_0c" archive="LineBresenham_0c.jar"
+width="800" height="600" mayscript="true">
+<param name="image" value="loading.gif">
+<param name="boxmessage" value="Loading Processing software...">
+<param name="boxbgcolor" value="#FFFFFF">
+
+<!-- This is the message that shows up when people don't have
+     Java installed in their browser. Any HTML can go here
+     (i.e. if you wanted to include an image other links, 
+     or an anti-Microsoft diatribe. -->
+To view this content, you need to install Java from <A HREF="http://java.com">java.com</A>
+
+</applet>
+</div>
+
+<p>
+
+</p>
+
+<!--<p>
+Source code: <a href="LineBresenham_0c.pde">LineBresenham_0c</a> 
+</p>-->
+
+
+
+
+<p>
+Built with <a href="http://processing.org" title="Processing.org">Processing</a>
+</p>
+<p>
+
+</p>
+<br />
+This is the Pseudocode as extracted from Wikipedia:
+<p>
+	
+function line(x0, x1, y0, y1)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;boolean steep := abs(y1 - y0) > abs(x1 - x0)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if steep then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap(x0, y0)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap(x1, y1)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if x0 > x1 then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap(x0, x1)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap(y0, y1)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;int deltax := x1 - x0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;int deltay := abs(y1 - y0)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;int error := 0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;int ystep<br />
+&nbsp;&nbsp;&nbsp;&nbsp;int y := y0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if y0 < y1 then ystep := 1 else ystep := -1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;for x from x0 to x1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if steep then plot(y,x) else plot(x,y)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;error := error + deltay<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if 2*error >= deltax<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y := y + ystep<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error := error - deltax
+</p>
+ 
+</div>
+ 
+</body>
+</html>

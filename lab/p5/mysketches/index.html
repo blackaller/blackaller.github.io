@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Luis Blackaller Lab 2025</title>
+    <script>
+        var step = true;
+
+        function animate(whatever) {
+            if ( step ){
+                whatever.style.color="dodgerblue";
+            }
+            else{
+                whatever.style.color= "#dedede";
+            }
+            step = !step;
+            setTimeout(function () {
+                animate(whatever);
+            }, 2000);
+        }
+
+        window.onload = function () {
+            var mydiv = document.getElementById("hello");
+            animate(mydiv);
+        }
+    </script>
+    <style>
+    	body {
+            padding: 0;
+            margin: 0;
+            background: #dedede;
+            color: #666;
+            font-family: monospace;
+            font-size: 1em;
+         }
+         #wrapper{
+            max-width: 400px;
+            margin:80px auto;
+            overflow:auto;
+            padding:0px;
+            background: #dedede;
+            
+        }
+    	.hi{
+            //text-align:center;
+            padding:0 0 0 20px;
+        }
+    	#hello{
+            font-weight: bold;
+            font-size: 3.0em;
+            color: dodgerblue;
+            -webkit-transition: color 2s; /* For Safari 3.1 to 6.0 */
+            transition: color 2s;
+        }
+        p{
+            margin: 0;
+            padding:20px 0 0 20px;
+        }
+        ul{
+            list-style: none;
+            padding:0px 0 0 20px;
+        }
+        li{
+            list-style: none;
+            padding:0 0 0 0;
+        }
+        a {
+            color: deeppink;
+            background-color: #ddd;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ddd;
+            text-decoration: none;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+	   <div class="hi" id="hello">
+			&#x1F44B; hello world
+		</div>
+        <div>
+            <p>
+                generative interactive reactive time capsule <br />
+                artisanal html5 p5js by Luis Blackaller <br />
+                mit media lab 2005-2007
+            </p>
+            <ul>
+                <li>
+                    draw
+                </li>
+                <li>
+                    text
+                </li>
+                <li>
+                    image
+                </li>
+                <li>
+                    math
+                </li>
+                <li>
+                    basic
+                </li>
+                <li>
+                    <a href="pulsematrix.html">pulseMatrix</a>
+                </li>
+                <li>
+                    <a href="pushpop.html">pushPop</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

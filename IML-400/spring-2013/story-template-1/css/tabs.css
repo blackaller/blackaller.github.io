@@ -1,0 +1,66 @@
+/*
+USC IML 400 Spring 2013.
+tabs.css by Luis Blackaller. 02 01 2013.
+*/
+body{
+    margin:0;
+    padding:0;
+    font-family:arial;
+    background:#eee;
+}
+
+h1{
+    color:dodgerblue;
+}
+
+#content-wrapper{
+    width:640px;
+    margin: 80px auto;
+
+}
+
+#nav-bar{
+    font-weight:bold;
+    position:fixed;
+    top:0;
+    background:#111;
+    color:#eee;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.nav ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.nav li{
+    list-style: none;
+    /*background:dodgerblue;*/
+    margin:0;
+    display:inline;
+    padding:10px 20px 10px 20px;
+
+}
+/*
+.nav li:hover{
+    background:red;
+}
+*/
+.nav a{
+    font-weight:bold;
+    color:dodgerblue;
+    text-decoration:none;
+}
+.nav a:hover{
+    color:#eee;
+
+}
+
+#selected-tab{
+    border-bottom:solid 7px;
+}
+#selected-link{
+    color:gold;
+}

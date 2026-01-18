@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>css positions</title>
+	<meta name="author" content="Luis Blackaller">
+	<!-- Date: 2012-09-25 -->
+</head>
+    <style>
+    body{
+        margin:0;
+        padding:0;
+    }
+    #wrapper{
+        position:relative;
+        margin:170px auto;
+        width:250px;
+        border:black 1px dashed;
+        overflow:auto;
+    }
+    .fixed{
+        position:fixed;
+        /*
+        width:100px;
+        height:100px;
+        */
+        border:black 1px dashed;
+    }
+    .absolute{
+        position:fixed;
+        /*
+        width:100px;
+        height:100px;
+        */
+        border:black 1px dashed;
+    }
+    .relative{
+        margin:10px;
+        width:40px;
+        height:40px;
+        border:black 1px solid;
+    }
+    .relative:hover{
+        background:black;
+    }
+    .top-left{
+        top:0;
+        left:0;
+    }
+    .top-right{
+        top:0;
+        right:0;
+    }
+    .bottom-left{
+        bottom:0;
+        left:0;
+    }
+    .bottom-right{
+        bottom:0;
+        right:0;
+    }
+    .left{
+        float:left;
+    }
+    .right{
+        float:right;
+    }
+    </style>
+<body>
+    <div id="wrapper">
+        <div class="fixed" style="padding:3px 5px; top:0px; left:100px;">
+            Resize the window ^_^
+        </div>
+        <div class="fixed top-left">
+            <div class="relative"></div>
+            <div class="relative"></div>
+            <div class="relative"></div>
+        </div>
+        
+        <div class="fixed top-right">
+            <div class="relative right"></div>
+            <div class="relative right"></div>
+            <div class="relative right"></div>
+        </div>
+        
+        <div class="fixed bottom-left">
+            <div class="relative left"></div>
+            <div class="relative left"></div>
+            <div class="relative left"></div>
+        </div>
+        
+        <div class="fixed bottom-right">
+            <div class="relative"></div>
+            <div class="relative"></div>
+            <div class="relative"></div>
+        </div>
+        
+        <div class="relative right"></div>
+        <div class="relative right"></div>
+        <div class="relative right"></div>
+        
+        <div class="absolute">
+            <div class="relative"></div>
+            <div class="relative"></div>
+            <div class="relative"></div>
+        </div>
+    </div>
+</body>
+</html>

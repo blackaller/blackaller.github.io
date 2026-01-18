@@ -1,0 +1,75 @@
+
+
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: normal;
+	line-height: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+
+
+
+
+
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: normal;
+	line-height: normal;
+	color: #FF3300;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: normal;
+	line-height: normal;
+	color:   #0075D9;
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	border: thin dotted #000000;
+	float: left;
+	height: auto;
+	width: 260px;
+	
+}
+
+ul.x {
+	list-style-type: none;
+	border: none;
+	height: auto;
+	width: 900px;
+	white-space: normal;
+	font-size: x-small;
+	
+}
+
+
+div {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+
+}
+
+body {
+	background-color: #DDDDCC; 
+	background-attachment: scroll;
+	background-image: url(images/stripe1.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	left: 32px;
+}
+td {
+	height: 220px;
+	width: 300px;
+}
+table {
+	height: 660px;
+	width: 900px;
+}

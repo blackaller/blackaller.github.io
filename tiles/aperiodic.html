@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Piles of Tiles</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="blackaller" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="black at mit.edu" />
+
+<meta name="Author"		content="Luis Blackaller, Kyle Buza, Justin Mazzola Paluska" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="MIT 6.891 Spring 2007 Class Project" />
+<meta name="Keywords" content="symbolic, programing, plane, tilings, scheme" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link rel='shortcut icon' type='image/x-icon' href='images/tile2.ico' />
+</head>
+
+
+<body>
+	<div id="content-wrapper">
+		<div id="sidebar">
+			<ul>
+				<h2 class="menu">- Project</h2>
+				<li><a href="cover.html">-cover</a></li>				
+				<li><a href="intro.html">-introduction</a></li>
+				<li><a href="bathroom.html">-the bathroom problem</a></li>
+				<li><a href="periodic.html">-periodic tilings</a></li>
+				<li><a href="aperiodic.html">-aperiodic tilings</a></li>
+				<li><a href="theorems.html">-three tiling theorems</a></li>
+				<br />
+
+					<h2 class="menu">- Strategy</h2>
+					<li><a href="strategy.html">-overview</a></li>
+
+					<br />
+							<h2 class="menu">- Implementation</h2>
+							<li><a href="shape.html">-shape representation</a></li>
+							<li><a href="operations.html">-flip and fuse</a></li>
+							<li><a href="primitives.html">-shape primitives</a></li>
+							<li><a href="shaper.html">-shaper</a></li>
+							<li><a href="tiler.html">-tiler</a></li>
+							<li><a href="visualization.html">-visualization</a></li>
+
+					<br />
+
+						<h2 class="menu">- Results</h2>	
+						<li><a href="gallery.html">-gallery</a></li>
+						<li><a href="downloads.html">-downloads</a></li>
+						<br />
+
+				<h2 class="menu">- Other</h2></li>
+				<li><a href="references.html">-references/links</a></li>
+				<li><a href="conclusion.html">-conclusion</a></li>
+			
+				<br />
+			</ul>
+		</div>
+
+	<div id="page">
+		<div id="header">
+			<h1><strong>Piles of Tiles</strong></h1>
+			<a href="http://cartoondistortion.com" target="_blank">Luis Blackaller </a> - <a href="http://plwclassic.media.mit.edu/people/buza/" target="_blank">Kyle Buza </a> - <a href="http://www.mit.edu/~jmp/" target="_blank">Justin Mazzola Paluska</a> <br/>
+			Advanced Symbolic Programming<a href="http://swiss.csail.mit.edu/classes/symbolic/spring07/"> [ 6.891 Spring 2007 ] </a> Final Project
+		</div>
+
+
+		<div id="content">
+			<div id="header">
+<!--*******************	THIS IS WHERE YOU WORK ********************-->
+				<h1><strong>Aperiodic Tilings</strong></h1>
+			</div>
+				<p> 
+					Non-periodic tilings are all the tilings that are not periodic. Aperiodic tilings are non-periodic tiings whose tiles can't be rearranged in a periodic manner. When dealing with non-periodic tilings, there can't be found any fundamental shape that could tile the plane by translations. Intuitively, "non-periodic" means that the tiling will never repeat itself, or that different sections of the tiling will always look different. However, there are several known techniques to specify how to construct a non-periodic tiling. An interesting technique, called substitution, relies on the property of some sets of tiles to build bigger copies of themselves after arranging them in the correct way, thus allowing the covered surface to grow as much as it is needed. A comprehensive list of substitution tilings, along with a lot of very nice illustrations, can be found at the <a href="https://tilings.math.uni-bielefeld.de/substitution/">Tiling Encyclopedia</a>.
+					</p>
+					
+					
+					
+					<h3>The Chair Tiling</h3>
+					<p> 
+						The chair substitution tiling is a simple example of a non-periodic tiling whose construction is easy to understand. It is also an example of a set of tiles that can be arranged both ways, as a periodic tiling (we showed in the section about periodic tilings) or as an non-periodic tiling. Because of this, the chair tiling is not aperiodic. </p>
+							<p>
+							<img src="images/symmetry_aperiodic_chair.png" />	
+
+						</p>
+						
+						
+						
+						<p>Four copies of a	chair can be used to build a bigger chair, and and then a bigger one, and so on, until the whole plane is covered. This construction process is called inflation. 						
+					</p>
+						<p>
+						<img src="images/chair_inflation.png" />	
+
+					</p>
+					<p>
+					An equivalent process can be used backwards, by subdividing a given chair into four smaller ones, each one of which could be subdivided again. This process is called deflation. 	
+					</p>	
+					
+						<p>
+						<img src="images/chair_deflation.png" />	
+
+					</p>
+				
+				
+				<h3>The Kepler Tiling</h3>
+				<p> 
+					Kepler's tiling shows up after exploring one way of not caring about the gaps left between pentagons when trying to arrange them together. Kepler found that he could tile the plane with pentagons after adding three more tiles: stars, decagons, and monsters (built by overlapping two decagons on a diamond shape).</p>
+					<p> 
+						<img src="images/kepler_tiling_1.png" />
+					</p>
+					
+					
+					
+					
+					<p> 
+					<a href="http://en.wikipedia.org/wiki/Roger_Penrose">Roger Penrose</a> noticed that the decagons and monsters on Kepler's tiling could be filled with pentagons and a couple of other different tiles (boats and diamonds), reducing the size of the tiles and revealing a more complex structure than the one hidden inside Kepler's deceitful decagons and monsters. Perhaps Kepler overlooked this possibility because he was obsessed with the greek notions of geometric symmetry, and wanted to keep his polygons as regular as possible.
+					
+					
+					</p>
+					
+					<p> 
+						<img src="images/decagons_1.png" />
+					</p>
+					
+					
+					<p> 
+						<img src="images/symmetry_aperiodic_kepler.png" />
+					</p>
+					
+					
+					<p>As Kepler did, Penrose added the new three different kinds of gaps (diamond, boat and star) to the pentagon as extra tiles, covering the plane in a beautiful way that resembles the snowflake outline of Koch's curve, and gave Penrose a hint to his later discoveries on aperiodic tilings. 							
+				</p>
+				
+				<p> 
+					<img src="images/pentagon_friends.png" />
+				</p>
+				
+				<p> 
+					<img src="images/pentagonal_pentagon.png" />
+				</p>
+				
+				<p> 
+					As with the chair tile, there is a way to make a periodic tiling with the Kepler and Penrose pentagonal tiles. Even though the Kepler, Penrose and Chair tilings are non-periodic, they are not truly aperiodic, because the chair tile and the set of pentagonal tiles (pentagon, diamond, boat and star) can be arranged in a periodic manner. However, several clever ideas were devised by mathematicians in the second half of the 20th century to force aperiodicity on a set of tiles.
+				</p>
+				
+				
+				<p> <img src="images/kepler_periodic_1.png" />
+					<img src="images/pentagonal_periodic.png" />
+				</p>
+				
+				<h3>The Penrose Tiling</h3>
+				<p> 
+					For a long time it was believed that if a set of bodies tiles the plane non-periodically, then there must be a way of arranging the tiles periodically. It was not until 1964 that <a href="http://en.wikipedia.org/wiki/Robert_Berger">Robert Berger</a> showed an example of a set of 20,426 colored domino tiles that tile the plane only non-periodically, thus inventing the first aperiodic tiling in history. Inspired by Kepler's tiling, <a href="http://en.wikipedia.org/wiki/Roger_Penrose">Roger Penrose</a> found a set of two pentagonal tiles (a kite and a dart, together with a couple of matching rules to prevent making a rhombus with them), that can only be arranged non-periodically, thus discovering the smallest set of bodies that tile aperiodically. Nobody has been able to find a single tile that is aperiodic.				
+				</p>
+				<p> 
+					<img src="images/kitendart.png" />
+				</p>
+				<p> 
+					<img src="images/penrose_match_1.png" />
+				</p>
+				<p> 
+					<img src="images/penrose_match_2.png" />
+				</p>
+			
+				
+				
+<!--*******************	THIS IS WHERE YOU WORK ********************-->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

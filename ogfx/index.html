@@ -1,0 +1,2360 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>E15:oGFx</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="oGFx" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="black at media.<strong>MIT</strong>.edu" />
+
+<meta name="Author"		content="luis blackaller" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="oGFx" />
+<meta name="Keywords" content="design computational art MIT PLW Physical Language Workshop python code cocoal graphics programming" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+<link rel='icon' type='image/png' href="images/ogfx_icob.png" />
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+
+<script language='Javascript' type='text/Javascript'>
+<!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<!--Make Microsoft Internet Explorer behave like a standards-compliant browser. http://code.google.com/p/ie7-js/-->
+</script>
+
+<script type="text/javascript" src="javascript/lib/prototype.js"></script>
+<script type="text/javascript" src="javascript/src/scriptaculous.js" ></script>
+<script type="text/javascript" src="javascript/src/effects.js" ></script>
+<script type="text/javascript" src="javascript/custom/black.js" ></script>
+
+<script src="http://www.apple.com/library/quicktime/scripts/ac_quicktime.js" language="JavaScript" type="text/javascript"></script>
+<script src="http://www.apple.com/library/quicktime/scripts/qtp_library.js" language="JavaScript" type="text/javascript"></script>
+<link href="http://www.apple.com/library/quicktime/stylesheets/qtp_library.css" rel="StyleSheet" type="text/css" />
+<!--
+      ___           ___           ___         ___     
+     /  /\         /  /\         /  /\       /__/|    
+    /  /::\       /  /:/_       /  /:/_     |  |:|    
+   /  /:/\:\     /  /:/ /\     /  /:/ /\    |  |:|    
+  /  /:/  \:\   /  /:/_/::\   /  /:/ /:/  __|__|:|    
+ /__/:/ \__\:\ /__/:/__\/\:\ /__/:/ /:/  /__/::::\____
+ \  \:\ /  /:/ \  \:\ /~~/:/ \  \:\/:/      ~\~~\::::/
+  \  \:\  /:/   \  \:\  /:/   \  \::/        |~~|:|~~ 
+   \  \:\/:/     \  \:\/:/     \  \:\        |  |:|   
+    \  \::/       \  \::/       \  \:\       |  |:|   
+     \__\/         \__\/         \__\/       |__|/
+-->
+
+
+</head>
+
+<body>
+
+<div id="header">
+	<span id="logo" style="font: 48px/42px Monospace, Verdana, Geneva, Arial, sans-serif;"><a class="head" onclick="toggleFade('ogfx'); closeOther('ogfx'); return false;">E15:oGFx</a></span> - 
+
+	<a class="head" href="#" onclick="toggleFade('download'); closeOther('download'); return false;">download</a> - 
+	<a class="head" href="#" onclick="toggleFade('demo'); closeOther('demo'); return false;">demo</a> -
+	<a class="head" href="#" onclick="toggleFade('featured'); closeOther('featured'); return false;">featured</a> -
+	<a class="head" href="#" onclick="toggleFade('api'); closeOther('api'); return false;">api</a> -
+	<a class="head" href="#" onclick="toggleFade('tutorial'); closeOther('tutorial'); return false;">tutorial</a> -
+	<a class="head" href="#" onclick="toggleFade('book'); closeOther('book'); return false;">book</a>
+
+</div>
+<!--
+<div id="separator-right"style="float:right; width:14px; right:0px;"> --- </div>
+<div id="separator-left"style="float:left; width:14px;"> --- </div>
+-->
+
+
+<div id="sidebar">
+
+<h2><a href="http://www.flickr.com/groups/1018339@N23/" style="padding:0px;" target="blank">E15:oGFx in Flickr</a></h2>
+				<!-- Start of Flickr Badge -->
+				<style type="text/css"> 
+.flickr_badge_image {margin:0px;display:inline;}
+.flickr_badge_image img {border: 0px solid #666666 !important; padding:1px; margin:2px;}
+#flickr_badge_wrapper {width:320px;text-align:left}
+</style><div id="flickr_badge_wrapper"><script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&display=random&size=s&layout=x&source=group&group=1018339@N23"></script></div>
+				
+				
+</div>
+
+
+<h2>Related</h2>
+				<div style="padding=0px; margin-left:0px;">
+				<a href="http://e15.media.mit.edu/" target="blank">E15</a>
+				<a href="http://e15web.media.mit.edu/" target="blank">E15:web</a>
+				<a href="http://pixs.media.mit.edu/studio/recent" target="blank">MyStudio</a>
+				<a href="http://plw.media.mit.edu/" target="blank">PLW</a>
+				<a href="http://opencode.media.mit.edu/" target="blank">OpenCode</a>
+				<a href="http://buzamoto.com/" target="blank">BuzaMoto</a>
+				</div>
+
+
+</div>
+
+
+<div id="wrapper">
+
+	<div id="content">
+
+
+	<div id="ogfx" style="position: absolute; color:#111; background-color: none; font-weigth:normal;">
+		<div>
+
+		<p class="texto" style="font: 18px/18px Monospace, Verdana, Geneva, Arial, sans-serif; font-family: Monospace, Verdana, Geneva, Arial, sans-serif; ">
+		<strong>E15:oGFx</strong> is a tool to generate and explore <strong>3D</strong> forms originating <strong>from 2D</strong> animations.
+		</p>
+		<p class="texto" style="font: 16px/16px Monospace, Verdana, Geneva, Arial, sans-serif; font-family: Monospace, Verdana, Geneva, Arial, sans-serif; ">
+		E15:oGFx, or simply oGFx, is an element of <strong>E15</strong> -- a blanket descriptor for much of the work that took place in John Maeda's <strong>Physical Language Workshop</strong> between the years of 2007 and 2008 in the <strong>MIT Media Lab</strong>. E15:oGFx is, in fact, the first of such projects falling under the "E15" designation, and was developed by Kyle Buza and Luis Blackaller in the Summer of 2007.
+	</p>
+	<p class="texto" style="font: 15px/15px Monospace, Verdana, Geneva, Arial, sans-serif; font-family: Monospace, Verdana, Geneva, Arial, sans-serif; ">
+		 The original motivation of E15:oGFx was to explore the set of 3D forms produced from procedurally generated 2D animations. E15:oGFx uses an embedded <strong>Python</strong> interpreter to provide a malleable programming interface for writing programs within it. By embedding a Python interpreter, we allow the user to update, modify, and interrogate the runtime state of the E15:oGFx program at any point during its execution. This is <strong>in contrast to</strong> the traditional "<strong>compile, run, debug, repeat</strong>" style of the majority of today's programming environments.
+		</p>
+		<p class="texto" style="font: 14px/14px Monospace, Verdana, Geneva, Arial, sans-serif; font-family: Monospace, Verdana, Geneva, Arial, sans-serif; ">
+		Like many of its livecoding siblings, E15:oGFx features solid support for user-defined <strong>GLSL-based shaders</strong>, as well as a mechanism for modifying shader parameters from within Python. We also take advantage of <strong>GPU-accelerated</strong> image manipulation through the use of Apple's <strong>CoreImage</strong> framework.
+		</p>
+		<p style="position:relative; text-align:center; padding:40px;">
+			<img src="images/mitplw.png" style="width:70px;" />
+		</p>
+		</div>
+	</div>	
+
+
+	<div id="download" style="position: absolute; display:none; font-weigth:normal; width:640px;">
+		<p class="texto" style="color:#fff; background: dodgerblue;">
+			 Requirements:
+			<ul style="list-style-type: disc; margin-bottom:0;">
+				<li>Intel Mac</li>
+				<li>MacOS 10.5 Leopard</li>
+			</ul>	
+		</p>
+		<p class="texto" style="color:#fff; background: dodgerblue;">
+			 Downloads:
+			<ul style="list-style-type: disc; margin-bottom:0;">
+					<!--temporarily disabled =(-->
+					<li><a href="binaries/E15OGFX001.zip" onClick="alert('This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY')">E15:oGFx alpha 001</a></li>
+					
+			</ul>
+		</p>
+		<p style="position:relative; text-align:center; padding:40px; background:#fff; border-bottom: 0px dashed black;">
+			<img src="images/mitplw.png" style="width:70px;" />
+		</p>
+	</div><!--vision-->
+
+
+
+
+	<div id="demo" style="position: absolute;  display:none;  color:#fff; font-weigth:normal;">
+		
+		<script type="text/javascript"><!--
+			QT_WritePoster_XHTML('Click to Play', 'quicktime/ogfx_demo_2008-poster.jpg',
+				'quicktime/ogfx_demo_2008.mov',
+				'640', '361', '',
+				'controller', 'false',
+				'autoplay', 'true',
+				'bgcolor', 'dodgerblue',
+				'scale', 'aspect');
+		//-->
+		</script>
+		<noscript>
+			<p style="border-bottom: 1px dashed black;">
+		<object width="640" height="361" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+			<param name="src" value="quicktime/ogfx_demo_2008-poster.jpg" />
+			<param name="href" value="quicktime/ogfx_demo_2008.mov" />
+			<param name="target" value="myself" />
+			<param name="controller" value="false" />
+			<param name="autoplay" value="false" />
+			<param name="scale" value="aspect" />
+			<embed width="853" height="496" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"
+				src="quicktime/ogfx_demo_2008-poster.jpg"
+				href="quicktime/ogfx_demo_2008.mov"
+				target="myself"
+				controller="false"
+				autoplay="false"
+				scale="aspect">
+			</embed>
+		</object></p>
+		</noscript>
+		
+		<p class="texto" style="color:#fff; background: dodgerblue;">
+		This video is running at 2x of its original speed.
+	</p>
+	<p style="position:relative; text-align:center; padding:40px; background:#fff; border-bottom: 0px dashed black;">
+		<img src="images/mitplw.png" style="width:70px;" />
+	</p>
+	  </div><!--demo-->
+
+
+	<div id="featured" style="position: absolute; display:none;   background:url('/images/bg.png'); font-weigth:normal; width:640px;">
+			<p class="texto" style="background: dodgerblue; color:#fff;">
+			You're invited to contribute to this gallery with your awesome graphical experiments. Please submit your script, a screenshot or two, and a description of what you did. Selected works will be featured here every month. Please email <strong>ofgx [at] mitplw [dot] com</strong> for submissions or questions. More code examples can be found in <a class="slider" href="http://e15web.media.mit.edu/">E15:web</a>.
+			
+			</p>
+
+			<p class="texto">
+				<a class="slider" href="#" onclick="toggleBlind('featured_1'); return false;">Bouncing Balls</a>
+			</p>
+			<div id="featured_1" style="display:none; background:#fff;">
+				<div>
+					<img src="images/featured_balls.jpg" />
+					<p class="cabezas">
+					Why call these objects balls when they are actually squares? It doesn't matter. Just by replacing "rect" with "ellipse" in the "display" method of the Ball class definition will make the squares into balls during runtime, without interruptions, when the script is reevaluated. Python Metaclass programming does the trick.
+					</p>
+					<pre>
+#
+#  ogfx_ballSequence.py
+#  OpenGFX
+#
+#  Created by buza+blackaller on 12/01/08.
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+#
+
+from drawengine import *
+
+sv1 = 0
+sv2 = 0
+sv3 = 0
+sv4 = 0
+sv5 = 0
+sv6 = 0
+mx = 0
+my = 0
+
+numBalls = 1
+balls = []
+
+#Size of the texture
+size = 256
+
+tsize(size)
+
+class Ball(AutoReloader):
+	def __init__(self, xin, yin, din, idin, oin, r, g, b, a):
+		self.x = xin
+		self.y = yin
+		self.diameter = din
+		self.id = idin
+		self.others = oin
+		self.spring = 0.05
+		self.gravity = 0.03
+		self.vx = 1.5
+		self.vy = 0
+		self.r = r
+		self.a = a
+		self.g = g
+		self.b = b
+		
+	def collide(self):
+		i = self.id + 1
+		while i < numBalls:
+			dx = self.others[i].x - self.x
+			dy = self.others[i].y - self.y
+			distance = sqrt(dx*dx + dy*dy)
+			minDist = self.others[i].diameter/2 + self.diameter/2
+			if (distance < minDist):
+				angle = atan2(dy, dx)
+				targetX = self.x + cos(angle) * minDist
+				targetY = self.y + sin(angle) * minDist
+				ax = (targetX - self.others[i].x) * self.spring
+				ay = (targetY - self.others[i].y) * self.spring
+				self.vx -= ax
+				self.vy -= ay
+				self.others[i].vx += ax
+				self.others[i].vy += ay
+			i = i + 1
+
+	def move(self):
+		self.vy += self.gravity
+		self.x += self.vx
+		self.y += self.vy
+		if (self.x  >  size - self.diameter):
+			self.x = size - self.diameter
+			self.vx *= -0.9
+		elif (self.x  < 0):
+			self.x = 0
+			self.vx *= -0.9
+		
+		if (self.y  > size - self.diameter):
+			self.y = size - self.diameter
+			self.vy *= -0.9 
+		elif (self.y  < 0):
+			self.y = 0
+			self.vy *= -0.9
+     
+	def display(self):
+		color(self.r, self.g, self.b, self.a)
+		stroke(self.r/4, self.g/4, self.b/4, self.a/2)
+		rect(self.x, self.y, self.diameter, self.diameter)
+
+		
+for i in range(numBalls):
+	balls.append(Ball(random()*size, random()*size, randrange(size/16, size/8), i, balls, random(), random(), random(), random()+0.7))
+
+balls[0].r = 0.8
+balls[0].g = 0.0
+balls[0].b = 0.0
+balls[0].a = 0.8
+
+a=0
+linewidth(4)
+blendmode(0,2)
+envcolor(0,0,0)
+
+def draw():
+	global balls, numBalls, sv1, sv2, sv3, sv4, sv5, sv6, a
+	stroke(1,1,1,1)
+	for i in range(numBalls):
+		balls[i].gravity=sin(a)
+		balls[i].collide()
+		balls[i].move()
+		balls[i].display()
+	a+=0.02
+
+state = 0
+
+doArray = []
+doArray.append(lambda : doStep1())
+doArray.append(lambda : doStep2())
+doArray.append(lambda : doStep3())
+doArray.append(lambda : doStep4())
+doArray.append(lambda : doStep5())
+doArray.append(lambda : doStep6())
+doArray.append(lambda : doStep7())
+doArray.append(lambda : doStep8())
+
+undoArray = []
+undoArray.append(lambda : undoStep1())
+undoArray.append(lambda : undoStep2())
+undoArray.append(lambda : undoStep3())
+undoArray.append(lambda : undoStep4())
+undoArray.append(lambda : undoStep5())
+undoArray.append(lambda : undoStep6())
+undoArray.append(lambda : undoStep7())
+undoArray.append(lambda : undoStep8())
+
+print "Use the left & right arrow keys to step through this animation sequence of a simple bouncing ball animation.\n"
+
+def onRight():
+  global state, doArray
+  if state == 8:
+    return
+  func = doArray[state]
+  state = state + 1
+  func()
+
+def onLeft():
+  global state, undoArray
+  if state == 0:
+    return
+  func = undoArray[state-1]
+  state = state - 1
+  if state < 0:
+    state = 0
+  func()
+
+def doStep1():
+  print "Doing Step 1 :: Applying this history command of 100 frames."
+  history(150, 0.033, 0)
+
+def undoStep1():
+  print "Undoing Step 1 :: Removing the history command. Displaying only one animation frame."
+  history(1, 0.05, 0)
+
+def doStep2():
+  print "Doing Step 2 :: Adding 4 balls to the animation."
+  global numBalls, balls
+  numBalls = 5
+  for i in range(numBalls):
+    balls.append(Ball(random()*size, random()*size, randrange(size/16, size/8), i, balls, random(), random(), random(), random()+0.7))
+
+def undoStep2():
+  print "Undoing Step 2 :: Leaving only one ball in the animation."
+  global numBalls, balls
+  numBalls = 1
+  balls = balls[:1]
+
+def doStep3():
+  #Angle the camera to see perspective.
+  print "Doing Step 3 :: Changing the perspective. Note you can also use the scroll wheel and shift key to navigate the scene."
+  camera(-1.0, 0.0, -1.0, 7.0, 0.0, 1.0)
+
+def undoStep3():
+  #Straighten out the camera.
+  print "Undoing Step 3 :: Resetting the perspective."
+  camera(0.0, 0.0, -1.0, 0.0, 0.0, 1.8)
+
+def doStep4():
+  print "Doing Step 2 :: Adding 20 balls to the animation."
+  global numBalls, balls
+  numBalls = 25
+  for i in range(numBalls):
+    balls.append(Ball(random()*size, random()*size, randrange(size/16, size/8), i, balls, random(), random(), random(), random()+0.7))
+
+def undoStep4():
+  print "Undoing Step 2 :: Leaving only 10 balls in the animation."
+  global numBalls, balls
+  numBalls = 5
+  balls = balls[:5]
+
+def doStep5():
+  print "Doing Step 4 :: Applying a kaleidoscope filter."
+  camera(-1.0, 0.0, -1.0, 3.5501196384429932, 0.0, -2.1374876499176025)
+  kaleidoscope("mykaleidoscope", { "center" : [128, 128] })
+
+def undoStep5():
+  print "Undoing Step 4 :: Removing the kaleidoscope filter."
+  removeFilter("mykaleidoscope")
+  camera(-1.0, 0.0, -1.0, 7.0, 0.0, 1.0)
+
+def doStep6():
+  print "Doing Step 5 :: Applying a Gaussian blur, edges and saturation filters."
+  gaussianblur("myblur", {"radius" : 3.0})
+  edges("myedges", {"intensity" : 8.0})
+  colorcontrols("mycolorcontrols", {"saturation" : 6.0})
+
+def undoStep6():
+  print "Undoing Step 5 :: Removing the Gaussian blur, edges and saturation filters."
+  removeFilter("myblur")
+  removeFilter("myedges")
+  removeFilter("mycolorcontrols")
+
+def doStep7():
+  print "Doing Step 6 :: Applying a Pixellation filter."
+  pixellate("mypixellate", {"scale" : 12})
+
+def undoStep7():
+  print "Undoing Step 6 :: Removing the Pixellation filter."
+  removeFilter("mypixellate")
+
+def doStep8():
+  print "Doing Step 10 :: Back to origin."
+  undoStep7()
+  undoStep6()
+  undoStep5()
+  undoStep4()
+  undoStep3()
+  undoStep2()
+  undoStep1()
+
+def undoStep8():
+  print "Undoing Step 10 :: Back to 10."
+  doStep1()
+  doStep2()
+  doStep3()
+  doStep4()
+  doStep5()
+  doStep6()
+  doStep7()
+					</pre>
+				</div>
+			</div>
+
+			<p class="texto">
+				<a class="slider" href="#" onclick="toggleBlind('featured_2'); return false;">Vertigo</a>
+			</p>
+			<div id="featured_2" style="display:none; background:#fff;">
+				<div>
+					<img src="images/featured_vertigo.jpg" />
+					<p class="cabezas">
+			    		A version of this experiment was featured during the keynote presentation of FlashForward 2007 in Boston.
+					</p>
+					<pre>
+#
+#  oGFx_vertigoSequence.py
+#  OpenGFX
+#
+#  Created by blackaller+buza on 12/01/08.
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+#  
+
+from drawengine import *
+from math import *
+#Size of the texture
+size = 256
+
+tsize(size)
+
+
+#setup globals
+a=0
+b=0
+c=250
+width=256
+height=256
+radiusX=0
+radiusY=0
+period=7
+
+
+
+# filters
+#root.gaussianblur("radius",10)
+#root.colorcontrols("saturation",20)
+#root.edges("intensity",6)
+#root.pixellate("scale",6)
+
+# filter removals
+#root.removeFilter("gaussianblur", lambda: del_gaussianblur())
+#root.removeFilter("colorcontrols", lambda: del_colorcontrols())
+#root.removeFilter("edges", lambda: del_edges())
+#root.removeFilter("pixellate", lambda: del_pixellate())
+
+blendmode(0,2)
+envcolor(1,1,1)
+
+numCircles = 1
+
+colorExterior = [0,1,1,1]
+colorMiddle = [1,0,1,1]
+colorInterior = [1,1,0,1]
+
+def draw():
+	global numCircles
+	#lightdirection(20*cos(a/10),20*sin(a/10),60,1)
+	global a,b,c, width, height, radiusX, radiusY, period
+	background(1,1,1,0)
+	linewidth(5)
+	stroke(0,0,1,0.3)
+	radiusX=5+abs(10*sin(c))
+	radiusY=5+abs(10*sin(c))
+	
+	# custom function calls
+	for i in range(numCircles):
+		radiusX=i+5+abs(10*sin(c))
+		radiusY=i+5+abs(10*sin(c))
+		display (width+(200*sin((a))),height+(200*sin((b))))
+		display (width+(200*sin((a+pi/ period*i))),height+(200*sin((b+pi/ period*i))))
+		display (width+(200*sin(-(a+2*pi/ period*i))),height+(200*sin((b+2*pi/ period*i))))
+		display (width+(200*sin((-a))),height+(200*sin((-b))))
+		display (width+(200*sin(-(a+pi/ period*i))),height+(200*sin(-(b+pi/ period*i))))
+		display (width+(200*sin((a+2*pi/ period*i))),height+(200*sin(-(b+2*pi/ period*i))))
+	a=a+0.1
+	b=b+0.15
+	c=c+0.025
+	period=sin(period/2) + period/2 +0.01
+
+# custom function definition
+# custom function definition
+def display(x,y):	
+	push()
+	translate(x/2,y/2)
+	color(colorExterior[0],colorExterior[1],colorExterior[2],colorExterior[3])
+	ellipse(-1.5 * radiusX,-1.5 * radiusY, 3 * radiusX, 3 * radiusY)
+	color(colorMiddle[0],colorMiddle[1],colorMiddle[2],colorMiddle[3])
+	ellipse(-radiusX,-radiusY, 2 * radiusX, 2 * radiusY)
+	color(colorInterior[0],colorInterior[1],colorInterior[2],colorInterior[3])
+	ellipse(0.5*-radiusX,0.5*-radiusY, radiusX, radiusY)
+	pop()
+	
+state = 0
+
+doArray = []
+doArray.append(lambda : doStep1())
+doArray.append(lambda : doStep2())
+doArray.append(lambda : doStep3())
+doArray.append(lambda : doStep4())
+doArray.append(lambda : doStep5())
+doArray.append(lambda : doStep6())
+doArray.append(lambda : doStep7())
+doArray.append(lambda : doStep8())
+doArray.append(lambda : doStep9())
+doArray.append(lambda : doStep10())
+
+undoArray = []
+undoArray.append(lambda : undoStep1())
+undoArray.append(lambda : undoStep2())
+undoArray.append(lambda : undoStep3())
+undoArray.append(lambda : undoStep4())
+undoArray.append(lambda : undoStep5())
+undoArray.append(lambda : undoStep6())
+undoArray.append(lambda : undoStep7())
+undoArray.append(lambda : undoStep8())
+undoArray.append(lambda : undoStep9())
+undoArray.append(lambda : undoStep10())
+
+print "Use the left & right arrow keys to step through this animation sequence of spinning discs.\n"
+
+def onRight():
+  global state, doArray
+  if state == 10:
+    print "Nothing happens after Step 10."
+    return
+  func = doArray[state]
+  state = state + 1 % 10
+  func()
+
+def onLeft():
+  global state, undoArray
+  if state == 0:
+    print "Nothing happens before Step 1."
+    return
+  func = undoArray[state-1]
+  state = state - 1 % 10
+  if state < 0:
+    state = 0
+  func()
+
+def doStep1():
+  print "Doing Step 1 :: Adding more circles to the animation."
+  global numCircles
+  numCircles = 5
+
+def undoStep1():
+  print "Undoing Step 1 :: Removing additional circles."
+  global numCircles
+  numCircles = 1
+
+def doStep2():
+  print "Doing Step 2 :: Applying this history command of 200 frames and incremental rotation."
+  history(200, 0.05, 1.0)
+
+def undoStep2():
+  print "Undoing Step 2 :: Removing the history command. Displaying only one animation frame."
+  history(1, 0.05, 0)
+
+def doStep3():
+  #Angle the camera to see perspective.
+  print "Doing Step 3 :: Changing the perspective. Note you can also use the scroll wheel and holding down the cmd key to navigate the scene."
+  camera(-1.0, 0.0, -1.0, 7.0, 0.0, 1.0)
+
+def undoStep3():
+  #Straighten out the camera.
+  print "Undoing Step 3 :: Resetting the perspective."
+  camera(0.0, 0.0, -1.0, 0.0, 0.0, 1.8)
+
+def doStep4():
+  print "Doing Step 4 :: Applying a Gaussian blur filter."
+  gaussianblur("myblur", {"radius" : 10})
+
+def undoStep4():
+  print "Undoing Step 4 :: Removing the Gaussian blur filter."
+  removeFilter("myblur")
+
+def doStep5():
+  print "Doing Step 5 :: Applying a saturation effect."
+  colorcontrols("mycolorcontrols", {"saturation" : 20})
+
+def undoStep5():
+  print "Undoing Step 5 :: Removing the saturation effect."
+  removeFilter("mycolorcontrols")
+
+def doStep6():
+  print "Doing Step 6 :: Setting the background color to black."
+  envcolor(0, 0, 0)
+
+def undoStep6():
+  print "Undoing Step 6 :: Setting the background color to white."
+  envcolor(1, 1, 1)
+
+def doStep7():
+  print "Doing Step 7 :: Changing the blending."
+  camera(0.0, 0.0, -1.0, 0.0, 0.0, -3.8) # going in
+  blendmode(3,0)
+
+def undoStep7():
+  print "Undoing Step 7 :: Reverting the blending."
+  camera(-1.0, 0.0, -1.0, 7.0, 0.0, 1.0)
+  blendmode(0,2)
+
+def doStep8():
+  print "Doing Step 8 :: Applying an edge and edgeworks combo filter."
+  edgework("myedgework", {"radius" : 8})
+  edges("myedges", {"intensity" : 6})
+  camera(-2.0, 0.0, -2.0, 4.0, 0.0, -6.0) # closer
+
+def undoStep8():
+  print "Undoing Step 8 :: Removing the edge and edgeworks filter."
+  removeFilter("myedgework")
+  removeFilter("myedges")
+  camera(0.0, 0.0, -1.0, 0.0, 0.0, -3.8)
+
+def doStep9():
+  print "Doing Step 9 :: Reverting the blending."
+  blendmode(0,2)
+
+def undoStep9():
+  print "Undoing Step 9 :: Changing back to  custom blending."
+  blendmode(3,0)
+
+def doStep10():
+  print "Doing Step 10 :: Back to origin."
+  undoStep9()
+  undoStep8()
+  undoStep7()
+  undoStep6()
+  undoStep5()
+  undoStep4()
+  undoStep3()
+  undoStep2()
+
+
+def undoStep10():
+  print "Undoing Step 10 :: Back to 10."
+  doStep2()
+  doStep3()
+  doStep4()
+  doStep5()
+  doStep6()
+  doStep7()
+  doStep8()
+  doStep9()
+					</pre>
+				</div>
+			</div>
+
+			<p class="texto">
+				<a class="slider" href="#" onclick="toggleBlind('featured_3'); return false;">Quadratic Splines</a>
+			</p>
+			<div id="featured_3" style="display:none; background:#fff;">
+				<div>
+					<img src="images/featured_splines.jpg" />
+					<p class="cabezas">
+			    		This experiment is a relatively simple application of Quartz2D's Quadratic Bezier splines.
+					</p>
+					<pre>
+#
+#  QuadraticCurves.py
+#  OpenGFX
+#
+#  Created by blackaller on 10/24/07.
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+# 
+
+
+from drawengine import *
+from math import *
+import random 
+
+size = 256
+
+tsize(size)
+
+class Polygon:
+	global a, pipi, lalpha, falpha
+	def __init__(self, numVertices, radius):
+		self.n = numVertices
+		self.r = radius	
+		
+		
+	def setFill(self,r,g,b,a):
+		color(r,g,b,a)
+	
+	def setLine(self,r,g,b,a):
+		stroke(r,g,b,a)
+	
+	def displayPolygon(self):
+		
+		oscillateradius = radiusOscillator(self.r, a, 16, 0)
+		
+		moveto(oscillateradius,0)
+		beginline()
+		
+		for i in range(self.n):
+			k=1+i
+			controlPointX = ((50*sin(a*k))+oscillateradius) * cos((k*pipi)/self.n - (pi)/self.n)
+			controlPointY = ((50*sin(a*k))+oscillateradius) * sin((k*pipi)/self.n - (pi)/self.n)
+			quadcurve(controlPointX, controlPointY, oscillateradius * cos(((k-1/2)*pipi)/self.n), oscillateradius * sin(((k-1/2)*pipi)/self.n))
+		closeline()
+		
+		for i in range(self.n):
+			k=1+i
+			stroke(0,0,0,0)
+			color(float(i)/self.n,float(i)/self.n,0.8,0.4)
+			controlPointX = ((50*sin(a*k))+oscillateradius) * cos((k*pipi)/self.n - (pi)/self.n)
+			controlPointY = ((50*sin(a*k))+oscillateradius) * sin((k*pipi)/self.n - (pi)/self.n)
+			ellipse(controlPointX, controlPointY,2 + 8*sin(a*k),2 + 8*sin(a*k))
+
+history(1,0.05, 1)
+
+linejoin(2)
+linewidth(4)
+
+pipi = 2*pi
+a=2
+
+width = 256
+height = 256
+
+lalpha = 0.8
+falpha = 0.2
+
+p= Polygon(13, (width/8) * (1+sin(a)) + 10 )
+
+envcolor(1,1,1)
+
+blendmode(0,2)
+
+def draw():
+	global a, width, height, lalpha, falpha, p
+	background(1,1,1,0)	
+
+	push()
+	translate(width/2,height/2)
+	push()
+	rotate(a)
+	p.setFill(cos(sin(a)), sin(cos(a)), sin(a), falpha)
+	p.setLine(1, cos(a/4), sin(a/4), lalpha)
+	p.displayPolygon()
+	pop()
+	pop()
+	a+=0.005
+
+def superFormulaRadius(angle, m, n1, n2, n3):
+	rad = ( abs( cos(m*angle/4)**n2 ) + abs( cos(m*angle/4)**n3 ) )**(-1/n1)
+	return rad
+
+def radiusRandomizer(radius, range):
+	rand = float(random.randint(0,100))
+	rad = radius - range * cos(rand)  
+	return rad
+
+def radiusOscillator(radius, osc, range, var):
+	rand = float(random.randint(0,var))
+	rad = radius - radius * cos(osc+rand) /range 
+	return rad
+
+state = 0
+
+doArray = []
+doArray.append(lambda : doStep1())
+doArray.append(lambda : doStep2())
+doArray.append(lambda : doStep3())
+doArray.append(lambda : doStep4())
+doArray.append(lambda : doStep5())
+doArray.append(lambda : doStep6())
+doArray.append(lambda : doStep7())
+doArray.append(lambda : doStep8())
+doArray.append(lambda : doStep9())
+doArray.append(lambda : doStep10())
+
+undoArray = []
+undoArray.append(lambda : undoStep1())
+undoArray.append(lambda : undoStep2())
+undoArray.append(lambda : undoStep3())
+undoArray.append(lambda : undoStep4())
+undoArray.append(lambda : undoStep5())
+undoArray.append(lambda : undoStep6())
+undoArray.append(lambda : undoStep7())
+undoArray.append(lambda : undoStep8())
+undoArray.append(lambda : undoStep9())
+undoArray.append(lambda : undoStep10())
+
+print "Use the left and right arrow keys to step through this animation sequence of quadratic curves.\n"
+
+def onRight():
+  global state, doArray
+  if state == 10:
+    print "Nothing happens after Step 10."
+    return
+  func = doArray[state]
+  state = state + 1
+  func()
+
+def onLeft():
+  global state, undoArray
+  if state == 0:
+    print "Nothing happens before Step 1."
+    return
+  func = undoArray[state-1]
+  state = state - 1
+  if state < 0:
+    state = 0
+  func()
+
+def doStep1():
+  global lalpha, falpha, a
+  print "Doing Step 1 :: Applying this history command of 200 frames and incremental rotation."
+  lalpha = 0.1
+  falpha = 0.01
+  history(200, 0.02, 1)
+
+def undoStep1():
+  global lalpha, falpha
+  print "Undoing Step 1 :: Removing the history command. Displaying only one animation frame."
+  lalpha = 0.8
+  falpha = 0.2
+  history(1, 0.02, 0)
+
+def doStep2():
+  #Angle the camera to see perspective.
+  print "Doing Step 2 :: Changing the perspective. Note you can also use the scroll wheel and holding down the cmd key to navigate the scene."
+  camera(-1.0, 0.0, -1.0, 3.5501196384429932, 0.0, -2.1374876499176025)
+
+def undoStep2():
+  #Straighten out the camera.
+  print "Undoing Step 2 :: Resetting the perspective."
+  camera(0.0, 0.0, -1.0, 0.0, 0.0, 1.8)
+
+def doStep3():
+  print "Doing Step 3 :: Invert background."
+  envcolor(0, 0, 0)
+
+def undoStep3():
+  print "Undoing Step 3 :: Invert back."
+  envcolor(1, 1, 1)
+
+def doStep4():
+  print "Doing Step 4 :: Applying a Crystallization filter."
+  crystallize("mycrystal", {"radius" : 4})
+
+def undoStep4():
+  print "Undoing Step 4 :: Removing the Crystallization filter."
+  removeFilter("mycrystal")
+
+def doStep5():
+  print "Doing Step 5 :: Applying a gaussian blur effect."
+  gaussianblur("myblur", {"radius" : 2})
+
+def undoStep5():
+  print "Undoing Step 5 :: Removing the gaussian blur effect."
+  removeFilter("myblur")
+  
+
+def doStep6():
+  print "Doing Step 6 :: Applying an edge and saturation filters."
+  edges("myedges", {"intensity" : 8})
+  colorcontrols("mycolorcontrols", {"saturation" : 10})
+
+def undoStep6():
+  print "Undoing Step 6 :: Removing the edge and saturation filters."
+  removeFilter("myedges")
+  removeFilter("mycolorcontrols")
+
+def doStep7():
+  print "Doing Step 7 :: Navigating inside."
+  camera(0.0, 0.0, -1.0, 0.0, 0.0, -3.3) # going in
+
+
+def undoStep7():
+  print "Undoing Step 7 :: Navigating back out."
+  camera(-1.0, 0.0, -1.0, 3.5501196384429932, 0.0, -2.1374876499176025)
+
+def doStep8():
+  print "Doing Step 7 :: Changing to screen blend mode."
+  blendmode(0,8)
+
+def undoStep8():
+  print "Undoing Step 7 :: Removing screen blend mode."
+  blendmode(0,2)
+
+def doStep9():
+  global lalpha, falpha
+  print "Doing Step 9 :: Changing to minmax blend mode."
+  lalpha = 0.4
+  falpha = 0.01
+  blendmode(3,0)
+
+def undoStep9():
+  global lalpha, falpha
+  print "Undoing Step 9 :: Removing minmax blend mode."
+  lalpha = 0.1
+  falpha = 0.01
+  blendmode(0,8)
+
+def doStep10():
+  print "Doing Step 10 :: Back to origin."
+  undoStep9()
+  undoStep8()
+  undoStep7()
+  undoStep6()
+  undoStep5()
+  undoStep4()
+  undoStep3()
+  undoStep2()
+  undoStep1()
+
+def undoStep10():
+  print "Undoing Step 10 :: Back to 10."
+  doStep1()
+  doStep2()
+  doStep3()
+  doStep4()
+  doStep5()
+  doStep6()
+  doStep7()
+  doStep8()
+  doStep9()
+					</pre>
+				</div>
+			</div>
+			
+			<p style="position:relative; text-align:center; padding:40px; padding-bottom:100px; background:#fff; border-bottom: 0px dashed black;">
+				<img src="images/mitplw.png" style="width:70px;" />
+			</p>
+		</div><!--featured-->
+
+
+
+
+	<div id="api" style="position: absolute; display:none; background:url('/images/bg.png'); font-weigth:normal; width:640px;">
+			<p class="texto" style="background: dodgerblue; color:#fff; ">
+			E15:oGFx is a work in progress, and so is this api. New methods and descriptions will be periodically added to this list. Check out the tutorial section and featured scripts for examples of usage. More code examples can be found in <a class="slider" href="http://e15web.media.mit.edu/">E15:web</a>.
+			</p>
+
+			<p class="texto" style="//background:#ccccff url('/images/bg.png');">
+				<a class="slider" href="#" onclick="toggleSlide('general'); return false;">General</a>
+			</p>
+			<div id="general" style="display:none; background:#fff;">
+				<div>
+					<p class="texto" style="padding-left:20px; background:#ccccff;">
+						<a class="slider" href="#" onclick="toggleSlide('general_method_1'); return false;">tsize</a>
+					</p>
+						<div id="general_method_1" style="display:none; background:#fff;">
+							<div>
+								<p style="padding-bottom: 0px;">
+									Important. This setup method is always required.
+								</p>
+								<ul style="list-style-type: disc;">
+									<li>Method name: tsize(int pot)</li>
+									<li>Values: Powers of two</li>
+									<li>Default: null</li>
+									<li>Description: Sets the texture size of the Quartz2D context to be mapped onto the OpenGL geometry</li>
+								</ul>
+								<pre>
+# Setting the texture size to 256
+tsize(256)
+								</pre>
+							</div>
+						</div><!--tsize-->
+
+					<p class="texto" style="padding-left:20px; background:#ccccff;">
+						<a class="slider" href="#" onclick="toggleSlide('general_method_2'); return false;">history</a>
+					</p>
+						<div id="general_method_2" style="display:none; background:#fff;">
+							<div>
+								<ul style="list-style-type: disc;">
+									<li>Method name: history(int length, float gap, float rotation)</li>
+									<li>Ranges:
+										<ul style="padding-left: 20px;">
+											<li>length is not recommended to be larger than 200</li>
+											<li>gap: [0, infinite]</li>
+											<li>rotation: any real number</li>
+										</ul>
+									</li>
+									<li>Default: history(1, 0, 0)</li>
+									<li>Description: Draws the 2D animation history onto a progression of OpenGL objects</li>
+								</ul>
+								<pre>
+# Sets a 12 frame history with a rotation ratio of 45 degrees
+history(12, 1, 45)
+								</pre>
+							</div>
+						</div><!--history-->
+
+						<p class="texto" style="padding-left:20px; background:#ccccff;">
+							<a class="slider" href="#" onclick="toggleSlide('general_method_3'); return false;">draw</a>
+						</p>
+							<div id="general_method_3" style="display:none; background:#fff;">
+								<div>
+									<ul style="list-style-type: disc;">
+										<li>Method name: draw()</li>
+										<li>Description: Defines a drawing loop that runs at the same time over the Quartz2D context that is used as a dynamic texture and over the OpenGL 3D context. It is required to be custom defined in every script.</li>
+									</ul>
+									<pre>
+#
+#  epoch.py
+#  oGFx
+#
+#  Created by blackaller on 02/13/09
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+#
+
+from drawengine import *
+from time import *
+
+#Size of the texture
+size = 256
+
+tsize(size)
+history(32, 0.01, 0)
+
+# draw() method definition
+def draw():
+	global a
+	background(1,0,0,0)
+	fontcolor(1,time() % 2,0,0.8)
+	font("Courier", 32, 0.0, 0.0)
+	text( str(time()), 0, 128) # draw epoch time on the Quartz2D context
+	print time() # print epoch time
+									</pre>
+								</div>
+							</div><!--draw-->
+
+							<p class="texto" style="padding-left:20px; background:#ccccff;">
+								<a class="slider" href="#" onclick="toggleSlide('general_method_4'); return false;">imgload</a>
+							</p>
+								<div id="general_method_4" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: imgload(string "URL", x, y)</li>
+											<li>Description: Loads an image and draws it in the specified (x, y) coordinates.</li>
+										</ul>
+										<pre>
+
+from drawengine import *
+
+#Size of the texture
+size = 256
+
+tsize(size)
+history(10, 0.02, 6)
+
+# draw() method definition
+def draw():
+	background(0,1,1,0)
+	# loading and image from the specified URL
+	imgload("http://pixs.media.mit.edu/picture/image/9589/preview/5000x5000.png", 22, 22)
+										</pre>
+									</div>
+								</div><!--imgload-->
+						
+				</div>
+			</div><!--general-->
+			
+			<p class="texto" style="//background:#ffcccc url('/images/bg.png');">
+				<a class="slider" href="#" onclick="toggleSlide('opengl'); return false;">OpenGL</a>
+			</p>
+			<div id="opengl" style="display:none; background:#fff;">
+				<div>
+					<p class="texto" style="padding-left:20px; background:#ffcccc;">
+						<a class="slider" href="#" onclick="toggleSlide('opengl_method_1'); return false;">envcolor</a>
+					</p>
+						<div id="opengl_method_1" style="display:none; background:#fff;">
+							<div>
+								<ul style="list-style-type: disc;">
+									<li>Method name: envcolor(float red, float green, float blue)</li>
+									<li>Range: [0,1] for all fields</li>
+									<li>Default: envcolor(0, 0, 0)</li>
+									<li>Description: Sets the background color of OpenGL 3D context</li>
+								</ul>
+								<pre>
+# Drawing a white OpenGL background
+envcolor(1, 1, 1)
+								</pre>
+							</div>
+						</div><!--envcolor-->
+						
+
+					<p class="texto" style="padding-left:20px; background:#ffcccc;">
+						<a class="slider" href="#" onclick="toggleSlide('opengl_method_2'); return false;">blendmode</a>
+					</p>
+						<div id="opengl_method_2" style="display:none; background:#fff;">
+							<div>
+								<p style="padding-bottom: 0px;">
+									Please consult the <a href="http://www.opengl.org/sdk/docs/man/">OpenGL documentation</a> for a description of the available set of OpenGL blend equations and blend functions.
+								</p>	
+								<ul style="list-style-type: disc;">
+									<li>Method name: blendmode(int blendEq, int blendFunc)</li>
+									<li>blendEq Values:
+										<ul style="padding-left: 20px;">
+											<li>0 = glBlendEquation(GL_FUNC_ADD)</li>
+											<li>1 = glBlendEquation(GL_FUNC_REVERSE_SUBTRACT)</li>
+											<li>2 = glBlendEquation(GL_MIN)</li>
+											<li>3 = glBlendEquation(GL_MAX)</li>
+											<li>4 = glBlendEquation(GL_FUNC_SUBTRACT)</li>
+										</ul>
+									<li>blendFunc Values:
+										<ul style="padding-left: 20px;">
+											<li>0 = glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)</li>
+											<li>1 = glBlendFunc(GL_ZERO, GL_ONE_MINUS_SRC_ALPHA)</li>
+											<li>2 = glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA)</li>
+											<li>3 = glBlendFunc(GL_ONE_MINUS_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)</li>
+											<li>4 = glBlendFunc(GL_SRC_COLOR, GL_ONE_MINUS_SRC_ALPHA)</li>
+											<li>5 = glBlendFunc(GL_ONE_MINUS_SRC_COLOR, GL_ONE_MINUS_SRC_ALPHA)</li>
+											<li>6 = glBlendFunc(GL_DST_COLOR, GL_ONE_MINUS_SRC_ALPHA)</li>
+											<li>7 = glBlendFunc(GL_DST_ALPHA, GL_ONE_MINUS_SRC_ALPHA)</li>
+											<li>8 = glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_COLOR)</li>
+											<li>9 = glBlendFunc(GL_ONE_MINUS_SRC_ALPHA, GL_ONE_MINUS_SRC_COLOR)</li>
+										</ul>
+									<li>Default: blendmode(0, 0)</li>
+									<li>Description: Globally sets the OpenGL blend equation and blend function</li>
+								</ul>
+								<pre>
+# Screen blending mode
+blendmode(0, 8)
+								</pre>
+							</div>
+						</div><!--blendmode-->
+
+					</div>
+				</div><!--opengl-->
+
+				<p class="texto" style="//background:#ffffcc url('/images/bg.png');">
+					<a class="slider" href="#" onclick="toggleSlide('quartz2d'); return false;">Quartz2D</a>
+				</p>
+				<div id="quartz2d" style="display:none; background:#fff;">
+					<div>
+						<p class="texto" style="padding-left:20px; background:#ffffcc;">
+							<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_1'); return false;">background</a>
+						</p>
+							<div id="quartz2d_method_1" style="display:none; background:#fff;">
+								<div>
+									<ul style="list-style-type: disc;">
+									<li>Method name: background(float red, float green, float blue, float alpha)</li>
+									<li>Range: [0,1] for all fields</li>
+									<li>Default: background(0, 0, 0, 0)</li>
+									<li>Description: Fills the background of the Quartz2d context with the selected color</li>
+									</ul>
+									<pre>
+def draw():
+	# Red transparent background
+	background(1, 0, 0, 0.5)
+									</pre>
+								</div>
+							</div><!--background-->
+
+						<p class="texto" style="padding-left:20px; background:#ffffcc;">
+							<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_2'); return false;">color</a>
+						</p>
+							<div id="quartz2d_method_2" style="display:none; background:#fff;">
+								<div>
+									<ul style="list-style-type: disc;">
+										<li>Method name: color(float red, float green, float blue, float alpha)</li>
+										<li>Range: [0,1] for all fields</li>
+										<li>Default: color(0, 0, 0, 0)</li>
+										<li>Description: Sets the fill color of Quartz2D objects drawn after called</li>
+									</ul>
+									<pre>
+def draw():
+	# Yellow fill
+	color(1, 1, 0, 1)
+	rect(64, 64, 128, 128)
+
+	# Green transparent fill
+	color(0, 1, 0, 0.5)
+	ellipse(128, 128, 64, 64)
+									</pre>
+								</div>
+							</div><!--color-->
+
+						<p class="texto" style="padding-left:20px; background:#ffffcc;">
+							<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_3'); return false;">stroke</a>
+						</p>
+							<div id="quartz2d_method_3" style="display:none; background:#fff;">
+								<div>
+									<ul style="list-style-type: disc;">
+										<li>Method name: stroke(float red, float green, float blue, float alpha)</li>
+										<li>Range: [0,1] for all fields</li>
+										<li>Default: stroke(0, 0, 0, 0)</li>
+										<li>Description: Sets the stroke color of Quartz2D objects drawn after called</li>
+									</ul>
+									<pre>
+def draw():
+	# Red outline
+	stroke(1, 0, 0, 1)
+	rect(64, 64, 128, 128)
+
+	# White transparent outline
+	stroke(1, 1, 1, 0.5)
+	ellipse(128, 128, 64, 64)
+									</pre>
+								</div>
+							</div><!--stroke-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_4'); return false;">linewidth</a>
+							</p>
+								<div id="quartz2d_method_4" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: linewidth(int w)</li>
+											<li>Range: Positive integer, measured in pixels relative to the Quartz2D context</li>
+											<li>Default: linewidth(1)</li>
+											<li>Description: Sets the stroke width of Quartz2D objects drawn after called</li>
+										</ul>
+										<pre>
+def draw():
+	# 20px thick white outline
+	stroke(1, 1 , 1, 1)
+	linewidth(20)
+	rect(64, 64, 128, 128)
+									</pre>
+								</div>
+							</div><!--linewidth-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_5'); return false;">linejoin</a>
+							</p>
+								<div id="quartz2d_method_5" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: linejoin(int jtype)</li>
+											<li>Ranges:</li>
+												<ul style="padding-left: 20px;">
+													<li>1 = kCGLineJoinMiter</li>
+													<li>2 = kCGLineJoinRound</li>
+													<li>3 = kCGLineJoinBevel</li>
+												</ul>
+											<li>Default: linejoin(1)</li>
+											<li>Description: Sets the line join type according to <a href="http://developer.apple.com/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/dq_intro/chapter_1_section_1.html">Quartz2D</a> specifications</li>
+										</ul>
+										<pre>
+def draw():
+	# round join followed by a typical line drawing sequence
+	stroke(1, 1 , 1, 1)
+	linewidth(20)
+	linejoin(2)
+
+	# the following code should draw a rectangle triangle with rounded corners
+	moveto(64, 64)
+	beginline()
+	line(64, 128)
+	line(128, 128)
+	closeline()
+									</pre>
+								</div>
+							</div><!--linejoin-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_6'); return false;">linecap</a>
+							</p>
+								<div id="quartz2d_method_6" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: linecap(int ctype)</li>
+											<li>Ranges:</li>
+												<ul style="padding-left: 20px;">
+													<li>1 = kCGLineCapButt</li>
+													<li>2 = kCGLineCapRound</li>
+													<li>3 = kCGLineCapSquare</li>
+												</ul>
+											<li>Default: linecap(1)</li>
+											<li>Description: Sets the line cap type according to <a href="http://developer.apple.com/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/dq_intro/chapter_1_section_1.html">Quartz2D</a> specifications</li>
+										</ul>
+										<pre>
+def draw():
+	# round cap followed by a typical line drawing sequence
+	stroke(1, 1 , 1, 1)
+	linewidth(20)
+	linecap(2)
+
+	# the following code should draw a horizontal line with round caps
+	moveto(64, 64)
+	beginline()
+	line(64, 128)
+	endline()
+									</pre>
+								</div>
+							</div><!--linecap-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_7'); return false;">moveto</a>
+							</p>
+								<div id="quartz2d_method_7" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: moveto(int x, int y)</li>
+											<li>Range: Positive integer 2D coordinates, measured in pixels relative to the Quartz2D context</li>
+											<li>Description: Sets the initial position for a line drawing call sequence</li>
+										</ul>
+										<pre>
+# a typical line drawing sequence starts with moveto
+# the following code should draw a rectangle corner
+def draw():
+	moveto(64, 64)
+	beginline()
+	line(64, 128)
+	line(128, 128)
+	endline()
+									</pre>
+								</div>
+							</div><!--moveto-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_8'); return false;">beginline</a>
+							</p>
+								<div id="quartz2d_method_8" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: beginline()</li>
+											<li>Description: Path initializer</li>
+										</ul>
+										<pre>
+def draw():
+	moveto(64, 64)
+	beginline()
+	line(64, 128)
+	line(128, 128)
+	endline()
+									</pre>
+								</div>
+							</div><!--beginline-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_9'); return false;">line</a>
+							</p>
+								<div id="quartz2d_method_9" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: line(px, py)</li>
+											<li>Range: Positive integer 2D coordinates, measured in pixels relative to the Quartz2D context</li>
+											<li>Description: Draws a line segment from the previous 2D point in the stack to the coordinate values specified by (px, py).</li>
+										</ul>
+										<pre>
+def draw():
+	moveto(64, 64)
+	beginline()
+	line(64, 128)
+	line(128, 128)
+	endline()
+									</pre>
+								</div>
+							</div><!--line-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_10'); return false;">quadcurve</a>
+							</p>
+								<div id="quartz2d_method_10" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: quadcurve(cx, cy, px, py)</li>
+											<li>Range: Pair of positive integer 2D coordinates, measured in pixels relative to the Quartz2D context</li>
+											<li>Description: Draws a quadratic Bezier segment from the previous 2D point in the stack to the coordinate values specified by (px, py), using the control point (cx, cy).</li>
+										</ul>
+										<pre>
+def draw():
+	background(1,1,1,1)
+	linecap(2)
+	moveto(128, 64)
+	beginline()
+	quadcurve(256, 0, 196,128)
+	quadcurve(256, 256, 128, 196)
+	quadcurve(0, 256, 64, 128)
+	endline()
+									</pre>
+								</div>
+							</div><!--quadcurve-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_11'); return false;">endline</a>
+							</p>
+								<div id="quartz2d_method_11" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: endline()</li>
+											<li>Description: open Path finisher</li>
+										</ul>
+										<pre>
+def draw():
+	moveto(64, 64)
+	beginline()
+	line(64, 128)
+	line(128, 128)
+	endline()
+									</pre>
+								</div>
+							</div><!--endline-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_12'); return false;">closeline</a>
+							</p>
+								<div id="quartz2d_method_12" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: closeline()</li>
+											<li>Description: Closed Path finisher</li>
+										</ul>
+										<pre>
+def draw():
+	moveto(64, 64)
+	beginline()
+	line(64, 128)
+	line(128, 128)
+	closeline()
+									</pre>
+								</div>
+							</div><!--closeline-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_13'); return false;">rect</a>
+							</p>
+								<div id="quartz2d_method_13" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: rect(bottomRightCornerX, bottomRightCornerY, w, h)</li>
+											<li>Range: Pair of positive integer 2D coordinates, measured in pixels relative to the Quartz2D context</li>
+											<li>Description: Drawing rectangles</li>
+										</ul>
+										<pre>
+def draw():
+	background(0, 0, 1, 0.4)
+	for i in range(8):
+		linewidth(i + 1)
+		color(1 - i % 2, 0, i % 2, 0.4)
+		stroke(i % 2, 0, 1 -i % 2, 0.4)
+		rect(64 + i*8, 64 + i*12, 8 + i*12, 8 + i*4)
+									</pre>
+								</div>
+							</div><!--rect-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_14'); return false;">ellipse</a>
+							</p>
+								<div id="quartz2d_method_14" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: ellipse(bottomRightCornerX, bottomRightCornerY, w, h)</li>
+											<li>Range: Pair of positive integer 2D coordinates, measured in pixels relative to the Quartz2D context</li>
+											<li>Description: Drawing ellipses</li>
+										</ul>
+										<pre>
+def draw():
+	background(0, 0, 1, 0.4)
+	for i in range(8):
+		linewidth(i + 1)
+		color(1 - i % 2, 0, i % 2, 0.4)
+		stroke(i % 2, 0, 1 -i % 2, 0.4)
+		ellipse(128 + i*4, 128 + i*4, 8 + i*12, 8 + i*12)
+		ellipse(128 - i*4, 128 - i*4, - 8 - i*12, - 8 - i*12)
+									</pre>
+								</div>
+							</div><!--ellipse-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_16'); return false;">push & pop</a>
+							</p>
+								<div id="quartz2d_method_16" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: push()</li>
+											<li>Description: Pushes the current transformation matrix onto the matrix stack. push() saves the current coordinate system to the stack.</li>
+											<li>Method name: pop()</li>
+											<li>Description: Pops the current transformation matrix onto the matrix stack.  pop() recovers the previous coordinate system from the stack.</li>
+										</ul>
+										<pre>
+#
+#  miniorrery.py
+#  oGFx
+#
+#  Created by blackaller on 02/08/09
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+#
+
+from drawengine import *
+
+size = 256
+
+tsize(size)
+blendmode(0,2)
+history(1, 0.01, 0)
+
+a = 0
+width = 256
+height = 256
+
+def draw():
+	global a,width,height
+	background(0,1,1,0)
+	linewidth(2)
+
+	push() # Push coordinate system into the transformation stack
+	translate(width/2,height/2) # Translate origin from corner to center
+	rotate(-a/2) # Apply parent rotation
+	
+	push() # Push coordinate system into the transformation stack
+	translate(-25,-25) # Match sun center with current origin
+	translate(8,8) # Offset a bit to experience sun subtle rotation
+	color(1,1,1,0.1)
+	stroke(1,1,1,0.5)
+	ellipse(0,0,50,50) # Paint the sun
+	pop() # Pop current coordinate system out of the transformation stack
+	
+	# The following transformations wont affect the sun, etc...
+	rotate(a)
+	translate(40,40)
+	
+	push()
+	rotate(-a*2)
+	translate(-10,-10)
+	color(1,1,0,0.1)
+	stroke(1,1,0,0.5)
+	ellipse(0,0,20,20)
+	pop()
+
+	rotate(-a*2)
+	translate(12,12)
+
+	push()
+	rotate(a*2)
+	translate(-6,-6)
+	color(1,0,1,0.1)
+	stroke(1,0,1,0.5)
+	ellipse(0,0,12,12)
+	pop()
+	pop()
+
+	a=a+0.05
+									</pre>
+								</div>
+							</div><!--push & pop-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_17'); return false;">translate</a>
+							</p>
+								<div id="quartz2d_method_17" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: translate(int x,iny y)</li>
+											<li>Range: 2D coordinates</li>
+											<li>Description: Applies a translation transform. The draw() loop DOES NOT RESET the transformation matrix, so every transform must be pushed and popped or it will be accumulated each time draw() is called.</li>
+										</ul>
+										<pre>
+from drawengine import *
+from math import *
+
+size = 256
+
+tsize(size)
+
+a = 0
+
+def draw():
+	global a
+	background(1,1,1,1)
+	linewidth(2)
+	color(0,0,1,0.8)
+	stroke(1,0,0,0.8)
+
+	push()
+	translate(96 - sin(a)*64, 96 - sin(a)*64)
+	ellipse(0,0,64,64)
+	pop()
+
+	a+=0.1
+									</pre>
+								</div>
+							</div><!--translate-->
+							
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_18'); return false;">rotate</a>
+							</p>
+								<div id="quartz2d_method_18" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: rotate(float x)</li>
+											<li>Range: angle in degrees</li>
+											<li>Description: Applies a rotation transform. The draw() loop DOES NOT RESET the transformation matrix, so every transform must be pushed and popped or it will be accumulated each time draw() is called.</li>
+										</ul>
+										<pre>
+from drawengine import *
+from math import *
+
+size = 256
+
+tsize(size)
+
+a = 0
+
+def draw():
+	global a
+	background(1,1,1,1)
+	linewidth(2)
+	color(0,0,1,0.8)
+	stroke(1,0,0,0.8)
+
+	push()
+	translate(128,128)
+	rotate(a)
+	ellipse(0,0,64,64)
+	pop()
+
+	a+=0.1
+									</pre>
+								</div>
+							</div><!--rotate-->
+
+							<p class="texto" style="padding-left:20px; background:#ffffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('quartz2d_method_19'); return false;">scale</a>
+							</p>
+								<div id="quartz2d_method_19" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: scale(float x,float y)</li>
+											<li>Range: 2D coordinates</li>
+											<li>Description: Applies a scale transform. The draw() loop DOES NOT RESET the transformation matrix, so every transform must be pushed and popped or it will be accumulated each time draw() is called.</li>
+										</ul>
+										<pre>
+from drawengine import *
+from math import *
+
+size = 256
+
+tsize(size)
+
+a = 0
+
+def draw():
+	global a
+	background(1,1,1,1)
+	linewidth(2)
+	color(0,0,1,0.8)
+	stroke(1,0,0,0.8)
+
+	push()
+	translate(128,128)
+	scale(2*(2-sin(a)), 2*(2-sin(a)))
+	push()
+	translate(-16,-16)
+	ellipse(0,0,32,32)
+	pop()
+	pop()
+
+	a+=0.1
+									</pre>
+								</div>
+							</div><!--scale-->
+
+
+						</div>
+					</div><!--Quartz2D-->
+
+				<p class="texto" style="//background:ccffcc url('/images/bg.png');">
+					<a class="slider" href="#" onclick="toggleSlide('coreimage'); return false;">CoreImage</a>
+				</p>
+				<div id="coreimage" style="display:none; background:#fff;">
+					<div>
+						<p class="cabezas">
+						E15:oGFx features Python bindings to apply most of the image processing filters supported by Apple's CoreImage. A description of the pattern used to make the filter calls will be provided here, together with a few examples. It will not be hard to infer how to call any other filter by consulting Apple's <a href="http://developer.apple.com/DOCUMENTATION/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html">CoreImage Filter Reference</a>. Please email <strong>ogfx [at] mitplw [dot] com</strong> with questions if you have them.
+						</p>
+						<p class="cabezas">
+						A CoreImage filter needs to be evaluated in a number of parameters. E15:oGFx automatically takes care of the inputImage parameter. The rest of the parameters is passed to the filter as a dictionary of {"parameter" : value} mappings. 
+						</p>
+						<p class="cabezas">
+						Assuming there is a generic CoreImage filter named CIFilterName with (CIImage inputImage, input1type input1, input2type input2, input3type input3) as its inputs, a <strong>general pattern</strong> for E15:oGFx filter application and removal can be outlined as follows:
+						</p>
+						<pre>
+# generic filter call 
+# inputValueMappings = {"input1" ; value1, "input2" ; value2, "input3" ; value3} 
+filtername(string "filterID", dict inputValueMappings)
+
+
+# generic input values update, where X, Y can be 1, 2 or 3.
+filterParams("filterID", {"inputX" : newX, "inputY" : newY})
+
+# generic filter removal
+removeFilter("filterID")
+
+# the next few examples illustrate this pattern:
+						</pre>
+
+						<p class="texto" style="padding-left:20px; background:#ccffcc;">
+							<a class="slider" href="#" onclick="toggleSlide('ci_method_1'); return false;">gaussianblur</a>
+						</p>
+							<div id="ci_method_1" style="display:none; background:#fff;">
+								<div>
+									<p class="cabezas">
+										gaussianblur: <a href="http://developer.apple.com/DOCUMENTATION/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIGaussianBlur">CIGaussianBlur</a></P>
+									<ul style="list-style-type: disc; margin-top:0px;">
+										inputRadius: (float radius)
+										<li>range [0.0, 100.0]</li>
+										<li>description: gaussianblur radius</li>
+									</ul>
+									<pre>
+# filter
+gaussianblur("myblur", {"radius" : 2.0})
+
+# update
+filterParams("myblur", {"radius" : 5.0})
+
+# removal
+removeFilter("myblur")
+									</pre>
+								</div>
+							</div>
+							
+							<p class="texto" style="padding-left:20px; background:#ccffcc;">
+								<a class="slider" href="#" onclick="toggleSlide('ci_method_2'); return false;">kaleidoscope</a>
+							</p>
+								<div id="ci_method_2" style="display:none; background:#fff;">
+									<div>
+										<p class="cabezas">
+											kaleidoscope: <a href="http://developer.apple.com/DOCUMENTATION/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/uid/TP30000136-SW226">CIKaleidoscope</a></P>
+										<ul style="list-style-type: disc; margin-top:0px;">
+											inputCount (float count)
+											<li>range [6.0, 64.0]</li>
+											<li>default: 6.0</li>
+											<li>description: kaleidoscope number of folds</li>
+										</ul>
+										<ul style="list-style-type: disc; margin-top:0px;">	
+											inputCenter [int x, int y]
+											<li>default: [150, 150] </li>
+											<li>description: kaleidoscope center</li>
+										</ul>
+										<ul style="list-style-type: disc; margin-top:0px;">	
+											inputAngle (float angle)
+											<li>default: 0.0 </li>
+											<li>description: kaleidoscope angle for axis of reflection</li>
+										</ul>
+										<pre>
+# filter
+kaleidoscope("mykaleidoscope", {"center" : [64, 64], "angle" : 30.0, "count" : 24.0})
+
+# update
+filterParams("mykaleidoscope", {"center" : [50, 50]})
+
+# removal
+removeFilter("mykaleidoscope")
+										</pre>
+									</div>
+								</div>
+								
+								<p class="texto" style="padding-left:20px; background:#ccffcc;">
+									<a class="slider" href="#" onclick="toggleSlide('ci_method_3'); return false;">colorcontrols</a>
+								</p>
+									<div id="ci_method_3" style="display:none; background:#fff;">
+										<div>
+											<p class="cabezas">
+												colorcontrols: <a href="http://developer.apple.com/DOCUMENTATION/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/uid/TP30000136-SW43">CIColorControls</a></P>
+											<ul style="list-style-type: disc; margin-top:0px;">
+												inputSaturation (float saturation)
+												<li>default: 1.0</li>
+											</ul>
+											<ul style="list-style-type: disc; margin-top:0px;">	
+												inputBrightness [float brightness]
+												<li>default: 0.0 </li>
+											</ul>
+											<ul style="list-style-type: disc; margin-top:0px;">	
+												inputContrast (float contrast)
+												<li>default: 1.0 </li>
+											</ul>
+											<pre>
+# filter
+colorcontrols("mycolorcontrols", {"saturation" : 6.0, "brightness" : 0.0, "contrast" : 1.0})
+
+# update
+filterParams("mycolorcontrols", {"saturation" : 8.0, "brightness" : 1.0, "contrast" : 3.0})
+
+# remove
+removeFilter("mycolorcontrols")
+											</pre>
+										</div>
+									</div>
+
+
+						</div>
+					</div><!--coreimage-->
+					
+					
+					
+
+				<p class="texto" style="//background:#ccc url('/images/bg.png');">
+					<a class="slider" href="#" onclick="toggleSlide('shaders'); return false;">Shaders</a>
+				</p>
+				<div id="shaders" style="display:none; background:#fff;">
+					<div>
+
+						<p class="texto" style="padding-left:20px; background:#ccc;">
+							<a class="slider" href="#" onclick="toggleSlide('shaders_method_1'); return false;">make_program</a>
+						</p>
+							<div id="shaders_method_1" style="display:none; background:#fff;">
+								<div>
+									<ul style="list-style-type: disc;">
+										<li>Method name: make_program(str program_id)</li>
+										<li>Description: Creates a program object with the specified string identifier.</li>
+									</ul>
+									<pre>
+# Creates an empty shader program.
+make_program("kernel_program")
+									</pre>
+								</div>
+							</div>
+
+							<p class="texto" style="padding-left:20px; background:#ccc;">
+								<a class="slider" href="#" onclick="toggleSlide('shaders_method_2'); return false;">make_shader</a>
+							</p>
+								<div id="shaders_method_2" style="display:none; background:#fff;">
+									<div>
+										<ul style="list-style-type: disc;">
+											<li>Method name: make_shader(str program_id, str shader_id, str shader_type, str code)</li>
+											<li>Description: Creates and compiles a shader object that is attached to the previously created program object using make_program().</li>
+										</ul>
+										<pre>
+# Create a simple fragment shader
+make_program("simple_shader")
+
+# Now create and attach the shader(s)
+shader = """ 
+void main (void) {
+   gl_FragColor = vec4(0.0, 1.0, 1.0, 1.0);
+}
+""" 
+make_shader("simple_shader", "s_shader", "fragment", shader)
+
+# Now we're ready to actually attach the shader to a specific element
+attach_program("demo", "simple_shader")
+										</pre>
+									</div>
+								</div>
+
+								<p class="texto" style="padding-left:20px; background:#ccc;">
+									<a class="slider" href="#" onclick="toggleSlide('shaders_method_3'); return false;">attach_program</a>
+								</p>
+									<div id="shaders_method_3" style="display:none; background:#fff;">
+										<div>
+											<ul style="list-style-type: disc;">
+												<li>Method name: attach_program(str elem_id, str program_id)</li>
+												<li>Description: Attaches the program object specified by program_id to the specified displayable object.</li>
+											</ul>
+											<pre>
+# Create a simple fragment shader.
+make_program("simple_shader")
+
+# Now create and attach the shader(s).
+shader = """ 
+void main (void) {
+   gl_FragColor = vec4(0.0, 1.0, 1.0, 1.0);
+}   
+""" 
+make_shader("simple_shader", "s_shader", "fragment", shader)
+
+# Now we're ready to actually attach the shader to a specific element.
+attach_program("demo", "simple_shader")
+											</pre>
+										</div>
+									</div>
+
+									<p class="texto" style="padding-left:20px; background:#ccc;">
+										<a class="slider" href="#" onclick="toggleSlide('shaders_method_4'); return false;">shader_param</a>
+									</p>
+										<div id="shaders_method_4" style="display:none; background:#fff;">
+											<div>
+												<ul style="list-style-type: disc;">
+													<li>Method name: shader_param(str program_id, str shader_id, str param, tuple values)</li>
+													<li>Description: Updates the specified shader uniform value with the provided data.</li>
+												</ul>
+												<pre>
+# Create a simple fragment shader with a modifiable color uniform.
+make_program("simple_shader")
+
+# Now create and attach the shader(s).
+shader = """
+uniform float col;
+void main (void) { 
+gl_FragColor = vec4(col, col, col, 1.0); 
+} 
+"""
+make_shader("simple_shader", "s_shader", "fragment", shader)
+
+# Now we're ready to actually attach the shader to a specific element.
+attach_program("demo", "simple_shader")
+
+# Change the value of the col parameter in the installed shader to 0.5 
+shader_param("simple_shader", "s_shader", "col", [0.5])
+												</pre>
+											</div>
+										</div>
+
+						</div>
+					</div><!--shaders-->
+			
+			<p style="position:relative; text-align:center; padding:40px; padding-bottom:100px; background:#fff; border-bottom: 0px dashed black;">
+				<img src="images/mitplw.png" style="width:70px;" />
+			</p>
+	</div><!--api-->
+
+
+
+
+	<div id="tutorial" style="position: absolute; display:none; background:url('/images/bg.png'); font-weigth:normal; width:640px;">
+			<p class="texto" style="background: dodgerblue; color:#fff;">
+				The simple tutorials featured here will get you started. Copy the code in red and paste it into your E15:oGFx Python interpreter for evaluation. If you need to request or submit a specific tutorial please contact us at the following email address: <strong>ofgx [at] mitplw [dot] com</strong>. More code examples can be found in <a class="slider" href="http://e15web.media.mit.edu/">E15:web</a>.
+			</p>
+
+<p class="texto">
+	<a class="slider" href="#" onclick="toggleSlide('tutorial_0'); return false;">Anatomy of a Script</a>
+</p>
+<div id="tutorial_0" style="display:none; background:#fff;">
+	<div>
+	
+	<p class="cabezas">
+    It doesn't matter how complex it can be, every E15:oGFx script must keep the basic structure outlined here.
+  	</p>
+	<pre>
+#
+#  basic.py
+#  oGFx
+#
+#  Created by blackaller on 02/08/09
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+#
+
+# Always import * from drawengine first:
+from drawengine import *
+
+# Other resources are optional:
+from random import *
+from math import *
+
+# Initialization of global variables:
+a = 0
+
+# Texture size is a mandatory setup method:
+tsize(256)
+# Optional setup methods:
+blendmode(0,8)
+history(77, 0.2, 0)
+
+# Definition of the draw method:
+def draw():
+	global a
+	background(1,1,1,0)
+	color(1,1,1,0.1)
+	stroke(1,1,1,0.05)
+	linewidth(10)
+	push()
+	translate(64,64)
+	centerX=random()*128
+	centerY=random()*128
+	rect(centerX, centerY, 64 * sin(a), 64 * sin(a))
+	pop()
+	print(centerX, centerY)
+	a += 0.1
+	</pre>	
+	</div>
+</div>
+
+			<p class="texto">
+				<a class="slider" href="#" onclick="toggleSlide('tutorial_1'); return false;">Hello World</a>
+			</p>
+			<div id="tutorial_1" style="display:none; background:#fff;">
+				<div>
+				
+				<p class="cabezas">
+			    Similar to other graphics programming environments, E15:ogfx requires the basic structure of a program to include a collection of setup calls and the definition of a draw method.
+			  	</p>
+				<pre>
+#
+#  helloworld.py
+#  oGFx
+#
+#  Created by blackaller on 02/08/09
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+
+# External library calls:
+from drawengine import *
+from math import *
+
+# Initialization of global variables:
+a = 0
+fontsize = 21.0
+hello = '''
+     __       __        __  __     __  
+|__||_ |  |  /  \  |  |/  \|__)|  |  \ 
+|  ||__|__|__\__/  |/\|\__/| \ |__|__/
+'''
+
+# Setup methods [look for descriptions in the api section]:
+tsize(512)
+blendmode(0,2)
+history(10, 0.2, 0)
+
+# Definition of the draw method:
+def draw():
+	global a, hello, fontsize
+	background(1,0,1,0.02)
+	color(1,0,0,1)
+	font("Monaco", fontsize, 0.0, 0.0)
+	lines=hello.split("\n")
+	i=0
+	push()
+	scale(3,3)
+	translate(200 - (a % 700), 0)
+	for line in lines:	
+		fontcolor(1,1,0,1)	
+		text(line, 0, 350 + i*fontsize)
+		fontcolor(0,1,1,1)	
+		text(line, 0, 410 + i*fontsize)
+		print(line)
+		i+=1
+	pop()
+	a+=3
+	print(a)
+				</pre>	
+				</div>
+			</div>
+
+			<p class="texto">
+				<a class="slider" href="#" onclick="toggleSlide('tutorial_2'); return false;">Navigation</a>
+			</p>
+			<div id="tutorial_2" style="display:none; background:#fff;">
+				<div>
+				
+				<p class="cabezas">
+			    There are two different ways to navigate inside the E15:oGFx OpenGL 3D view. The standard way controls the camera position and orientation using mouse input. On the other hand, custom methods can be defined making calls to the camera(x, y, z, eyeX, eyeY, eyeZ) method [consult the api for a description of this method]. The following list describes the combination of moves that can be achieved using a combination of <strong>mighty mouse scroll ball</strong> and key-press events:
+			  	</p>
+
+				<ul style="list-style-type: disc;">
+					<li>mightymousescrollballUp/Down = zoom</li>
+					<li>shift + mightymousescrollballmouseUp/Down = pan up down</li>
+					<li>mightymousescrollballLeft/Right = pan left-right</li>
+					<li>command + mightymousescrollballUp/Down = tilt</li>
+					<li>command + mightymousescrollballLeft/Right = roll</li>
+					<li>spacebar = reset view</li>
+				</ul>
+				<p class="cabezas">
+				And the following list does the same thing in case you are using a <strong>multitouch trackpad</strong> in your macBook:
+				</p>
+				<ul style="list-style-type: disc;">
+					<li>twofingergestureUp/Down = zoom</li>
+					<li>shift + twofingergestureUp/Down = pan up down</li>
+					<li>twofingergestureLeft/Right = pan left-right</li>
+					<li>command + twofingergestureUp/Down = tilt</li>
+					<li>command + twofingergestureLeft/Right = roll</li>
+					<li>spacebar = reset view</li>
+				</ul>
+				
+					<p class="cabezas">
+				    Use this simple script to navigate around the generated form.
+				  	</p>
+
+				<pre>
+#
+#  staticsquare.py
+#  oGFx
+#
+#  Created by blackaller on 02/08/09.
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+#
+# Simple script that draws a square.
+
+from drawengine import *
+
+size = 512
+tsize(size)
+history(20,1,15)
+
+def draw():
+	background(0,1,1,0.5)
+	color(1,1,0,0.5)
+	stroke(0,0,0,0.6)
+	linewidth(20)
+	rect(128,128,256,256)
+				</pre>	
+				</div>
+			</div>
+
+			<p class="texto">
+				<a class="slider" href="#" onclick="toggleSlide('tutorial_3'); return false;">Drawing with Quartz2D</a>
+			</p>
+			<div id="tutorial_3" style="display:none; background:#fff;">
+				<div>
+				
+				<p class="cabezas">
+			    The E15:oGFx api supports most of Apple's Quartz2D framework. This is a simple example to get you started with polygonal lines. Consult the api for descriptions of available method calls.
+			  	</p>
+				<pre>
+#
+#  polylines.py
+#  OpenGFX
+#
+#  Created by blackaller on 10/24/07.
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+
+
+from drawengine import *
+
+size = 512
+
+tsize(size)
+
+# Custom class definition
+class Point2D:
+	def __init__(self, px, py):
+		self.x = px
+		self.y = py
+
+def draw():
+	background(1,1,1,0.5)
+	linewidth(10)
+	push()
+	translate(64,64)
+	color(0,1,1,0.8)
+	stroke(1,1,1,0.6)
+
+	# Drawing an open ended line
+	polyline ([Point2D(0,0), Point2D(0,256), Point2D(256,256), Point2D(256,0)])
+	translate(128,128)
+	color(1,1,0,0.8)
+	stroke(0,0,0,0.6)
+
+	# Drawing a polygon
+	polygon ([Point2D(0,0), Point2D(0,256), Point2D(256,256), Point2D(256,0)])
+	pop()
+
+
+# Custom method definitions
+# Open ended line
+def polyline(doodle):
+	moveto(doodle[0].x, doodle[0].y)
+	beginline()
+	if len(doodle) > 0:
+		for p2D in doodle:	
+			line(p2D.x, p2D.y)
+	endline()
+
+# Closed line or polygon
+def polygon(doodle):
+	moveto(doodle[0].x, doodle[0].y)
+	beginline()
+	if len(doodle) > 0:
+		for p2D in doodle:	
+			line(p2D.x, p2D.y)
+	closeline()
+				</pre>	
+				</div>
+			</div>
+
+			<p class="texto">
+				<a class="slider" href="#" onclick="toggleSlide('tutorial_4'); return false;">CoreImage Filters</a>
+			</p>
+			<div id="tutorial_4" style="display:none; background:#fff;">
+				<div>
+				
+				<p class="cabezas">
+					Apple's CoreImage filters can be applied and removed. Apply the filters one by one or in groups. It is recommended to experiment with these filters on a base texture size of 256 so that the history(length, gap, rotation) command can be evaluated under a comfortable performance. For a list of filters and descriptions of parameters please consult the E15:oGFx api.
+			  	</p>
+				<pre>
+#
+# These are some filter calls. Evaluate them ONLY after evaluating a script.
+# Experiment with any possible combination (filter evaluation is not always commutative).
+kaleidoscope("mykaleidoscope", {"center" : [150, 150], "count" : 6.0})
+gaussianblur("myblur", {"radius" : 2.0})
+edges("myedges", {"intensity" : 10.0})
+colorcontrols("mycolorcontrols", {"saturation" : 6.0, "brightness" : 0.0, "contrast" : 1.0})
+
+# Parameter update examples:
+filterParams("mykaleidoscope", {"center" : [50, 50]})
+filterParams("myblur", {"radius" : 5.0})
+filterParams("myedges", {"intensity" : 3.0})
+filterParams("mycolorcontrols", {"saturation" : 8.0, "brightness" : 1.0, "contrast" : 3.0})
+
+# These are the corresponding filter removal calls:
+removeFilter("mykaleidoscope")
+removeFilter("myblur")
+removeFilter("myedges")
+removeFilter("mycolorcontrols")
+
+#
+# Evaluate this script first (or any other).
+# Buza recommends using gaussianblur, edges and colorcontrols on the helloworld script.
+#
+#  sticks.py
+#  E15:oGFx
+#
+#  Another mini orbital system
+#  Created by  blackaller on 8/02/07.
+#  Copyright (c) 2007 MITPLW. All rights reserved.
+
+from drawengine import *
+from math import *
+
+# Recommended size of the texture for intensive filter processing:
+size = 256
+
+tsize(size)
+blendmode(0,2)
+history(100,0.1,0)
+
+a=0
+width=256
+height=256
+
+def draw():
+	global a,width,height
+	background(0,0,1,0)
+	color(1,1,1,1)
+	stroke(1,0,1,0)
+	a=a+0.05
+
+	push()
+	translate(width/2,height/2)
+
+	push()
+	rotate(a)
+	translate(-128,-5)
+	color(1,1,1,1)
+	rect(0,0,256,10)
+	pop()	
+
+	rotate(a)
+	translate(-128,-5)
+	
+	push()
+	rotate(-a*2)
+	translate(-128,-5)
+	color(1,1,0,.9)
+	rect(0,0,256,10)
+	pop()
+
+	rotate(-a*2)
+	translate(-128,-5)
+
+	push()
+	rotate(a*2)
+	translate(-128,-5)
+	color(1,0,1,.9)
+	rect(0,0,256,10)
+	pop()
+
+	pop()
+				</pre>	
+				</div>
+			</div>
+			
+			<p style="position:relative; text-align:center; padding:40px; padding-bottom:100px; background:#fff; border-bottom: 0px dashed black;">
+				<img src="images/mitplw.png" style="width:70px;" />
+			</p>
+	</div><!--tutorials-->
+
+
+	<div id="book" style="position: absolute;  display:none; background:url('/images/bg.png'); color:#fff; font-weigth:normal; width:640px;">
+		<p class="texto" style="background: dodgerblue; color:#fff;">
+		The E15:ogfx book will feature a collection of visual wonders, aesthetic reflections and code recipes. And it will include a section with selected user works. More information about it will be posted here in the future.<br />
+		Please email <strong>ofgx [at] mitplw [dot] com</strong> if you're interested in back ordering a copy or submitting work for consideration.
+		</p>
+		<p style="border-bottom: 1px dashed black; padding:0 0 0 0;">
+			<img src="images/interior.png">
+			<img src="images/book.jpg">
+		</p>
+		
+		<p style="position:relative; text-align:center; padding:40px; padding-bottom:100px; background:#fff; border-bottom: 0px dashed black;">
+			<img src="images/mitplw.png" style="width:70px;" />
+		</p>
+	</div><!--book-->
+
+
+
+	</div><!--content-->
+</div><!--wrapper-->
+
+<div id="footer">
+
+
+	&copy;2009<a class="foot" href="http://mitplw.com/" target="blank">MITPLW</a> -
+	<a class="foot" href="http://buza.mitplw.com/" target="blank;">Kyle Buza</a> - 
+	<a class="foot" href="http://black.mitplw.com/" target="blank;">Luis Blackaller</a>
+</div>
+
+<!--google analytics-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-453016-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

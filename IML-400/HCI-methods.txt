@@ -1,0 +1,44 @@
+Assignment 1: Personas and Scenarios
+Persona:
+In this assignment, you will get practice creating personas to capture the most important aspects of who people are, what they do, and why they do it. I want you to choose four of your closest friends and create a single persona based on them. Do not use any of their names, but come up with a new name and a new image that represent this new persona you have created. Remember, believability of the persona is more important than being factual (though the persona should be based on facts). Key point: This persona is not about you. Write one page on this persona.
+Furthermore, pretend that you are working for an online media organization. You are interested in understanding how people use media, what are their news and information consumption habits, what do they like to scrutinize closely and when and what do they care less about, what kinds of devices do they have and use, and so forth. Use these interests to guide your persona (and scenario) creation.
+Scenario:
+Once you have written the persona, create a scenario for how people would use news kiosks located in their most habitual locations (e.g., grocery store, mall, school, coffee shop, and so forth). The details of the kiosk are up to you, but write a 1/2 page to 1 page scenario.
+Extra Credit: College Professor Persona (10 points)
+Interview 3 professors from any department at IUPUI using a format similar to that provided above. For guidance, you may want to inquire about how they use technology for teaching and in their personal lives and problems and goals of technology as it applies to teaching. Create a single, one-page persona from your findings. Note: If you interview instructors from different departments (i.e., Math versus Psychology), determine whether there are similarities between them.
+
+Assignment 2: Problem Statements
+For this assignment, write a problem statement. Part of this course is becoming good at identifying areas for improvement. To find such areas, you need to be good at specifying what exactly a problem is for a particular domain. For this assignment, think of a problem with an interactive system that you have experienced. Find one article from a reputable authority that describes this problem. For example, it could be
+• an argument criticizing the accessibility of a major company’s website
+• a public critique of a piece of software or device from Microsoft or Apple
+• an article describing issues with the next version of cellphone interfaces.
+In any case, the article must discuss a specific technology (not a group of technologies in general—like digital cameras, iPods, or cell phones). Your job is to understand the point the article is making and create a problem statement about it, from which you could then redesign the product. Remember, what we talked about in class for problem statements. They are succinct, specific—but not too specific—and communicative.
+
+The length of this assignment may range from one paragraph to one page. Include the citation for the article you read in APA format.
+Note: When creating the problem statement, do not get stuck on interface visual issues (even if the article does). Focus on problems that will occur in the use of the interface.
+
+Assignment 3: Heuristic Evaluation
+For this assignment, I’d like you to write a heuristic evaluation report for a site that you frequent. It does not have to be an educational website, but it should be something a little more complex and one that you could easily report on several different heuristics.
+I’d like you to go through the site and come up with 15–20 different heuristics and write them in the reporting style similar to my example. Include with each
+The heuristic
+• Feedback Issues
+• Screen Scope
+• Severity
+• Solutions and Trade-offs
+• Screen Capture (if applicable)
+Also include an executive summary and formatting similar to the first page.
+
+Assignment 4: Usability Test Instructions
+For our final assignment, I’d like you to write a usability test for a more complex task that
+you perform online:
+• Purchasing a product at a retail site—browsing using menus vs. searching for a
+particular item, selecting an item, adding it to the cart, removing it from the
+cart, creating an account, purchasing that item, completing the process
+• Ordering a pizza on two different sites to compare the processes
+• Using an online travel site to plan a vacation
+• Select your class, find an assignment, complete an assignment, and check grades in
+OnCourse.
+Do not use the same site you used for your group work.
+Include an introduction, the instructions you would use in the test, and any follow-up questions you would have once the test was over. Look at last week’s PowerPoint presentation for examples.
+
+

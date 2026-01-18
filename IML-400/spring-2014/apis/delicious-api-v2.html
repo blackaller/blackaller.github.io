@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Delicious API V2</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script>
+
+function setRange(n, max, size, offset){
+	return( Math.floor ( ( n/max ) * size ) + offset );
+}
+// passing a user parameter:
+// http://storm.usc.edu/~black/IML-400/apis/delicious-api-v2.html?user=blackaller
+//console.log (setRange(800,800,255,0));
+
+//window.location.search.substring(1).split("=")[1];
+var user = "blackaller";
+if ( window.location.search.substring(1) != "") user = window.location.search.substring(1).split("=")[1];
+
+$.getJSON("http://feeds.delicious.com/v2/json/tags/" + user + "?callback=?", function(data) {
+    //Spit out JSON object
+    //console.log(data);
+    var max = 1;
+    $.each( data, function( key, val ) {
+
+		if (val > max) max = val;
+		
+	});
+    //console.log(max);
+    var items = [];
+	$.each( data, function( key, val ) {
+		///console.log (setRange(val,max,255,0));
+		//items.push( "<li id='" + key + "'" + "style=font-size:" + setRange(val,max,50,40) + "px;" +  "color:rgba(" + setRange(val,max,200,55) +"," + "0,0,1)" +">" + key + ","+ val + "</li>" );
+		items.push( "<a href='https://delicious.com/" + user + "/"+ key + "' id='" + key + "'" + "style=font-size:" + setRange(val,max,60,28) + "px;" +  "color:rgba(" + setRange(val,max,200,55) +"," + "0,"+ (255 - setRange(val,max,200,55)) +",1)" +">" + key + " </span>" );
+	});
+
+	$( "<ul/>", {
+	"class": "my-new-list",
+	html: items.join( "" )
+	}).appendTo( "#wrapper" );
+});
+    </script>
+
+    <style>
+    body{
+    	margin:0;
+    	font-family:arial;
+    	background:#eee;
+    	font-weight:bold;
+    }
+    #wrapper{
+    	margin:20px;
+    }
+    ul, li {
+    	list-style: none;
+    	float:left;
+    }
+    a{
+    	padding-right:10px;
+    	text-decoration: none;
+    }
+    </style>
+
+  </head>
+
+
+  <body>
+  	<div id="wrapper">
+  	</div>
+  </body>
+  </html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>JQueryUI accordion template</title>
+	<meta name="author" content="Luis Blackaller">
+	
+	<!-- this pulls jQuery from the cloud
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+    -->
+	<!-- this pulls jQuery from my server -->
+	<script src="js/jquery-1.8.2.js" type="text/javascript"></script>
+	<!-- Date: 2012-10-03 -->
+    	<style>
+    	body{
+    	    background:#222;
+    	    color:#eee;
+            font-family:arial;
+    	}
+    	#wrapper{
+    	    width:640px;
+    	    margin:60px auto;
+            width:80%;
+            max-width:640px;
+        }
+    	#accordion {
+        }
+
+        .accordion-header-wrapper {
+            font-size: 16px;
+            background: #ebebeb;
+            margin: 5px 0 0 0;
+            padding: 0;
+            cursor: pointer;
+            color: #eee;     
+        }
+
+        .accordion-header{
+            padding:5px 20px;
+        }
+
+        .active-header {
+            background: hotpink;
+            background-repeat: no-repeat;
+            background-position: right 50%;
+        }
+
+        .active-header:hover {
+            background: deeppink;
+            background-repeat: no-repeat;
+            background-position: right 50%;
+        }
+
+        .inactive-header {
+            background: deepskyblue;
+            background-repeat: no-repeat;
+            background-position: right 50%;
+        }
+
+        .inactive-header:hover {
+            background: dodgerblue;
+            background-repeat: no-repeat;
+            background-position: right 50%;
+        }
+
+        .accordion-content-wrapper {
+            display: none;
+            padding: 0;
+            margin:0;
+            background: #eee; 
+            color:#222 !important;
+        }
+        .accordion-content-wrapper img{
+            width:100% !important;
+
+        }
+        .accordion-content{
+            padding:5px 20px;
+        }
+    	
+    	</style>
+    	<script>
+        $( window ).resize(function() {
+            var contentwidth = $('.accordion-header-wrapper').width();
+            $('.accordion-content-wrapper').css({'width' : contentwidth });
+        });
+
+        $(document).ready(function()
+        {
+            //Deactivate All Accordion Headers
+            $('.accordion-header-wrapper').toggleClass('inactive-header');
+            
+            //Set The Accordion Content Width
+            var contentwidth = $('.accordion-header-wrapper').width();
+            $('.accordion-content-wrapper').css({'width' : contentwidth });
+            
+            //Open Section 1 When Page Loads
+            $('.accordion-header-wrapper').first().toggleClass('active-header').toggleClass('inactive-header');
+            $('.accordion-content-wrapper').first().slideDown().toggleClass('open-content');
+            
+            // Accordion Effect
+            $('.accordion-header-wrapper').click(function () {
+                // if clicked on inactive
+                if($(this).is('.inactive-header')) {
+
+                    // closes active section
+                    $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
+                    // deactivates active header
+                    $(this).toggleClass('active-header').toggleClass('inactive-header');
+
+                    // deactivates active header
+                    $(this).next().slideToggle().toggleClass('open-content');
+                }
+                // if clicked on active
+                else {
+                    // closes active section
+                    $(this).toggleClass('active-header').toggleClass('inactive-header');
+                    // deactivates active header
+                    $(this).next().slideToggle().toggleClass('open-content');
+            }
+        });
+        
+        return false;
+    });
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+
+
+        <div id="accordion">
+            <!--first element-->
+            <div class="accordion-header-wrapper">
+                <div class="accordion-header">
+                    Section 1
+                </div> 
+            </div> 
+            <div class="accordion-content-wrapper"> 
+                <div class="accordion-content">
+                    Palabras
+                </div>
+            </div>
+            <!--second element-->
+            <div class="accordion-header-wrapper">
+                <div class="accordion-header">
+                    Section 2
+                </div> 
+            </div> 
+            <div class="accordion-content-wrapper"> 
+                <img src="images/ojo-2.JPG" width="640px" />
+                <div class="accordion-content">
+                    Palabras
+                </div>
+            </div>
+            <!--third element-->
+            <div class="accordion-header-wrapper">
+                <div class="accordion-header">
+                    Section 3
+                </div> 
+            </div>  
+            <div class="accordion-content-wrapper"> 
+              <div class="accordion-content">
+                    Palabras
+                </div>
+                <img src="images/robot.png" width="640px" />
+            </div>
+            <!--fourth element-->
+            <div class="accordion-header-wrapper">
+                <div class="accordion-header">
+                    Section 4
+                </div> 
+            </div> 
+            <div class="accordion-content-wrapper"> 
+              <div class="accordion-content">
+                    Palabras
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footnote">
+        <p>
+        Click headers to expand/collapse content that is broken into logical sections, much like tabs.
+        </p>
+        <p>
+        The underlying HTML markup is a series of content divs so the content is
+        usable without JavaScript.
+        </p>
+        <p>
+        Question: Can you find the lines of Javascript code that you need to comment out in order to not close a section when you open another one?
+        </p>
+        </div><!-- footnote -->
+    
+    <div/>
+    
+</body>

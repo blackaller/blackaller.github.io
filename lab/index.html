@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>blacklab</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="blackaller" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="blackaller at luisblackalleraller.com" />
+
+<meta name="Author"		content="luis blackaller" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="Works of LUIS BLACKALLER MIT Media Lab plw Physical Language Workshop" />
+<meta name="Keywords" content="media, design, electronic media, architecture, mathematics, film, photography, arts" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel='shortcut icon' type='image/x-icon' href='images/blk.ico' />
+<script type="text/javascript">
+function init(){
+  clock();
+  setInterval(clock,1000);
+}
+function clock(){
+  var now = new Date();
+  var size = 1;
+  var ctx = document.getElementById('clock').getContext('2d');
+  ctx.save();
+  ctx.clearRect(0,0,300*size,300*size);
+  ctx.translate(150*size,150*size);
+  ctx.scale(size,size);
+  ctx.rotate(-Math.PI/2);
+  ctx.strokeStyle = "#333";
+  ctx.fillStyle = "#333";
+  ctx.lineWidth = 8;
+  ctx.lineCap = "butt";
+  //ctx.lineCap = "square";
+  //ctx.lineCap = "round";
+
+  // background
+	ctx.beginPath();
+	ctx.lineWidth = 2;
+	//ctx.fillStyle = "white";	
+	//ctx.arc(0,0,118,0,Math.PI*2,true);
+	//ctx.fill();
+
+
+  // Hour marks
+  ctx.fillStyle = "#333";
+  ctx.save();
+  for (i=0;i<12;i++){
+	//ctx.lineWidth = 2;
+    ctx.beginPath();
+
+	//ctx.translate(56,0);
+    ctx.rotate(Math.PI/6);
+	
+	ctx.arc(106,0,6,0,Math.PI*2,true);
+	
+    //ctx.moveTo(100,0);
+    //ctx.lineTo(120,0);
+    //ctx.stroke();
+	ctx.fill();	
+  }
+	
+  ctx.restore();
+
+  // Minute marks
+  ctx.save();
+  ctx.lineWidth = 1;
+  for (i=0;i<60;i++){
+    if (i%5!=0) {
+      ctx.beginPath();
+      ctx.moveTo(117,0);
+      ctx.lineTo(120,0);
+      //ctx.stroke();
+    }
+    ctx.rotate(Math.PI/30);
+  }
+  ctx.restore();
+
+  var sec = now.getSeconds();
+  var min = now.getMinutes();
+  var hr  = now.getHours();
+  hr = hr>=12 ? hr-12 : hr;
+
+  ctx.fillStyle = "#333";
+
+  // write Hours
+  ctx.save();
+  ctx.rotate( hr*(Math.PI/6) + (Math.PI/360)*min + (Math.PI/21600)*sec )
+  ctx.strokeStyle = "#333";
+  ctx.lineWidth = 14;
+  ctx.beginPath();
+  ctx.moveTo(-20,0);
+  ctx.lineTo(80,0);
+  ctx.stroke();
+  ctx.strokeStyle = "white";
+  ctx.lineWidth = 4;
+  ctx.beginPath();
+  ctx.moveTo(-20,0);
+  ctx.lineTo(80,0);
+  ctx.stroke();
+  ctx.restore();
+
+  // write Minutes
+  ctx.save();
+  ctx.rotate( (Math.PI/30)*min + (Math.PI/1800)*sec )
+  ctx.strokeStyle = "#333";
+  ctx.lineWidth = 14;
+  ctx.beginPath();
+  ctx.moveTo(-20,0);
+  ctx.lineTo(110,0);
+  ctx.stroke();
+  ctx.strokeStyle = "white";
+  ctx.lineWidth = 4;
+  ctx.beginPath();
+  ctx.moveTo(-20,0);
+  ctx.lineTo(110,0);
+  ctx.stroke();
+  ctx.restore();
+
+  // Write seconds
+  ctx.save();
+  ctx.rotate(sec * Math.PI/30);
+  ctx.strokeStyle = "deeppink";
+  ctx.fillStyle = "#deeppink";
+  ctx.lineWidth = 8;
+  ctx.beginPath();
+  ctx.moveTo(-20,0);
+  ctx.lineTo(118,0);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0,0,10,0,Math.PI*2,true);
+  ctx.fill();
+  ctx.beginPath();
+  //ctx.arc(95,0,10,0,Math.PI*2,true);
+  ctx.stroke();
+  ctx.fillStyle = "#555";
+  //ctx.arc(0,0,3,0,Math.PI*2,true);
+  ctx.fill();
+  ctx.restore();
+
+  ctx.beginPath();
+  ctx.lineWidth = 6;
+  ctx.strokeStyle = '#333';
+  ctx.arc(0,0,120,0,Math.PI*2,true);
+  //ctx.stroke();
+  ctx.restore();
+}
+window.onload = function(e){
+	init();
+}
+</script>
+</head>
+
+<body>
+	
+	<div id="content-wrapper">
+	<div id="header"> 
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/">
+	 	</a> 
+		<!--&nbsp;&nbsp;exercise log:
+			<a href="progress/progress_4.html">&nbsp;4</a>
+			<a href="progress/progress_3.html">&nbsp;3</a>
+			<a href="progress/progress_2.html">&nbsp;2</a>
+			<a href="progress/progress_1.html">&nbsp;1</a>
+			<a href="progress/progress_0.html">&nbsp;0</a>-->
+		<!--information is not knowledge is not wisdom is not love (zappa)<br />-->
+  		blacklab dot com dot mx<br />
+  		an electronic sketchbook by luis blackaller<br />
+  		material is available after any + sign<!-- and in the exercise log--><br />
+ 		<!-- all other sections will take you to a rather random, unexpected place<br /><br />-->
+	</div>
+	<div id="sidebar"> 
+										<!--	<li><a href="notyet.html">citizone</A></li>
+				     						<li><a href="notyet.html">gimmenum</A></li>
+										<li><a href="notyet.html">knocktalk</a></li><br /> -->
+				     					<ul>
+				        					<li><a href="http://blacklog.mitplw.com/">+ blacklog at mitplw</a></li>
+											<li><a href="/">+ black at mitplw</a></li>
+											<br />
+				      					</ul>	
+					</div>	
+					<div id ="content">	
+						<canvas id="clock" width="300" height="300" style="{left: 170px;}"></canvas>
+						<ul>
+							<li>&nbsp;&nbsp;&nbsp;winter 2005 <a href="progress/winter_2005.html">+ all</a><br />
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="progress/progress_4.html">+ 4</a>
+								<a href="progress/progress_3.html">&nbsp;3</a>
+								<a href="progress/progress_2.html">&nbsp;2</a>
+								<a href="progress/progress_1.html">&nbsp;1</a>
+								<a href="progress/progress_0.html">&nbsp;0</a></li>
+							<li>&nbsp;&nbsp;&nbsp;protodraw <a href="protodraw/protodraw.html">+ all</a></li>
+									<li>&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;<a href="protodraw/drawtoo.html">+ drawToo</a><br /></li>
+									<li>&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;<a href="protodraw/ink.html">+ ink</a></li>
+									<li>&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;<a href="protodraw/tiny.html">+ tiny</a></li>
+										</ul>
+	</div>
+
+	<div id="footer"> 
+		<br />
+			<!--<img  alt="Creative Commons License" border="0" src="http://creativecommons.org/images/public/somerights20.gif" />
+      			
+      				 Creative Commons License -->
+      				<!--<center>
+	 			<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/">
+	  			<img class="x" alt="Creative Commons License" border="0" src="http://creativecommons.org/images/public/somerights20.gif" />
+	  			</a> 
+	  			</center>-->
+      				<br />
+     				 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/">Creative 
+      				Commons Attribution-NonCommercial-NoDerivs 2.5 License</a>
+      				<!-- /Creative Commons License --><br /><br /> 
+
+	</div>
+
+	<!--
+
+	<rdf:RDF xmlns="http://web.resource.org/cc/"
+   	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+   	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<Work rdf:about="">
+   	<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/2.5/" />
+	</Work>
+
+	<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/2.5/">
+   	<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+  	<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   	<requires rdf:resource="http://web.resource.org/cc/Notice" />
+   	<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   	<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+	</License>
+	</rdf:RDF>
+	-->
+
+</div>
+
+</body>
+
+</html>

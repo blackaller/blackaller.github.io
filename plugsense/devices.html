@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>PlugSense</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="blackaller" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="luisblackaller at luisblackaller.com" />
+
+<meta name="Author"		content="Luis Blackaller, Sanghoon Lee, Manas Mittal" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="Pattern Recognition Class Project" />
+<meta name="Keywords" content="media, design, electronic media, architecture" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link rel='shortcut icon' type='image/x-icon' href='images/plug.ico' />
+</head>
+
+
+<body>
+
+
+
+	<div id="content-wrapper">
+		<div id="sidebar">
+			<ul>
+				<h2 class="menu">- Project</h2>
+				<li><a href="cover.html">-cover</a></li>				
+				<li><a href="intro.html">-introduction</a></li>
+				<li><a href="motivation.html">-motivation</a></li>
+				<br />
+
+					<h2 class="menu">- Data Set</h2>
+					<li><a href="devices.html">-devices</a></li>
+				 	<li><a href="voltage_current.html">-voltage and current</a></li>
+					<li><a href="preprocessing.html">-preprocessing</a></li>
+
+					<br />
+							<h2 class="menu">- Features</h2>
+							<li><a href="amplitude.html">-amplitude</a></li>
+							<li><a href="phase.html">-phase</a></li>
+							<li><a href="shape.html">-shape</a></li>
+							<li><a href="eigenwaves.html">-eigenwaves</a></li>
+							<li><a href="fisherwaves.html">-fisherwaves</a></li>
+							<li><a href="psd.html">-psd</a></li>
+
+					<br />
+
+				<h2 class="menu">- Classification</h2>	
+				<li><a href="knn.html">-knn</a></li>
+				<li><a href="neural_nets.html">-neural nets</a></li>
+				<br />
+
+				<h2 class="menu">- Other</h2></li>
+				<li><a href="references.html">-references</a></li>
+				<li><a href="conclusion.html">-conclusion</a></li>
+			
+				<br />
+			</ul>
+		</div>
+
+	<div id="page">
+		<div id="header">
+			<h1><strong>Plug Sense</strong></h1>
+			<a href="http://plw.media.mit.edu/people/black/journal/">Luis Blackaller </a> - <a href="http://plw.media.mit.edu/~sanghoon/">Sanghoon Lee </a> - <a href="http://web.media.mit.edu/~manas/">Manas Mittal</a> <br/>
+			Pattern Recognition and Analysis<a href="http://courses.media.mit.edu/2006fall/mas622j/"> [ MAS 622J 2006 ] </a> Final Project
+		</div>
+
+
+		<div id="content">
+			<div id="header">
+				<h1><strong>Data Set and Devices</strong></h1>
+			</div>
+				<p> 
+				A fundamental step in the design cycle of a Pattern Recognition system is data collection and labeling. As Duda, Hart, and Stork pointed out in their <a href="https://archive.org/details/patternclassific0000rich_2ed">Pattern Classification</a> Book, "data collection can account for surprisingly large part of the cost of developing a pattern recognition system". We were given a collection of 30 labeled data points that were reduced to 21 once we took a first look at the data an discarded the bad samples. A good data set for training and testing a Pattern Recognition system has to be both sufficiently large and representative of the different classes in consideration, and our data set was neither large or representative. The data was initially collected inside the Media Laboratory, thus constraining the variety of devices to those found in the Lab. Most of the common home appliances were not well represented. The initial data set helped us understand the nature of the problem, and gave us hints about new possible categories to relabel the data. With a laptop and a Plug, we devised a portable Plug system, and measured another 65 devices from different locations. The resulting data set, after discarding the bad data consisted of 74 data points.
+				<br /><br />
+				The measured devices include: christmas lights, lightboxes, fans, hairdryers, powerdrills, blenders, lamps, monitors, and computers. Just by looking at them, it can make sense to distinguish them as: things that produce motion, things that produce light, electronics, or combinations of those three. This simple common sense observation turned out to be a very useful point of reference to start making sense out of the tangle of waves that was the raw data.  
+				<br /><br />
+				The following images represent a subset of 16 devices and their corresponding voltage-current waveforms. A careful look at them suggests the possibility to find correlations between the common sense function, the internal structure in terms of electrical engineering (inductive, resistive, switch mode power supply), and the shape characteristic of the voltage-current waveforms of a device.     								
+				</p>
+				<p> 
+					<img src="images/devices.png" />
+				</p>
+				<p> 
+					<img src="images/devices_overlap.png" />
+				</p>
+				<p> 
+					<img src="images/devices_waves.png" />
+				</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

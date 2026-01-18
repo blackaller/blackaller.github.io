@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="javascripts/prototype.js"></script>
+<script type="text/javascript" src="javascripts/timeline.js"></script>
+<script type="text/javascript">
+
+	window.onload = function(e) {
+	  //init();	  
+	  t = new Timeline($('timeline'), {bg_opacity: 0.005});
+	  if (!(this.canvas==null)){
+	  t.offsetX = Position.cumulativeOffset(this.canvas)[0];
+	  t.offsetY = Position.cumulativeOffset(this.canvas)[1];
+	  }
+	  setInterval(function() { t.timeline_now();},0);
+
+
+	}
+
+	</script>
+</head>
+<body>
+<div id="top-bar">slumberScrollBar prototype - <a href="http://dream.media.mit.edu/">visit Slumbertime</a></div>
+<div id="content-wrapper">
+	
+	
+<div id="content">	
+	<p>Drag over the timeline to create an interval:</p>
+	
+	<div id="today">
+	yesterday today	tomorrow
+	</div>
+
+	<canvas id="timeline" width="820" height="100"></canvas>
+
+	<div id="hours">
+	12 3 6 9 0 3 6 9 12 3 6 9 0	3 6 9 12
+	</div>
+
+	<div id="time">
+	noon midnight noon midnight	noon
+	</div>
+	<p></p>
+	
+</div>
+
+
+
+
+</div>
+<div id="footer">slumberScrollBar by <a href='http://plw.media.mit.edu/people/black/journal/' target='blank'>Luis Blackaller</a> - <a href='http://plw.media.mit.edu/' target='blank'>PLW</a> - <a href='http://www.media.mit.edu' target='blank'>Mit Media Lab</a></div>
+</body>
+</html>
+

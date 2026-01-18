@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>PlugSense</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="blackaller" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="luisblackaller at luisblackaller.com" />
+
+<meta name="Author"		content="Luis Blackaller, Sanghoon Lee, Manas Mittal" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="Pattern Recognition Class Project" />
+<meta name="Keywords" content="media, design, electronic media, architecture" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link rel='shortcut icon' type='image/x-icon' href='images/plug.ico' />
+</head>
+
+
+<body>
+
+
+
+	<div id="content-wrapper">
+		<div id="sidebar">
+			<ul>
+				<h2 class="menu">- Project</h2>
+				<li><a href="cover.html">-cover</a></li>				
+				<li><a href="intro.html">-introduction</a></li>
+				<li><a href="motivation.html">-motivation</a></li>
+				<br />
+
+					<h2 class="menu">- Data Set</h2>
+					<li><a href="devices.html">-devices</a></li>
+				 	<li><a href="voltage_current.html">-voltage and current</a></li>
+					<li><a href="preprocessing.html">-preprocessing</a></li>
+
+					<br />
+							<h2 class="menu">- Features</h2>
+							<li><a href="amplitude.html">-amplitude</a></li>
+							<li><a href="phase.html">-phase</a></li>
+							<li><a href="shape.html">-shape</a></li>
+							<li><a href="eigenwaves.html">-eigenwaves</a></li>
+							<li><a href="fisherwaves.html">-fisherwaves</a></li>
+							<li><a href="psd.html">-psd</a></li>
+
+					<br />
+
+				<h2 class="menu">- Classification</h2>	
+				<li><a href="knn.html">-knn</a></li>
+				<li><a href="neural_nets.html">-neural nets</a></li>
+				<br />
+
+				<h2 class="menu">- Other</h2></li>
+				<li><a href="references.html">-references</a></li>
+				<li><a href="conclusion.html">-conclusion</a></li>
+			
+				<br />
+			</ul>
+		</div>
+
+	<div id="page">
+		<div id="header">
+			<h1><strong>Plug Sense</strong></h1>
+			<a href="http://plw.media.mit.edu/people/black/journal/">Luis Blackaller </a> - <a href="http://plw.media.mit.edu/~sanghoon/">Sanghoon Lee </a> - <a href="http://web.media.mit.edu/~manas/">Manas Mittal</a> <br/>
+			Pattern Recognition and Analysis<a href="http://courses.media.mit.edu/2006fall/mas622j/"> [ MAS 622J 2006 ] </a> Final Project
+		</div>
+
+
+		<div id="content">
+			<div id="header">
+		
+			 <h1><strong> Time domain features: Shape </strong></h1>
+			 	</div>
+			
+					<p>
+			The shape of a wave was also a good discriminator for signal classification.  As in Figure 1 we could see that class 'lamps' had a symmetric shape whereas 'motors' and 'electronics' tend to have either leaning forward or leaning backward shape. 		
+					
+				</p>
+					<p>	Figure 1: Current divided by area of signal:
+						<img src="images/shape_1.png" > 
+					</p>
+					<p>We could represent the factor of slope by
+						<img src="images/shape_equation.png" >
+					</p>
+					<p>Using 3 features, we plotted a 3d distribution graph of 3 classes.  Using KNN classification, we got 85% accuracy in cross validation.  We used this value as a baseline of evaluating other feature's performances. 
+					</p>
+					<p>	Figure 2: Current divided by area of signal:
+						<img src="images/shape_3d.png" > 
+					</p>
+					
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>PlugSense</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="blackaller" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="luisblackaller at luisblackaller.com" />
+
+<meta name="Author"		content="Luis Blackaller, Sanghoon Lee, Manas Mittal" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="Pattern Recognition Class Project" />
+<meta name="Keywords" content="media, design, electronic media, architecture" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link rel='shortcut icon' type='image/x-icon' href='images/plug.ico' />
+</head>
+
+
+<body>
+
+
+
+	<div id="content-wrapper">
+		<div id="sidebar">
+			<ul>
+				<h2 class="menu">- Project</h2>
+				<li><a href="cover.html">-cover</a></li>				
+				<li><a href="intro.html">-introduction</a></li>
+				<li><a href="motivation.html">-motivation</a></li>
+				<br />
+
+					<h2 class="menu">- Data Set</h2>
+					<li><a href="devices.html">-devices</a></li>
+				 	<li><a href="voltage_current.html">-voltage and current</a></li>
+					<li><a href="preprocessing.html">-preprocessing</a></li>
+
+					<br />
+							<h2 class="menu">- Features</h2>
+							<li><a href="amplitude.html">-amplitude</a></li>
+							<li><a href="phase.html">-phase</a></li>
+							<li><a href="shape.html">-shape</a></li>
+							<li><a href="eigenwaves.html">-eigenwaves</a></li>
+							<li><a href="fisherwaves.html">-fisherwaves</a></li>
+							<li><a href="psd.html">-psd</a></li>
+
+					<br />
+
+				<h2 class="menu">- Classification</h2>	
+				<li><a href="knn.html">-knn</a></li>
+				<li><a href="neural_nets.html">-neural nets</a></li>
+				<br />
+
+				<h2 class="menu">- Other</h2></li>
+				<li><a href="references.html">-references</a></li>
+				<li><a href="conclusion.html">-conclusion</a></li>
+			
+				<br />
+			</ul>
+		</div>
+
+	<div id="page">
+		<div id="header">
+			<h1><strong>Plug Sense</strong></h1>
+			<a href="http://plw.media.mit.edu/people/black/journal/">Luis Blackaller </a> - <a href="http://plw.media.mit.edu/~sanghoon/">Sanghoon Lee </a> - <a href="http://web.media.mit.edu/~manas/">Manas Mittal</a> <br/>
+			Pattern Recognition and Analysis<a href="http://courses.media.mit.edu/2006fall/mas622j/"> [ MAS 622J 2006 ] </a> Final Project
+		</div>
+
+
+		<div id="content">
+			<div id="header">
+				<h1><strong>Neural Nets</strong></h1>
+			</div>
+			<p>
+				We trained a neural network. Since Neural Networks are opaque in terms of how they work, we relied on experimentation to fix our parameters. The parameters that gave the best results on a small test set were:
+				
+				<ul>
+				<li>1. 20 Neurons.</li>
+				<li>2. 2 Hidden layers.</li>
+				<li>3. Tansigmoidal transfer function.</li>
+				<li>4. Cross validation for results.</li>
+				</ul>
+				<br/><br/>
+				
+				Feature Selection: We decided to choose from a list of 7 hand-crafted features (detailed in previous section), and from 4 dimensions with the highest variance, which in turn were selected by doing principle component analysis on current wave time series. We ran an exhaustive search for the best possible features (trying all 2043 possible combinations).
+			<br/><br/>
+					<h2>Results</h2>
+
+					Neural Networks performed worse that the KNN algorithm (77%, as compared to 87% from KNN). <br /><br />
+					Figure: Confusion Matrix for Neural Network based classification.
+					<br/><br/><br/>
+						<img src="images/neural_net_1.png" />
+
+					<br/><br/>
+					In order to tweak the classification algorithm, we decided to investigate which samples were getting misclassified. If we plot the samples on a 3 dimensional graph (more than 3 dimensions are used for actual classification, hence this plot is only indicative of the spread). 
+
+
+					<br/><br/><br/>
+					Figure: Scatter Plot 
+					<img src="images/neural_net_2.png" />
+					<br/><br/><br/>
+					Green Circles - KNN misclassified.<br/>
+					Blue Circles - Neural net misclassified.<br/>
+					Red - Both methods misclassified.<br/><br/>
+					From looking at the location of points on the scatter plot, it seemed that the classification algorithm was performing well. The challenge is then feature design, based on how waveforms are.
+
+					<br/><br/>
+					Figure: Misclassified Waveforms and Mean Waveforms of their class.<br/><br/>
+					<img src="images/neural_net_3.png" />
+
+					The plots on the left show misclassified waveforms that belong to the class whose mean waveform is plotted in the second column. This shows how the waveforms in the left are distinct from the training waveforms. Notice that the 'mean' waveform is displayed here to serve as a 'representative' example of the given class. Hence, the features we propose are intrinsically different. This indicates that the classification rate of over 80% is the best we can get. We discuss further strategies to improve identification rate in the conclusion.
+				
+			</p>	
+				
+				
+				
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

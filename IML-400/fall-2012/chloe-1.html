@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<title>a three chapter adventure</title>
+	<style>
+	body{
+		margin:0;
+		background:#222;
+		color:#aaa;
+	}
+	h1, h3{
+		margin:0;
+	}
+	a{
+		text-decoration:none;
+		font-weight:bold;
+		color:#666;
+	}
+	a:hover{
+		color:#ddd;
+	}
+	#wrapper{
+		width:900px;
+		margin:auto;
+		padding:40px 0;
+	}
+	#header{
+		text-align:center;
+		background:#111;
+		border-radius:8px;
+		padding:10px 0;
+		width:400px;
+		margin:auto;
+	}
+	#content{
+		position:relative;
+		overflow:auto;
+		background:#111;
+		border-radius:8px;
+		margin:30px 0;
+		padding:0 15px;
+	}
+	.content-column{
+		float:left;
+		width:240px;
+		height:480px;
+		margin:25px;
+		background:#333;
+		border-radius:8px;		
+	}
+	.content-column:hover{
+		background:#444;
+		/*border:solid 2px #666;*/
+	}
+	.column-title{
+		position:absolute;
+		bottom:0;
+		background:rgba(0,0,0,0.3);
+		height:100px;
+		width:220px;
+		padding:5px 10px;
+		margin:0 0 25px 0;
+		border-bottom-left-radius:8px;
+		border-bottom-right-radius:8px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>three steps to the end</h1>
+			<h3>a three chapter adventure</h3>
+		</div>
+		<div id="content">
+			<div class="content-column">
+				<div class="column-title">
+					<h1><a href="">title one</a></h1>
+					<h3>subtitle one</h3>
+				</div>
+			</div>
+			<div class="content-column">
+				<div class="column-title">
+					<h1><a href="">title two</a></h1>
+					<h3>subtitle two</h3>
+				</div>
+			</div>
+			<div class="content-column">
+				<div class="column-title">
+					<h1><a href="">title three</a></h1>
+					<h3>subtitle three</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

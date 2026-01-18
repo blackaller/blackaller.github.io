@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>cellular automata</title>
+    <script type="text/javascript">
+		
+	function drawRule(rule) {
+	  var canvas = document.getElementById('automata');	
+	  var curRow = [];
+		var autoctx = canvas.getContext('2d');
+		autoctx.clearRect(0,0,550,550);
+		
+		autoctx.fillStyle = 'yellow'
+		autoctx.fillRect(0,0,275,275);
+		autoctx.fillStyle = '#FF3300'
+		autoctx.fillRect(275,0,275,275);
+		autoctx.fillStyle = 'deepskyblue'
+		autoctx.fillRect(0,275,275,275);
+		autoctx.fillStyle = 'white'
+		autoctx.fillRect(275,275,275,275);
+		
+		autoctx.fillStyle = 'black'
+		
+	  for (var i=0; i<550; i++) curRow.push(0);
+	  curRow[275] = 1;
+
+	  for (var y=0; y<550; y++) {
+	    // first do the drawing
+
+	    for (var x=0; x<curRow.length; x++) {
+	      if (curRow[x]) autoctx.rect(x*1,y*1,1,1);
+	    }
+
+	    var nextRow = [];
+
+	    // compute the next row
+	    for (var x=0; x<curRow.length; x++) {
+	      var c=0;
+	      if (x>0 && curRow[x-1]) c+=4;
+	      if (curRow[x]) c+=2;
+	      if ((x+1)<curRow.length && curRow[x+1]) c+=1;
+	      nextRow.push( Math.pow(2,c) & rule );
+	    }
+
+	    curRow = nextRow;
+	  }
+	
+	  autoctx.fill();
+		
+	}
+	</script>
+    <style type="text/css">
+      canvas { border: 0px solid black; }
+    </style>
+  </head>
+  <body onload="drawRule(30);">
+	
+	<form onsubmit="drawRule( document.getElementById('rule').value ); return false" action="#">
+
+	<p>change rule (for example try 90, 99) (most values are lame by the way): 
+	<input type="text" id="rule" value="30" /><input type="submit" value="generate" />
+	</p></form>
+	
+    <canvas id="automata" width="550" height="550px" onclick="drawRule(1+Math.floor(Math.random()*99));"></canvas>
+
+    
+
+	
+  </body>
+</html>
+
+
+
+
+

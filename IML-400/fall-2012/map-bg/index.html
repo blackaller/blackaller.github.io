@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+      #sections{
+        position:fixed;
+        bottom:0;
+        left:0;
+        background:rgba(0,0,0,0.75);
+        color:#eee;
+        font-family:arial;
+        padding:18px 12px 18px 12px;
+        width:100%;
+        line-height:21px;
+      }
+      #sections a{
+        font-weight:bold;
+        color:crimson;
+        text-decoration:none;
+      }
+      #sections a:hover{
+        font-weight:bold;
+        color:gold;
+      }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lFfLe6M8ZfLtBZuxO82402e1ATUu5iM&sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          //center: new google.maps.LatLng(33.998752, -118.472362), // Wemolab 
+          center: new google.maps.LatLng(34.0240, -118.2875), // USC MAP
+          zoom: 18,
+          //https://developers.google.com/maps/documentation/javascript/maptypes
+          mapTypeId: google.maps.MapTypeId.SATELLITE //options MapTypeId.TERRAIN MapTypeId.HYBRID MapTypeId.ROADMAP
+          //mapTypeId: google.maps.MapTypeId.TERRAIN
+          //mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            //map: map,
+            animation: google.maps.Animation.DROP,
+            //title: "WemoLab: " + map.center.d.toString() + ", " + map.center.e.toString()
+            title: "IML400",
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+            content: "<strong style='font-size:40px; padding:0 40px; color:crimson;'>Hello IML400!</strong>"
+        });
+
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map,marker);
+        });
+
+        function dropMarker() {
+          console.log("alive");
+          setTimeout(function() {
+                        console.log("about to do something");
+                        marker.setMap(map);
+                        console.log("something happened");
+                        //infowindow.open(map,marker);
+                      },1200)
+        };
+        dropMarker();
+      };
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+      
+    </script>
+  </head>
+  <body>
+
+    <div id="map-canvas"></div>
+    <div id="sections">
+      Google Maps API Links:
+      <a href="https://developers.google.com/maps/documentation/javascript/reference">Reference</a> |  
+      <a href="https://developers.google.com/maps/documentation/javascript/events">Events</a> |  
+      <a href="https://developers.google.com/maps/documentation/javascript/examples/">Examples</a> |  
+      <a href="https://embed-dot-more-than-a-map.appspot.com/demos">Demos</a><br />
+        Sketches:
+      <a href="api-test-1.html">Simple Map</a> |   
+      <!--<a href="coordinate-finder.html">coordinate calculator</a> - -->
+      <a href="zooming.html">Zooming In</a> | 
+      <a href="flyover-teleporter.html"> Flyover Teleporter</a> | 
+      <a href="address-to-coordinates.html">Address to Coordinates</a> [currently broken]
+      
+    </div>
+
+    
+
+  </body>
+</html>

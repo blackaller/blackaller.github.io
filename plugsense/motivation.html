@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>PlugSense</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9" />
+<meta name="blackaller" content="no-cache" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Resource-type" content="document" />
+<meta http-equiv="Reply-to" content="luisblackaller at luisblackaller.com" />
+
+<meta name="Author"		content="Luis Blackaller, Sanghoon Lee, Manas Mittal" />
+<meta name="Publisher"		content="blackaller" />
+<meta name="Description"	content="Pattern Recognition Class Project" />
+<meta name="Keywords" content="media, design, electronic media, architecture" />
+
+  <X-SAS-WINDOW TOP=135 BOTTOM=600 LEFT=4 RIGHT=643 />
+
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link rel='shortcut icon' type='image/x-icon' href='images/plug.ico' />
+</head>
+
+
+<body>
+
+	<div id="content-wrapper">
+		<div id="sidebar">
+			<ul>
+				<h2 class="menu">- Project</h2>
+				<li><a href="cover.html">-cover</a></li>				
+				<li><a href="intro.html">-introduction</a></li>
+				<li><a href="motivation.html">-motivation</a></li>
+				<br />
+
+					<h2 class="menu">- Data Set</h2>
+					<li><a href="devices.html">-devices</a></li>
+				 	<li><a href="voltage_current.html">-voltage and current</a></li>
+					<li><a href="preprocessing.html">-preprocessing</a></li>
+
+					<br />
+							<h2 class="menu">- Features</h2>
+							<li><a href="amplitude.html">-amplitude</a></li>
+							<li><a href="phase.html">-phase</a></li>
+							<li><a href="shape.html">-shape</a></li>
+							<li><a href="eigenwaves.html">-eigenwaves</a></li>
+							<li><a href="fisherwaves.html">-fisherwaves</a></li>
+							<li><a href="psd.html">-psd</a></li>
+
+					<br />
+
+				<h2 class="menu">- Classification</h2>	
+				<li><a href="knn.html">-knn</a></li>
+				<li><a href="neural_nets.html">-neural nets</a></li>
+				<br />
+
+				<h2 class="menu">- Other</h2></li>
+				<li><a href="references.html">-references</a></li>
+				<li><a href="conclusion.html">-conclusion</a></li>
+			
+				<br />
+			</ul>
+		</div>
+
+
+
+	<div id="page">
+		<div id="header">
+			<h1><strong>Plug Sense</strong></h1>
+			<a href="http://plw.media.mit.edu/people/black/journal/">Luis Blackaller </a> - <a href="http://plw.media.mit.edu/~sanghoon/">Sanghoon Lee </a> - <a href="http://web.media.mit.edu/~manas/">Manas Mittal</a> <br/>
+			Pattern Recognition and Analysis<a href="http://courses.media.mit.edu/2006fall/mas622j/"> [ MAS 622J 2006 ] </a> Final Project
+		</div>
+
+
+		<div id="content">
+			<div id="header">
+				<h1><strong>Project Motivation</strong></h1>
+			</div>
+				<p>
+				The multiple functionalities of the Plug suggest a potential for a variety of applications. Smart human housing immediately comes to mind. By augmenting a human living environment with a network of Plugs, it is possible to build a system that can predict the identity and state of any given device connected to the network. After extracting patterns of energy consumption from the data collected by the Plug network, a Plug can control a device's behavior based on these predictions, anticipating the needs of the human user, for example  optimizing the overall energy consumption of the plug-aware living environment.
+				<br /><br />  						
+				The idea of a smart building is not new, but there have been very few efforts to embed sensor networks and intelligent systems into old infrastructures that were built with no support for digital technologies. Enhanced with myriads of Plug-like devices, the skin of the city could become a collective responsive interface, and beginning to take an active role in the forces that motivate its evolution. From a human perspective, it might be a better effort towards that end to try hacking existing infrastructures, instead of rebuilding them from scratch.   
+				</p>
+				<p>
+					<img src="images/network.png" />
+				</p>
+				<p>
+				A simple scenario can be conceived using nothing more that voltage-current information from a single Plug. If the Plug could learn to identify the devices connected to it just by looking at it's current signature, and if it could tell a difference of state in the device's performance by looking at fluctuations of it's current signature, the Plug could predict patterns of human activity within it's host room. We can think every other device in the room is fed power through the Plug. If there is only a computer and a lamp in the room, and the Plug knows both of them are turned on, and the computer doesn't report any sign of activity, then the Plug could assume that room is empty, and it would be safe to dim (or turn off) the light, thus saving energy that would otherwise be wasted.
+				</p>
+				<p>	
+					<img src="images/question.png" />
+				</p>
+				<p>	
+				In terms of Pattern Recognition, there are two important questions to deal with:
+				<br /><br />
+				1: Can the Plug know what kind of device is connected to it by looking at its power signature? (identity)<br />
+				2: Can the Plug know if a device is being actively used? (state)
+				<br /><br />
+				 Each Plug should be able to recognize the identity and state of any given device connected to it. Our intention has been to answer the first question. We have been looking at the problem of designing a system to determine the identity of a device connected to a Plug, by merely analyzing the device's power signature.
+				</p>
+				
+				
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

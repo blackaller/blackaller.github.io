@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>ThreeJS MOzVR boilerplate</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background-color: #000;
+				color: #fff;
+				margin: 0px;
+				padding: 0;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+
+	</body>
+
+	<!--
+	three.js 3d library
+	-->
+	<script src="js/lib/three.min.js"></script>
+
+	<!--
+	VRControls.js acquires positional information from connected VR devices and applies the transformations to a three.js camera object.
+	 -->
+	<script src="js/lib/VRControls.js"></script>
+
+	<!--
+	VREffect.js handles stereo camera setup and rendering.
+	-->
+	<script src="js/lib/VREffect.js"></script>
+
+	<script>
+		/*
+		Setup three.js WebGL renderer
+		*/
+		var renderer = new THREE.WebGLRenderer( { antialias: true } );
+
+		/*
+		Append the canvas element created by the renderer to document body element.
+		*/
+		document.body.appendChild( renderer.domElement );
+
+		/*
+		Create a three.js scene
+		*/
+		var scene = new THREE.Scene();
+
+		/*
+		Create a three.js camera
+		*/
+		var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+
+		/*
+		Apply VR headset positional data to camera.
+		*/
+		var controls = new THREE.VRControls( camera );
+
+		/*
+		Apply VR stereo rendering to renderer
+		*/
+		var effect = new THREE.VREffect( renderer );
+		effect.setSize( window.innerWidth, window.innerHeight );
+
+		/*
+		Create 3d objects
+		
+		var oldgeometry = new THREE.BoxGeometry( 10, 10, 10 );
+
+		var oldmaterial = new THREE.MeshNormalMaterial();
+
+		var cube = new THREE.Mesh( oldgeometry, oldmaterial );
+		*/
+
+		/*
+		Position cube mesh
+		
+		cube.position.z = -20;
+		*/
+		/*
+		Add cube mesh to your three.js scene
+		*/
+		//scene.add( cube );
+
+		// DO MY THING
+
+		var light = new THREE.HemisphereLight(0x777777, 0x000000, 0.6);
+      	scene.add(light);
+
+	      var texture = THREE.ImageUtils.loadTexture(
+	        'textures/patterns/checker.png'
+	      );
+	      texture.wrapS = THREE.RepeatWrapping;
+	      texture.wrapT = THREE.RepeatWrapping;
+	      texture.repeat = new THREE.Vector2(50, 50);
+	      texture.anisotropy = renderer.getMaxAnisotropy();
+
+	      // urls1 cubemap texture by <a href="http://www.zfight.com
+	      var urls1 = [
+	        'textures/cube/skybox/px.jpg',
+	        'textures/cube/skybox/nx.jpg',
+	        'textures/cube/skybox/py.jpg',
+	        'textures/cube/skybox/ny.jpg',
+	        'textures/cube/skybox/pz.jpg',
+	        'textures/cube/skybox/nz.jpg'
+	      ];
+
+
+	      var cubemap = THREE.ImageUtils.loadTextureCube(urls1);
+	      cubemap.format = THREE.RGBFormat;
+
+	      // Skybox
+	      var shader = THREE.ShaderLib[ "cube" ];
+	      shader.uniforms[ "tCube" ].value = cubemap;
+
+	      var skyMaterial = new THREE.ShaderMaterial( {
+
+	        fragmentShader: shader.fragmentShader,
+	        vertexShader: shader.vertexShader,
+	        uniforms: shader.uniforms,
+	        depthWrite: false,
+	        side: THREE.BackSide
+
+	      } );
+
+	      var material = new THREE.MeshPhongMaterial({
+	        color: 0xffffff,
+	        specular: 0xffff33,
+	        shininess: 1,
+	        shading: THREE.FlatShading,
+	        map: texture,
+	        envMap: cubemap,
+	        alphaMap: texture
+	      });
+
+	      var skybox = new THREE.Mesh( new THREE.BoxGeometry( 900, 900, 900 ), skyMaterial );
+
+	      var ambient = new THREE.AmbientLight( 0xffffff );
+	      scene.add(ambient);
+
+	      var pointLight = new THREE.PointLight( 0xffffff, 1 );
+	      scene.add( pointLight );
+
+	      var reflectionMaterial = new THREE.MeshBasicMaterial({
+	        color: 0xcccccc,
+	        envMap: cubemap
+	      });
+
+	      var geometry = new THREE.PlaneGeometry(2000, 2000);
+
+	      var mesh = new THREE.Mesh(geometry, material);
+	      mesh.rotation.x = -Math.PI / 2;
+	      mesh.position.y = -50;
+	      scene.add(mesh);
+
+	      var torus1 = new THREE.Mesh(new THREE.TorusGeometry(5,1,50,50), material);
+	      torus1.rotation.y = 90;
+	      torus1.position.z = -50;
+	      torus1.position.y = 5;
+	      scene.add(torus1);
+
+	      var torus2 = new THREE.Mesh(new THREE.TorusGeometry(8,1,50,50), material);
+	      torus2.rotation.y = 90;
+	      torus2.position.z = -50;
+	      torus2.position.y = 5;
+	      scene.add(torus2);
+
+	      var torus3 = new THREE.Mesh(new THREE.TorusGeometry(11,1,50,50), material);
+	      torus3.rotation.y = 90;
+	      torus3.position.z = -50;
+	      torus3.position.y = 5;
+	      scene.add(torus3);
+
+	      var ico = new THREE.Mesh(new THREE.IcosahedronGeometry(2,2), material);
+	      ico.position.z = -50;
+	      ico.position.y = 5;
+	      scene.add(ico);
+
+	      scene.add(skybox);
+
+
+
+		/*
+		Request animation frame loop function
+		*/
+		function animate() {
+			/*
+			Apply rotation to cube mesh
+			*/
+			//cube.rotation.y += 0.01;
+			torus1.rotation.y += 1/200;
+			torus2.rotation.y -= 1/200;
+			torus3.rotation.y -= 1/100;
+			ico.rotation.y -= 1/100;
+			torus1.rotation.x -= 1/100;
+			torus2.rotation.x -= 1/100;
+			torus3.rotation.z -= 1/100;
+			ico.rotation.z -= 1/200;
+			torus3.rotation.x += 1/100;
+			/*
+			Update VR headset position and apply to camera.
+			*/
+			controls.update();
+
+			/*
+			Render the scene through the VREffect.
+			*/
+			effect.render( scene, camera );
+
+			requestAnimationFrame( animate );
+		}
+
+		/*
+		Kick off animation loop
+		*/
+		animate();
+
+		/*
+		Listen for double click event to enter full-screen VR mode
+		*/
+		document.body.addEventListener( 'dblclick', function() {
+			effect.setFullScreen( true );
+		});
+
+		/*
+		Listen for keyboard event and zero positional sensor on appropriate keypress.
+		*/
+		function onkey(event) {
+	    event.preventDefault();
+
+	    if (event.keyCode == 90) { // z
+	    	controls.zeroSensor();
+	    }
+	  };
+
+	  window.addEventListener("keydown", onkey, true);
+
+
+		/*
+		Handle window resizes
+		*/
+		function onWindowResize() {
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+
+			effect.setSize( window.innerWidth, window.innerHeight );
+		}
+
+		window.addEventListener( 'resize', onWindowResize, false );
+
+	</script>
+</html>

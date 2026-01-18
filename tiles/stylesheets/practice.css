@@ -1,0 +1,118 @@
+<html>
+<head>
+
+<style type="text/css">
+a:link {color: #FF0000}
+a:visited {color: #00FF00}
+a:hover {color: #FF00FF
+}
+a:active {color: #0000FF}
+
+body {
+  background-color: red;
+}
+
+/* COLUMN CLASSES */
+
+div.column {
+  background-color: white;
+  float: left;
+  margin: 0 20px 0 0;
+  width: 165px;
+  height: 100%;
+  border: 1px solid red;
+}
+
+/* IDs */
+
+#content-wrapper {
+  width: 780px;
+  height: 600px;
+float: left;
+  padding: 20px 20px 40px 20px;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+div.column2 {
+  background-color: white;
+  float: left;
+  margin: 0 12px 0 0;
+  width: 100px;
+  height: 100%;
+
+}
+
+div.column3 {
+  background-color: white;
+  float: left;
+  margin: 0 12px 0 0;
+  width: 100px;
+  height: 100%;
+border: 1px solid green;
+}
+
+div.column4 {
+  background-color: white;
+  float: left;
+  margin: 0 12px 0 0;
+  width: 100px;
+  height: 100%;
+border: 1px solid blue;
+}
+
+#header {
+  width: 780px;
+  height: 140px;
+  overflow: hidden;
+}
+
+#text {
+  width: 780px;
+  height: 440px;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+
+#footer {
+  width: 780px;
+  height: 140px;
+  overflow: hidden;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="content-wrapper">
+
+<div id="header">
+
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!!</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective!!</p>
+
+</div>
+
+
+<div id="text">
+<div class = column>hola</div>
+<div class = column2><p>
+Position an element relative to its normal position
+Position an element with an absolute value
+Set the shape of an element
+What should happen when an element's content is too big to fit in a specified area
+Vertical alignment of an image
+Place an element "behind" another element
+</p>
+</div>
+<div class = column4>hola</div>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,211 @@
+/******************************************************************************
+
+PROJECT:    nextlab2
+FILE:       new.css
+DATE:       07/01/2008
+
+Copyright (c) 2007 by the Massachusetts Institute of Technology.
+All rights reserved.
+
+Developed by Luis Blackaller at the Media Laboratory, MIT,
+Cambridge, Massachusetts.
+http://plw.media.mit.edu/people/black
+
+For use by NextLab.
+
+This distribution is approved by Frank Moss,
+Director of the Media Laboratory, MIT.
+
+Permission to use, copy, or modify this software and its documentation for
+educational and research purposes only and without fee is hereby granted,
+provided that this copyright notice and the original authors' names appear on
+all copies and supporting documentation. If individual files are separated from
+this distribution directory structure, this copyright notice must be included.
+For any other uses of this software, in original or modified form, including
+but not limited to distribution in whole or in part, specific prior permission
+must be obtained from MIT. These programs shall not be used, rewritten, or
+adapted as the basis of a commercial software or hardware product without
+first obtaining appropriate licenses from MIT. MIT makes no representations
+about the suitability of this software for any purpose. It is provided "as is"
+without express or implied warranty.
+  
+******************************************************************************/
+
+
+body {
+	margin:0px;
+	font: 14px/18px Monospace, Verdana, Geneva, Arial, sans-serif;
+	font-family: Monospace, Verdana, Geneva, Arial, sans-serif;
+	background-image: url("/temp/images/bg_1.png");
+	background-color: #111;
+	font-weight: normal;
+	color: #444;
+	text-align: left; /*for ie*/
+}
+
+#content-wrapper {
+	top:0px;
+	position:relative;
+	width: 1000px;
+	margin:left;
+	margin-left:40px;
+	text-align: left; /*for ie*/
+	/*min-height:1200px;*/
+}
+
+#content {
+	margin-top: 0px;
+	margin-left: 0px;
+	background-color: none;
+	border: 0px solid red;
+	padding-top: 0px;
+	padding-bottom: 60px;
+}
+
+#bottom{
+
+}
+
+.main-titles{
+
+	color:deeppink;
+	margin:0;
+	padding:0;
+}
+
+h2{
+	font: 24px/30px Monospace, Verdana, Geneva, Arial, sans-serif;
+	font-weight:normal;
+	color:deeppink;
+	margin:0;
+	padding:0;
+}
+
+h3{
+	font: 14px/18px Monospace, Verdana, Geneva, Arial, sans-serif;
+	font-weight:normal;
+	color:deeppink;
+	margin-top:5px;
+	padding:0;
+}
+h4{
+	font: 14px/18px Monospace, Verdana, Geneva, Arial, sans-serif;
+	font-weight:normal;
+	color:dodgerblue;
+	margin-top:5px;
+	padding:0;
+}
+
+ul{
+	padding-left:0px;
+	list-style:none;
+}
+li{
+	padding-top:10px;
+}
+
+p{
+}
+
+strong{
+	font-weight:bold;
+	color:#888;
+}
+
+
+.time{
+	color:red;
+}
+
+a { outline: none; -moz-outline-style: none; text-decoration: none;}
+
+:active, :focus, :href, :visited { outline: none; -moz-outline-style: none; text-decoration: none; border: none; }
+
+
+a {
+	
+	
+	color: dodgerblue;
+	font-weight: bold;
+	padding-left:0px;
+	padding-right:0px;
+	text-decoration: none;
+	background-color: none;
+	outline:none;
+	-moz-outline-style: none;
+}
+
+a.imglink{
+	color:black;
+	background-color:none;
+	border:none;
+	text-decoration: none;
+	-moz-outline-style: none;
+}
+
+a:hover {
+
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: dodgerblue;
+	text-decoration: none;
+	outline:none;
+	-moz-outline-style: none;
+	border: none; 
+}
+
+a.imglink:hover, a.imglink:active, a.imglink:focus{
+	color:black;
+	background-color:black;
+	text-decoration: none;
+	outline:none;
+	-moz-outline-style: none;
+	border: none; 
+	padding:0; margin:0;
+}
+
+#header-wrapper{
+	background-color: #000;
+	font: 18px/21px Futura, Verdana, Geneva, Arial, sans-serif;
+	text-align: left;
+	padding:10px 10px 10px 40px;
+
+	/*z-index:2;*/
+}
+
+
+
+#footer-wrapper {
+	left:0px;
+	background:black;
+	margin: 0 auto;
+	bottom:0px;
+	text-align: left;	
+	position: fixed;
+	width:3000px;
+	z-index:2;
+}
+
+#footer {
+  padding:15px 10px 10px 40px;
+}
+
+
+
+
+#left{
+	/*position:absolute;*/
+	margin-left:10px;
+	width:320px;
+}
+
+#right{
+	left:340px;
+	/*position:absolute;*/
+	margin-right:10px;
+}
+
+div.clear {
+	clear: both;
+}

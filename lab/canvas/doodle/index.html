@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html sm_document_loaded="true"><head><title>doodle</title>
+
+
+<script type="text/javascript" src="index_files/cp_depends.js"></script>
+<script type="text/javascript" src="index_files/excanvas.js"></script>
+<script src="index_files/CanvasWidget.js" type="text/javascript"></script>
+<script src="index_files/CanvasPainter.js" type="text/javascript"></script>
+<script src="index_files/CPWidgets.js" type="text/javascript"></script>
+<script src="index_files/CPAnimator.js" type="text/javascript"></script>
+<script src="index_files/CPDrawing.js" type="text/javascript"></script>
+
+<style type="text/css">
+	body {
+		font: 18px/21px Arial, Helvetica, Verdana, sans-serif;
+		font-weight: bold;
+		letter-spacing: 1px;
+		
+		margin: 0px;
+		padding: 0px;
+		
+	}
+	h1 {
+		font-size: 14pt;
+		font-style: italic;
+		margin-bottom: 8px;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	canvas {
+		
+		
+	}
+	#canvas {
+		border: 1px solid #000000;
+		position: absolute;
+		left: 90px;
+		top: 20px;
+	}
+	#canvasInterface {
+		
+		position: absolute;
+		left: 90px;
+		top: 20px;
+	}
+	#colorChooser{
+		border: 1px solid #000000;
+	}
+	#lineWidthChooser{
+		border: 1px solid #000000;
+		
+	}
+	#transportWidget{
+		position: absolute;
+		left: 90px;
+		top: 630px;
+		
+	}
+	#noCanvas {
+		position: absolute;
+		left: 90px;
+		top: 100px;
+		width: 400px;
+		height: 400px;
+		font-size: 16px;
+	}
+	#chooserWidgets {
+		display: block;
+		position: absolute;
+		left: 700px;
+		width: 300px;
+		top: 20px;
+	}
+	#chooserWidgets canvas {
+		margin-bottom: 10px;
+	}
+	#controls {
+		position: absolute;
+		top: 20px;
+		left: 8px;
+		font-size: 12px;
+		width: 70px;
+		
+	}
+	
+	
+	.ctr_btn {
+		overflow: hidden;
+		width: 70px;
+		height: 20px;
+		cursor: pointer; 
+		padding-left: 3px; 
+		margin-bottom: 2px;
+		border:0px solid #000000; 
+		color: #FFFFFF;
+		background-color: deepskyblue;
+	}
+	#cpainterInfo {
+		position: absolute;
+		left: 500px;
+		top: 340px;
+	}
+	#errorArea {
+		position: absolute;
+		width: 200px;
+		left: 800px;
+	}
+	#content-wrapper {
+		
+		/*margin:  auto;
+		width: 900px;
+		border: 0px solid red;
+		padding: 10px;
+		position: relative;
+		background-color: none;*/
+	}
+	
+</style>
+<script type="text/javascript">
+	var canvasPainter;
+	var saveDrawing;
+	var canvasAnimator;
+	var colorWidget;
+	var lineWidthWidget;
+	var transportWidget;
+
+	function doOnLoad() {	
+		if(CanvasHelper.canvasExists("canvas")) {
+			canvasPainter = new CanvasPainter("canvas", "canvasInterface", {x: 90, y: 20});
+			//init save objects
+			//saveDrawing = new CPDrawing(canvasPainter);
+			canvasAnimator = new CPAnimator(canvasPainter);
+
+			//init widgets
+			colorWidget = new ColorWidget('colorChooser', {x: 700, y: 20});
+			colorWidget.addWidgetListener(function() {
+			canvasPainter.setColor(colorWidget.colorString);
+			});
+
+			lineWidthWidget = new LineWidthWidget('lineWidthChooser', 30, {x: 700, y: 120});
+			canvasPainter.setLineWidth(30);
+			lineWidthWidget.addWidgetListener(function() {
+			canvasPainter.setLineWidth(lineWidthWidget.lineWidth);
+			});
+			
+			transportWidget = new TransportWidget('transportWidget', {x: 90, y: 630}, canvasAnimator);
+		} else {
+			var ffb = new Image();
+			ffb.src = "http://www.mozilla.org/products/firefox/buttons/getfirefox_large2.png";
+			document.getElementById("controls").style.display = "none";
+			document.getElementById("noCanvas").style.display = "block";
+			document.getElementById("ffbutton").src = ffb.src;
+			document.getElementById("cpainterInfo").style.display = "none";
+		}
+		
+	}
+
+	function printError(error) {
+		document.getElementById("errorArea").innerHTML += error +"<br>";
+	}
+
+		// used by the dhtml buttons
+	function setControlLook(id, color) {
+		if(id != canvasPainter.curDrawAction)
+		document.getElementById("btn_"+id).style.background = color;
+	}
+
+	function setCPDrawAction(action) {
+		if (action != 5){
+		document.getElementById("btn_"+canvasPainter.curDrawAction).style.background = "deepskyblue";
+		document.getElementById("btn_"+action).style.background = "rgb(255,25,100)";
+		}
+		canvasPainter.setDrawAction(action);
+	}
+</script>
+</head>
+
+<body onload="doOnLoad()">
+<div id="content-wrapper">
+<div id="controls">
+		
+		<!--<div class="ctr_btn" id="btn_2" onclick="setCPDrawAction(2)" onmousedown="setControlLook(2, '#CCCCCC')" onmouseover="setControlLook(2, '#EEEEEE')" onmouseout="setControlLook(2, '#FFFFFF')">line</div> 
+		<div class="ctr_btn" id="btn_3" onclick="setCPDrawAction(3)" onmousedown="setControlLook(3, '#CCCCCC')" onmouseover="setControlLook(3, '#EEEEEE')" onmouseout="setControlLook(3, '#FFFFFF')">rectangle</div> 
+		<div class="ctr_btn" id="btn_4" onclick="setCPDrawAction(4)" onmousedown="setControlLook(4, '#CCCCCC')" onmouseover="setControlLook(4, '#EEEEEE')" onmouseout="setControlLook(4, '#FFFFFF')">circle</div> 
+		<div class="ctr_btn" id="btn_5" onclick="setCPDrawAction(5)" onmousedown="setControlLook(5, '#CCCCCC')" onmouseover="setControlLook(5, '#EEEEEE')" onmouseout="setControlLook(5, '#FFFFFF')">clear</div> 
+		<br>
+		<div class="ctr_btn" id="btn_9" onclick="canvasAnimator.newAnimation();" onmousedown="setControlLook(9, '#CCCCCC')" onmouseover="setControlLook(9, '#EEEEEE')" onmouseout="setControlLook(9, '#FFFFFF')">new</div>
+		-->
+		<!--
+		<div class="ctr_btn" id="btn_10" onclick="saveDrawing.removeLastNode();" onMouseDown="setControlLook(10, '#CCCCCC')" onMouseOver="setControlLook(10, '#EEEEEE')" onMouseOut="setControlLook(10, '#FFFFFF')">undo</div> 
+		<div class="ctr_btn" id="btn_13" onclick="saveDrawing.addLastRemovedNode();" onMouseDown="setControlLook(13, '#CCCCCC')" onMouseOver="setControlLook(13, '#EEEEEE')" onMouseOut="setControlLook(13, '#FFFFFF')">redo</div> 
+		<div class="ctr_btn" id="btn_11" onclick="saveDrawing.paintDrawing();" onMouseDown="setControlLook(11, '#CCCCCC')" onMouseOver="setControlLook(11, '#EEEEEE')" onMouseOut="setControlLook(11, '#FFFFFF')">repaint</div> 
+		<div class="ctr_btn" id="btn_12" onclick="saveDrawing.saveDrawing();" onMouseDown="setControlLook(12, '#CCCCCC')" onMouseOver="setControlLook(12, '#EEEEEE')" onMouseOut="setControlLook(12, '#FFFFFF')">print</div> 
+		-->
+		</div>
+		
+
+<canvas id="canvas" width="600" height="600"></canvas>
+<canvas id="canvasInterface" width="600" height="600"></canvas>
+<canvas id="transportWidget" width="600" height="50"></canvas>
+
+<div id="chooserWidgets">
+<canvas id="colorChooser" width="275" height="80"></canvas>
+<canvas id="lineWidthChooser" width="275" height="76"></canvas>
+<div>
+<span class="ctr_btn" id="btn_0" onclick="setCPDrawAction(0)" onmousedown="setControlLook(0, 'rgb(255,25,100)')" onmouseover="setControlLook(0, 'hotpink')" onmouseout="setControlLook(0, 'deepskyblue')">flat</span> 
+<span class="ctr_btn" id="btn_1" style="background: rgb(255,25,100) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" onclick="setCPDrawAction(1)" onmousedown="setControlLook(1, 'rgb(255,25,100)')" onmouseover="setControlLook(1, 'hotpink')" onmouseout="setControlLook(1, 'deepskyblue')">round</span>
+<span class="ctr_btn" id="btn_5" onclick="setCPDrawAction(5); setControlLook(5, 'deepskyblue');" onmousedown="setControlLook(5, 'rgb(255,25,100)')" onmouseover="setControlLook(5, 'hotpink')" onmouseout="setControlLook(5, 'deepskyblue')">clear</span>
+
+<!--<span class="ctr_btn" id="btn_9" onclick="canvasAnimator.newAnimation();" onmousedown="setControlLook(9, 'rgb(255,25,100)')" onmouseover="setControlLook(9, 'hotpink')" onmouseout="setControlLook(9, 'deepskyblue')">new</span>--> 
+
+<br>
+</div>
+
+</div>
+
+<div id="errorArea"></div>
+
+<div id="noCanvas" style="display: none;">
+	<center>This software requires <a href="http://www.mozilla.com/firefox/">Mozilla Firefox 1.5</a> or Opera 8.5</center><br><br>
+	<center><a href="http://www.getfirefox.net/" title="Get Firefox - Web browsing redefined."><img id="ffbutton" src="" alt="Get Firefox" border="0" height="60" width="178"></a> </center>
+</div>
+
+
+
+</div>
+</body></html>

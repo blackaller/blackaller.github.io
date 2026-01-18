@@ -1,53 +1,483 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Luis Blackaller Home</title>
-    <script>
-        var step = true;
 
-        function animate(whatever) {
-            if ( step ){
-                whatever.style.color="dodgerblue";
-            }
-            else{
-                whatever.style.color= "#cdcdcd";
-            }
-            step = !step;
-            setTimeout(function () {
-                animate(whatever);
-            }, 4000);
-        }
-
-        window.onload = function () {
-            var mydiv = document.getElementById("hello");
-            animate(mydiv);
-        }
-    </script>
+    <title>Luis Blackaller Media Artist</title>
     <style>
-    	body{
-            margin:0;
-            color: #222;
-            background: #cdcdcd;
-            /*min-width:1220px;*/
-        }
-    	.hi{
-            text-align:center;
-            margin:80px;
-        }
-    	#hello{
-            font-weight: bold;
-            font-size: 8em;
-            color: dodgerblue;
-            -webkit-transition: color 4s; /* For Safari 3.1 to 6.0 */
-            transition: color 4s;
-        }
+    body{
+        font-family: monospace;
+        color:#444444;
+        line-height: 18pt;
+        background:#cdcdcd;
+    }
+    h1{
+        color:#444444;
+        font-weight:normal;
+        //text-decoration: underline;
+        padding:0;
+        margin:0;
+        margin-bottom:20px;
+    }
+    h2{
+        color:#444444;
+        font-weight:normal;
+        //text-decoration: underline;
+        padding:0;
+        margin:0;
+        margin-bottom:0px;
+
+    }
+    h3{
+        color:#444444;
+        font-weight:normal;
+        padding:0;
+        margin:0;
+        margin-bottom:20px;
+    }
+    a{
+        //font-weight:bold;
+        color: dodgerblue;
+    }
+    a:hover{
+
+        color: white;
+        background-color:dodgerblue;
+    }
+    #wrapper{
+        width:760px;
+        margin:40px auto;
+    }
+    p{
+        padding:10px 0px 10px 0;
+    }
+    ul{
+        padding:0px 0px 0px 16px;
+    }
+
+    .section{
+        padding:20px 40px 60px 40px;
+        background:#eaeaea;
+        margin:40px 0px 40px 0px;
+    }
+    .divider{
+        padding:20px 40px 20px 40px;
+        background:#eaeaea;
+        margin:0px 0px 0px 0px;
+    }
+
+    .header{
+        padding:20px 20px 0px 20px;
+    }
+    
+    .write-up{
+        margin:20px;
+        color:#777777;
+    }
+
     </style>
 </head>
 
 <body>
-		<h1 class="hi" id="hello">
-			Hello World
-		</h1>
+    <div id="wrapper">
+
+        <div class="section"id="about"> <!----------------------ABOUT-->
+            <div class="header">
+                <h2>Luis E. Blackaller</h2>
+                
+                <img alt="luis blackaller portrait" src="images/headshot.jpg" style="width: 320px; margin-left: 0.00px; margin-top: 20.00px; margin-bottom: 10.00px;" title="">
+                <h3>&#128065; &#9997;&#65039; &#127912; &#127916; &#128218; &#9986;&#65039; &#128421; &#129302;</h3>
+            </div>
+
+            <div class="write-up">
+                <p>
+                    I engage with the digital medium to explore creativity, artistic expression, collaboration, and communication. I am interested in visual systems, storytelling, animation, interactive art, postmodern fiction and transmedia, the influence of technique and production systems in the construction of meaning, public space, the history and anthropology of narrative media, issues of representation and diversity in popular culture, and the history and conservation of ephemeral media.
+                </p>
+                <p>
+                    I work across disciplines to navigate the connective tissue between reproduction technologies and the human desire for symbolism and fiction, as well as the [liminal] tension between agency and control, experience, and story.
+                </p>
+                <p>
+                    The work listed in this document is a testament to my creative and technical range and flexibility as an artist, designer, programmer, and communicator. I hope you enjoy them as much as I do.
+                </p>
+            </div>
+        </div> <!----------------------ABOUT-->
+        
+        <div class="divider"> <!----------------------Recent Work-->
+            <div class="header">
+                <h1>&#128065; Recent Work </h1>
+            </div>
+        </div>
+    
+        <div class="section" id="emperor"> <!----------------------EMPEROR-->
+            <div class="header">
+                <h1>Terracotta Warriors VR</h1>
+                <h3>2024-2025</h3>
+
+            </div>
+
+            <div class="write-up">
+                <p>
+                    Conceived and designed in close collaboration with historians, archeologists and artists from <strong>Emperor Qin Shi Huang’s Mausoleum Site Museum</strong> in Xi'an, China, this 40 minute long multiplayer location based immersive journey offers visitors a unique opportunity to explore a virtual reality speculative reconstruction of Emperor Qin SHi Huang's Mausoleum, and transports them 2,200 years back in time to witness the eve of China’s first emperor’s burial. Guided by a local archaeologist, visitors traverse the vast underground complex to encounter ancient traps, ceremonial spaces, and relics from a vanished world.
+                </p>
+                <p>
+                    Additional information:
+                    <ul>
+                        <li><a href="https://www.vivearts.com/projects/terracotta-warriors">Terracotta Warriors Vive Arts Project Page</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=mK5nfiBlBmg">Terracotta Warriors Trailer</a></li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/emperor-4.jpg" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------EMPEROR-->
+
+        <div class="section" id="wallace"> <!----------------------Harry Potter VR-->
+            <div class="header">
+                <h1>Harry Potter VR</h1>
+                
+                <h3>2019-2022</h3>
+            </div>
+
+            <div class="write-up">
+                <p>
+                    <strong>Wizards take Flight</strong> and <strong>Chaos at Hogwarts</strong> are two multiplayer Location Based virtual reality Narrative Experiences that take audiences inside the <strong>Wizarding World of Harry Potter</strong> to experience the magic in person ad Hogwarts freshmen students, brooms and magic wands included.
+            </p>
+            <p>
+                    Animation was produced using game engine virtual production techniques to combine key-framed creature animations and motion captured live performances. The end product is fully interactive, and we placed special care to deliver an engaging experience for each one of the six players participating in it. For this reason, I devised a branching narrative structure that blended between different animations based on what the players were doing. This is similar to what is usually done in narrative computer gameplay, but with more emphasis in the fidelity of the performances, since the characters were required to inhabit the same space where the players were in virtual reality. For example, eye contact became extremely important, and we had to make sure each one of our characters addressed every player directly at some point in the adventure, looking at them in the eye every time this happened. 
+                </p>
+                <p>
+                    Additional information:
+                    <ul>
+                        <li><a href="https://www.unrealengine.com/en-US/spotlights/accio-unreal-engine-the-making-of-new-york-s-harry-potter-vr-experiences">Unreal Engine Spotlights: The making of New York’s Harry Potter VR experiences</a></li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/harry-potter-hagrid.jpg" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------Harry Potter VR-->
+
+        <div class="section" id="holodome"> <!----------------------Holodome Labs-->
+            <div class="header">
+                <h1>Holodome Labs</h1>
+                
+                <h3>2018-2019</h3>
+            </div>
+
+            <div class="write-up">
+                <p>
+                    During my tenure as a creative director at Wevr, I was commissioned to design and run a year long workshop program in Los Angeles for <strong>Paul Allen’s Holodome</strong>, a prototype spherical interactive projection mapping system. I was responsible for teaching new media artists and filmmakers from multiple backgrounds about the expressive strengths and limitations of the system, and I worked with them to explore ideas, solve diverse technical challenges, and adjust their voices to this new format, while helping engineers and technicians troubleshoot and develop new features in the process.
+                </p>
+                <p>
+                    Additional information:
+                    <ul>
+                        <li><a href="https://www.holodome360.com">Holodome website</a></li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/holodome-1.jpg" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------Holodome Labs-->
+
+        <div class="divider"> <!----------------------Writing-->
+            <div class="header">
+                <h1>&#9997;&#65039; Published Writing</h1>
+            </div>
+        </div>
+
+
+        <div class="section" id="dma"> <!----------------------Published-->
+            <div class="header">
+                <h3>Escritura Descompuesta</h3>
+            </div>
+            <div class="write-up">
+                <p>
+                    2021, in Spanish. Featured essay in experimental e-book <strong>Estamos Aquí</strong>, centered around the prospects, limitations, and dangers of automatic writing and its potential impact in the literary world. Published by Centro de Cultura Digital in Mexico City.
+                    <ul>
+                        <li>Download ebook: <a href="https://centroculturadigital.mx/descargable/estamos-aqui">Estamos Aquí</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="header" style="margin-top:0.0px; padding-top:0.0px;">
+                <h3>Espacio Público y Participación Narrativa en la Era Digital</h3>
+            </div>
+            <div class="write-up">
+                <p>
+                    2014, in Spanish. Featured essay in the book <strong>Artes Mediales, Convergencias y Tecnologías</strong>, centered around digitally mediated experiments and participatory programs in the public space. Published by Cinemateca Distrital in Bogotá, Colombia.
+                    <ul>
+                        <li>Download PDF: <a href="https://idartesencasa.gov.co/artes-audiovisuales/libros/catalogos-razonados-artes-mediales-convergencias-y-tecnologias">Artes Mediales, Convergencias y Tecnologías</a></li>
+                    </ul>
+                </p>
+            </div>
+        </div> <!----------------------Writing-->
+
+
+
+
+        <div class="divider"> <!----------------------Teaching-->
+            <div class="header">
+                <h1>&#128218; Teaching</h1>
+            </div>
+        </div>
+
+        <div class="section" id="dma"> <!----------------------UCLA DMA-->
+            <div class="header">
+                <h1>DESMA-172 Immersive Media Storytelling </h1>
+                <h3>UCLA Design and Media Arts 2023</h3>
+            </div>
+
+            <div class="write-up">
+                <p>
+                    Writing, directing and acting, pre production, production design, animation, performance capture, 3D-art, virtual production and interactive game engine development, haptics, theme park special effects and other aspects of production will be explored in the context of today’s immersive media landscape.
+                </p>
+                <p>
+                    Students will be able to conceive a narrative immersive project and push their vision through the development and production process in a practical, results-oriented manner. This class will strengthen the students’ design and production experience and interactive storytelling skills as immersive creators, performers and/or developers.
+                </p>
+                <p>
+                    In a workshop-based series of lectures, students will be guided through the theory and history of Immersive Storytelling by researching and deconstructing relevant case-studies and using them as the starting point to practice and accomplish different narrative and expressive goals. Basic prompt-based exercises will compel them to explore interactive game engine technologies, VR, projection mapping, interactive animation, real-time motion capture and other relevant aspects necessary to develop a powerful narrative experience.
+                </p>
+                <p>
+                    <ul>
+                        <li><a href="https://dma.ucla.edu/people/faculty">Faculty page at UCLA DMA</a></li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/depthkit-1.jpg" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------UCLA DMA-->
+
+
+        <div class="section" id="iml400"> <!----------------------USC MAP-->
+            <div class="header">
+                <h1>IML-400 Creative Coding for the Web</h1>
+                
+                <h3>USC Media Arts and Practices 2012-2015</h3>
+            </div>
+
+            <div class="write-up">
+                <p>
+                    A primer in HTML, CSS, and Javascript, <strong>IML-400</strong> explores creativity in the world wide web from the standpoint of new media literacies. Following concepts I learned about education at MIT, I have injected a strong infusion of maker culture into the class recipe, my most important goal to help students from any background and level of expertise to engage with the medium creatively, and to understand the fundamentals of how the web works and how websites are made. I follow the cognitive patterns that led me to develop my own programming literacy —to understand code, and to express myself with it— to share the valuable bits that pushed me through the breakthroughs that helped me learn and develop a functional coding practice.
+                </p>
+                <p>
+                    Class website archive:
+                    <ul>
+                        <li><a href="IML-400">IML-400 Spring 2015</a> (archive)</li>
+                        <li><a href="IML-400/examples.html">Class examples</a> (all code included)</li>
+                        <li><a href="IML-400/spring-2014/assignment-2-2.html">Lecture notes example</a> (basic)</li>
+                        <li><a href="IML-400/spring-2014/pop-ups/">Object based pop ups</a> (intermediate)</li>
+                        <li><a href="IML-400/live-inputs.html">Live inputs</a> (intermediate)</li>
+                        <li><a href="IML-400/fall-2012/JQueryUI-slideshow.html">Fading slideshow</a> (intermediate)</li>
+                        <li><a href="IML-400/canvas-examples/canvas-clock.html">Canvas clock</a> (advanced)</li>
+                        <li><a href="IML-400/threejs-particle-raster">3D particle raster tool</a> (advanced)</li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/IML-400-1.jpg" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------USC MAP-->
+
+
+        <div class="divider"> <!----------------------Media Lab-->
+            <div class="header">
+                <h1>&#129302; MIT Media Lab</h1>
+            </div>
+        </div>
+
+        <div class="section" id="thesis"> <!----------------------Performing Process-->
+            <div class="header">
+                <h1>Performing Process</h1>
+                
+                <h3>MIT Media Lab Thesis 2008</h3>
+            </div>
+
+            <div class="write-up">
+                <p>
+                    <strong>Abstract.</strong> Digital media has pushed art and culture towards formats defined by immediacy, interactivity, participation, and social systems. This thesis looks at recent changes in artistic practice within the realm of the digital visual arts. In order to study the intersection between interactive art and the digital image, I describe the design of an online participatory studio system, where an artist can perform their creative process and receive remote feedback from audience participants at the same time. Such a system opens a conversation between artist and audience that will shed new light on how we learn, understand and communicate boundaries in digital space and digital interactive art.
+                </p>
+                <p>
+                    The main subject of my master thesis at the MIT Media Lab is a real-time interactive graphics environment called <strong>myStudio</strong>. It implements a custom studio web application to log and share my creative process by giving me the ability to publish code and picture snapshots directly to the web while writing and running scripts on a customized graphics engine. People who visited the studio website could send messages to my livecoding environment, and I could respond to them in real-time from within my livecoding session. By performing this experiment, I was able to observe changes in my creative process in a digitally mediated quasi public space, and to explore a versioning system for graphically oriented programs that correlated visualized snapshots with the corresponding versioned code.
+                </p>
+                    Additional material:
+                    <ul>
+                        <li>Download thesis PDF: <a href="documents/thesis.pdf">Performing Process</a></li>
+                        <li><a href="https://plw.media.mit.edu">Physical Language Workshop</a> at the MIT Media Lab (archive)</li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/mystudio-1.png" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------Performing Process-->
+
+        
+        <div class="section" id="e15"> <!----------------------E15-->
+            <div class="header">
+                <h1>E15</h1>
+                
+                <h3>2007</h3>
+            </div>
+
+            <div class="write-up">
+                <p>
+                    <strong>E15</strong> is an experimental networked architecture and graphics engine developed by the <strong>Physical Language Workshop</strong> at MIT to explore and organize web content in three dimensional interactive environments.
+                    
+                </p>
+                <p>
+                    Additional material:
+                    <ul>
+                        <li><a href="https://web.archive.org/web/20081016042614/http://e15.media.mit.edu/">e15.media.mit.edu at the wayback machine</a> (archive)</li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/e15-2.png" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------E15-->
+
+        <div class="section" id="ogfx"> <!----------------------oGFx-->
+            <div class="header">
+                <h1>oGFx</h1>
+                <h3>2007</h3>
+            </div>
+            <div class="write-up">
+                <p>
+                    
+                    <strong>oGFx</strong> is a tool to generate and explore 3D forms originating from procedurally generated 2D animations. oGFx is an element of E15, a blanket descriptor for much of the work that took place in the <strong>Physical Language Workshop</strong> between the years of 2007 and 2008 at the MIT Media Lab. oGFx is, in fact, the first of such projects falling under the E15 designation, and was developed by Kyle Buza and Luis Blackaller in the Summer of 2007.
+                </p>
+                <p>
+                    In contrast to the traditional <i>compile, run, debug, repeat</i> style of the majority of today's programming environments, oGFx features an embedded Python interpreter to provide a malleable interface for livecoding. Artists and developers can update, modify, and interrogate the runtime state of an oGFx program at any point during its execution. 
+
+                </p>
+                <p>
+                    oGFx features solid support for user-defined GLSL-based shaders, as well as a mechanism to modify shader parameters from within Python. We also take advantage of GPU-accelerated image manipulation through the use of Apple's CoreImage framework.
+                </p>
+                <p>
+                    Additional material:
+                    <ul>
+                        <li><a href="ogfx">oGFx.mitplw.com</a> (archive)</li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/ogfx-1.png" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------oGFx-->
+
+        <div class="section" id="openstudio"> <!----------------------openStudio-->
+            <div class="header">
+                <h1>OpenStudio</h1>
+                <h3>2005-2008</h3>
+            </div>
+            <div class="write-up">
+                <p>
+                    
+                    <strong>OpenStudio</strong> was an experiment in creativity, collaboration & virtual economics developed by the Physical Language Workshop at the MIT Media Lab. Participants were able to create and trade or sell artwork in an online marketplace using a virtual currency.
+                </p>
+                <p>
+                    The platform featured asynchronous browser based cloud hosted vector art tools with embedded drawing histories, on-demand rendering tailored to viewing devices, smart contracts for commissioned artwork, user driven taxonomies, and a distributed sensor-actuator system for building interconnected electronic artworks. It pioneered much of the creative activity we experience online today, from creator driven social media to surveillance and the data driven hyper commoditization of artistic expresion and appreciation.
+                </p>
+                <p>
+                    Additional material:
+                    <ul>
+                        <li><a href="https://github.com/blackaller/OPENSTUDIO-archive">openstudio github repository</a> (archive)</li>
+                        <li><a href="https://www.flickr.com/groups/1256152@N22/">openstudio flickr group</a> (archive)</li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/openstudio-4.jpg" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------openStudio-->
+
+        <div class="section" id="tiny"> <!----------------------Tiny Icon Factory-->
+            <div class="header">
+                <h1>Tiny Icon Factory</h1>
+                <h3>2006-2012</h3>
+            </div>
+            <div class="write-up">
+                <p>
+                    
+                    The <strong>Tiny Icon Factory</strong> was an online gallery and drawing tool for the creation of black and white low resolution icons. The low resolution (13 by 13 pixels) was justified by the desire to lower the barrier of entry to creation and publishing as much as possible. All a user needed to do was to visit the website, wiggle their mouse across the tiny canvas, give their creation a name if they felt like it, and hit the <i>publish</i> button. A multitude of interesting behaviours emerged from this design pattern, including typographic experiments, and animations and short form poetry by taking advantage of the clever display of consecutive icons in cronological sequence.
+                </p>
+                <p>
+                    With over 200,000 uncensored anonymous contributions in under two years, it has become a unique exploration of unhinged creative expression. Built in the Physical Language Workshop at the MIT Media Lab. During its heyday, it enjoyed features in Lifehacker, Digg, Del.icio.us, Flabber.nl, StumbleUpon, and several other design blogs and news sites. Also included in the Delight by Design show at the MIT Museum.
+                </p>
+                <p>
+                    The functionality rich drawing application featured an invert function, several previews in different scales, and an optional grid, all meant to enhance the user's understanding of this meaningful art form. The custom data format encodes each icon in a 169 character string of 0s and 1s. The string is longer than my attention span in a very good day, and it will not fit my layout (or your browser) unless I shrink it or break it. After breaking it 13 times, the source of a typical Tiny drawing looks like this (If you stare at it long enough and you squint, you can almost see the drawing):
+                    <pre style="color:#969696; font-weight:bold; font-family: 'Courier New', Courier, monospace; margin:0.0px; padding:0.0px; line-height: 14pt;">
+
+0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 1 1 1 1 1 0
+0 0 0 0 0 1 1 0 0 0 0 0 1
+0 1 0 0 1 1 1 1 1 1 1 0 0
+0 1 0 0 1 1 0 0 0 0 1 1 0
+0 1 1 0 1 1 0 0 0 0 0 1 0
+0 0 1 0 1 0 0 0 0 0 0 0 1
+0 0 1 0 1 0 0 0 0 0 0 0 1
+0 0 0 1 1 0 0 1 0 0 1 0 1
+0 0 0 0 1 0 0 0 0 0 0 0 1
+0 0 0 0 1 1 0 0 0 0 0 1 0
+0 0 0 0 0 1 1 1 1 1 1 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0</pre>
+                </p>
+                <p>
+                    Additional material:
+                    <ul>
+                        <li><a href="https://github.com/blackaller/OPENSTUDIO-archive">openstudio github repository</a> (archive)</li>
+                        <li><a href="https://www.flickr.com/photos/blackaller/albums/72177720315259318/">Tiny Icon Factory flickr gallery</a> (archive)</li>
+                    </ul>
+                </p>
+                <p>
+                    <img alt="" src="images/tiny_2_1_1340_c.png" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------Tiny Icon Factory-->
+
+        <div class="section" id="picturexs"> <!----------------------pictureXS-->
+            <div class="header">
+                <h1>PictureXS</h1>
+                <h3>2007-2011</h3>
+            </div>
+            <div class="write-up">
+                <p>
+                    
+                    <strong>PictureXS</strong> was an anonymous image aggregator where anybody was able to upload and classify pictures without compromising their identity. It featured an embedded tracing tool, a self-regulated censorship system, and a taxonomy that combined comparative insights from tags and computer vision based analysis. Before it was turned off in 2011, PictureXS had collected over 30,000 pictures, 1000 drawings and 500,000 tags.
+                </p>
+                <p>
+                    <img alt="" src="images/picturexs-2.png" style="width: 640.00px; margin-left: 0.00px; margin-top: 0.00px;" >
+                </p>
+            </div>
+        </div> <!----------------------pictureXS-->
+
+        <div class="section" id="picturexs"> <!----------------------misc-->
+            <div class="header">
+                <h1>Miscelaneous</h1>
+                <h3>Warning: Some sections of these websites might require an update</h3>
+            </div>
+            <div class="write-up">
+                <p>
+                    <ul>
+                        <li><a href="tiles">Lisp based tiling generator</a> (archive)</li>
+                        <li><a href="plugsense">PlugSense</a> (archive)</li>
+                        <li><a href="lab">Generative art gallery</a> (requires Java)</li>
+                        <li><a href="fantasticsoup">Fantastic Soup film collective</a> (archive)</li>
+                    </ul>
+                </p>
+                <p style="margin-top:50px; color:#444444; text-align:center; font-size:3em;">
+                    Thank you &#x1F60A;
+                </p>
+            </div>
+        </div> <!----------------------pictureXS-->
+
+
+
+
+
+
+    </div>
 </body>
 </html>

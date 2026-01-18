@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!-- Tells the browser that the page is created with the HTML5 standard. It will be broken in IE -->
+<html lang="en">
+<head>
+    	<meta charset="utf-8" />
+		<!-- Introducing the meta tag -->
+		<meta name="author" content="Luis Blackaller">
+		<meta name="designer" content="Luis Blackaller">
+		<title> IML400 CSS Layout Example</title>
+		<meta name="description" content="Simple CSS Layout Example">
+		<meta name="abstract" content="A Simple CSS Layout Example">
+		<meta name="keywords" content="layour css example class IML400">
+		
+		<!-- CSS is embedded here -->
+		<style>
+		body{
+			margin:0;
+			background:#222;
+			color:#eee;
+			font-family:arial;
+		}
+		a{
+			color:crimson;
+			text-decoration:none;
+			font-weight: bold;
+		}
+		a:hover{
+			color:gold;
+		}
+		#wrapper{
+			position:relative;
+			margin:0 auto;
+			padding-top: 40px;
+			width:800px;
+			background:#333;
+			height:100%;
+			
+		}
+		#wrapper h1, h2 ,h3{
+			font-size:40px;
+			padding:20px 80px;
+			margin:0;
+		}
+		#content{
+			position:relative;
+			overflow:auto;
+			padding:0;
+		}
+		#content div{
+			width:100%;
+			margin:10px 0px;
+		}
+		#content ul{
+			overflow:auto;
+			list-style: none;
+		}
+		#content li{
+			font-size:60px;
+			float:left;
+			background:#222;
+			width:200px;
+			height:200px;
+			margin:10px;
+			padding:10px;
+		}
+		#header, #footer{
+			position:fixed;
+			background:black;
+			padding:10px 20px;
+			margin:0;
+			width:100%;
+			z-index:1;
+		}
+		#footer{
+			bottom:0;
+			width:100%;
+		}
+		.info{
+			font-size: 18px;
+		}
+		</style>
+	</head>
+
+	<!-- Content Begins -->
+	<body>
+		<div id="header">
+			My IML400 Page - <a href="../assignment-3.html">Back to assignment 3</a>
+		</div>
+
+		<div id="wrapper">
+			<div id="content">
+				<div id="assignments">
+					<h1>Assignments</h1>
+					<ul>
+						<li><a href="" >One</a><div class="info">Information about the assignment can go here<div></li>
+						<li><a href="" >Two</a></li>
+						<li><a href="" >Three</a></li>
+						<li><a href="" >Four</a></li>
+					</ul>
+				</div>
+				<div id="reports">
+					<h1>Reading Reports</h1> 
+					<ul>
+						<li><a href="" >One</a></li>
+						<li><a href="" >Two</a></li>
+						<li><a href="" >Three</a></li>
+						<li><a href="" >Four</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+ 
+		<div id="footer">
+			footer
+		</div>
+	</body>
+</html>

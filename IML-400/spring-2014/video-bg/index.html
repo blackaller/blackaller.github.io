@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>hgb video</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body{
+      font-family: helvetica;
+      background:black;
+      color:#eeeeee;
+      line-height:1.4em;
+      letter-spacing:0.02em;
+    }
+    #bg{
+      background: url('video.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position: center;
+    }
+    #footer a{
+      color:#22B573;
+      color:#00FF8D;
+      color:white;
+      text-decoration: underline;
+      padding:0 5px;
+    }
+    #footer a:hover{
+      color:#00FF8D;
+      text-decoration: underline;
+    }
+    #g{
+      background:rgba(30,20,0,0.1);
+    }
+    #content{
+      position:relative;
+      top:0;
+      margin:auto;
+      max-width:1280px;
+      max-width:1920px;
+      min-height:400px;
+      background:rgba(255,0,0,0.1);
+      height:100%;
+      z-index:10;
+    }
+
+    #footer{
+      position:absolute;
+      bottom:0;
+      text-align:center;
+      width:100%;
+      padding:10px;
+    }
+    #main{
+      position:relative;
+      max-width:500px;
+      padding-top:20px;
+      margin:auto;
+      text-align:center;
+      font-size:24px;
+      line-height:1.2em;
+    }
+  </style>
+</head>
+
+<body class="home">
+
+  <div id="video">
+    <video autoplay loop muted>
+      <source type="video/mp4" src="video.mp4">
+       <!--<source type="video/webm" src="/assets/uploads/iphone-standing.webm">-->
+    </video>
+  </div>
+
+  <div id="bg-wrap">
+    <div id="g"></div>
+    <div id="bg"></div>
+  </div>
+
+  <div id="content">
+
+    <div id="main">
+      <p style="padding:0 0 40px 0">content</p>
+    </div>
+
+    <div id="footer">
+      footer
+    </div>
+  </div>
+  
+
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="script.js?v=2"></script>
+</body>
+</html>

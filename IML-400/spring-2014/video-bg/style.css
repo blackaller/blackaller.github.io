@@ -1,0 +1,80 @@
+*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+/*======== reset/cleanup of browser css =============*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;}
+body{font-size:12px;*font-size:small;*font:x-small;}
+table {font-size:inherit;font:100%;}select, input, textarea {font:99% arial,helvetica,clean,sans-serif;}pre, code {font:115% monospace;*font-size:100%;}
+/*======== reset/cleanup of browser css =============*/
+
+.cb{clear:both;display:block;}
+.sc{clear:both;*zoom:1;}
+.sc:after{content:".";display:block;height:0;clear:both;visibility:hidden; }
+html,body{height:100%;}
+body{
+	font-weight:normal;
+	font-size:16px;
+	line-height:1em;
+	font-family:proximanova, times;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;-webkit-background-size:cover;-ms-background-size:cover;
+	background-position: center top;
+	color:#333;
+}
+
+a{text-decoration:none;color:#0F9FF5;}
+b,strong{font-weight:bold}
+i,em{font-style:italic;}
+small,.small{font-size:10px;}
+
+
+/* MIGHT NEED LATER
+#container{
+	position:relative;
+	z-index:3;
+	margin-bottom:-30px;
+	bottom:0;
+}
+#content, #container{
+	clear:both;
+}
+*/
+#bg-wrap{
+}
+#bg{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;top:0;
+	z-index:1;
+	background: url('v-03304820-7ef7-0131-30d4-22000a499ea4_qvga.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+
+#g {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+/*=========== homepage with video =========*/
+#video{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#video video{
+	width:320px;
+	height:240px;
+	-webkit-filter:grayscale(40%);
+	filter:grayscale(40%) sepia 80%;
+	opacity:0;
+	transition:opacity 6s;
+}

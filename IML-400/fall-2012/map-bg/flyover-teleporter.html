@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+	<style>
+	body{
+		color: #fff;
+		font-family: Verdana, Geneva, sans-serif;
+		margin:0;
+	}
+	html, body {
+		height:100%;
+	}
+	h1{
+		font-size:190px;
+		padding:0;
+		margin:0;
+	}
+	h2{
+		padding:0;
+		margin:0;
+		font-size:90px;
+	}
+	a{
+		text-decoration:none;
+		color:#fff;
+	}
+	a:hover{
+		color:deeppink;
+	}
+	#cabeza{
+		text-align: center;
+		/*
+		text-shadow: 0 00 0.5em rgba(255,255,255,0.8);
+		background:rgba(0,0,0,0.2);
+		box-shadow: 0 00 0.5em rgba(0,0,0,0.2);
+		*/
+	}
+	#map {
+		position:absolute;
+		width:100%;
+		min-height:100%;
+		background:#dffee7;
+	}
+	#wrapper{
+		min-height:100%;
+		height:auto !important;
+		z-index:1000;
+		background:rgba(0,0,0,0.3);
+
+		position:relative;
+		margin:auto;
+		padding:80px 0;
+		width:100%;
+
+	}
+	</style>
+
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyB4lFfLe6M8ZfLtBZuxO82402e1ATUu5iM" type="text/javascript"></script>
+
+	<!--<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+	<script src="js/mapita.js" type="text/javascript"></script>
+
+	<script src="js/jquery.lazyload.mini.js" type="text/javascript"></script>
+
+
+
+</head>
+
+<body onload="load()" onunload="GUnload()">
+	<div id="map"></div>
+	
+	<div id="wrapper">
+		<div id="cabeza">
+			<h1 id="map-location">Hello</h1>
+			<h2><a href="#" onClick="window.location.reload()">Take me elsewhere</a></h2>
+			<!--
+			<img src="images/ojo.jpg" width="300px" height="300px" />
+			-->
+		</div>	
+	</div>
+
+</body>
+</html>

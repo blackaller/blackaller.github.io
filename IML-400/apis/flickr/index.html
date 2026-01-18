@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Flickr API test</title>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	
+	<style>
+	body{
+		margin:0;
+	}
+	ul{
+		background:#ddd;
+		padding:20px;
+		margin:10px;
+	}
+	ul li{
+		list-style: none;
+	}
+	</style>
+	<script>
+	// good reference:
+	// http://mashupguide.net/1.0/html/index.xhtml
+	// http://mashupguide.net/1.0/html/pt02.xhtml
+	// http://mashupguide.net/1.0/html/ch08.xhtml
+	// http://mashupguide.net/1.0/html/ch08s07.xhtml
+
+	// http://idgettr.com/
+	// you can input user_id http://storm.usc.edu/~Black/IML-400/apis/flickr/?user_id=75903973@N00
+
+	// Here are some ids
+	var user_ids = [["blackaller","75903973@N00"],
+					["kylebuza", "17996229@N03"],
+					["frybros", "33761401@N02"],
+					["alombana", "49488981@N00"],
+					["zepolth", "24947909@N06"],
+					["nasacommons", "44494372@N05"],
+					["lomokev", "40962351@N00"],
+					["wiissa", "38546378@N02"],
+					["astilla", "29641417@N04"],
+					["taffeta", "30533017@N00"],
+					["louobedlam", "49229574@N00"],
+					["maeda", "71957046@N00"],
+					["testykitty", "35389340@N08"],
+					["vonmurr", "20193184@N00"]]
+	var random_id = user_ids[Math.floor(Math.random()*user_ids.length)][1];
+	
+	// set up default user id
+	var user_id = random_id;
+	if ( window.location.search.substring(1) != "") user_id = window.location.search.substring(1).split("=")[1];
+	var script_src =  "https://api.flickr.com/services/rest/?&method=flickr.people.getPublicPhotos&api_key=e328fa64d032f640225e728f8a38b61b&user_id="+ user_id + "&format=json&per_page=500"
+
+  function jsonFlickrApi(response) {
+    window.response = response;
+    console.log(response);
+    var s = "";
+    // http://farm{id}.static.flickr.com/{server-id}/{id}_{secret}_[mstb].jpg
+    // http://www.flickr.com/photos/{user-id}/{photo-id}
+    s = "loading: " + response.photos.photo.length + " photos<br/>";
+    
+    for (var i=0; i < response.photos.photo.length; i++) {
+		photo = response.photos.photo[i];
+		t_url = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "s.jpg";
+		p_url = "http://www.flickr.com/photos/" + photo.owner + "/" + photo.id;
+		s +=  '<a href="' + p_url + '">' + '<img alt="'+ photo.title + '" src="' + t_url + '"/>' + '</a>';
+    }
+    //document.writeln(s);
+    document.body.innerHTML=s;
+  }
+  </script>
+</head>
+
+<body>
+	<script>
+		var request_url = document.createElement( 'script' );
+		request_url.setAttribute('src', script_src);
+		document.body.appendChild( request_url );
+	</script>
+</body>
+</html>

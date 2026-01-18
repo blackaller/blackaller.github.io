@@ -76,9 +76,45 @@
     }
 
     </style>
+    <script type="text/javascript">
+    var mover = 0;
+    function initSun(){
+        drawSun();
+        setInterval(drawSun,50);
+    }
+
+    function drawSun() {
+        var sunctx = document.getElementById('sunspot').getContext('2d');
+        sunctx.fillStyle = '#eaeaea';
+        sunctx.fillRect(0,0,640,200);
+        sunctx.save();
+        sunctx.translate(320,100);
+        sunctx.scale(1.8,1.8);
+        for (i=2;i<6;i++){
+            sunctx.save();
+            sunctx.fillStyle = 'rgb(255,'+Math.abs(286-51*i)+',0)';
+            for (j=0;j<i*3;j++){
+                sunctx.rotate(Math.PI*2/(i*3)+ (mover/(i+j)));
+                sunctx.save();
+                sunctx.scale(1/i,1/i);
+                //sunctx.scale(i/10,i/10);
+                //sunctx.scale(1/j,1/j);
+
+                sunctx.beginPath();
+                sunctx.arc(0,i*30,20,0,Math.PI*2,true);
+                sunctx.fill();
+                sunctx.restore();
+            }
+            sunctx.restore();
+        }
+    sunctx.restore();
+    mover = mover + 0.009;
+    }
+    </script>
 </head>
 
-<body>
+<body onload="initSun();">
+    
     <div id="wrapper">
 
         <div class="section"id="about"> <!----------------------ABOUT-->
@@ -99,6 +135,7 @@
                 <p>
                     The work listed in this document is a testament to my creative and technical range and flexibility as an artist, designer, programmer, and communicator. I hope you enjoy them as much as I do.
                 </p>
+                <canvas id="sunspot" width="640" height="200"></canvas>
             </div>
         </div> <!----------------------ABOUT-->
         

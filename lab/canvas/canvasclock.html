@@ -11,6 +11,7 @@
       margin: 0;
       background: #dedede;
       font-family: monospace;
+      background: #dedede;
     }
     #wrapper{
       max-width: 400px;
@@ -40,11 +41,11 @@ function init(){
 }
 function clock(){
   var now = new Date();
-  var size = 2;
+  var size = 1.8;
   var ctx = document.getElementById('clock').getContext('2d');
   ctx.save();
   ctx.clearRect(0,0,200*size,200*size);
-  ctx.translate(100*size,100*size);
+  ctx.translate(100*size+20,100*size+20);
   ctx.scale(size,size);
   ctx.rotate(-Math.PI/2);
   ctx.strokeStyle = "#333";
@@ -57,7 +58,7 @@ function clock(){
   // background
   ctx.beginPath();
   ctx.lineWidth = 2;
-  ctx.fillStyle = "#aeaeae";  
+  ctx.fillStyle = "#dedede";  
   ctx.arc(0,0,100,0,Math.PI*2,true);
   ctx.fill();
 
@@ -112,7 +113,7 @@ function clock(){
   ctx.moveTo(-20,0);
   ctx.lineTo(60,0);
   ctx.stroke();
-  ctx.strokeStyle = "#aeaeae";
+  ctx.strokeStyle = "#dedede";
   ctx.lineWidth = 3;
   ctx.beginPath();
   ctx.moveTo(-21,0);
@@ -129,7 +130,7 @@ function clock(){
   ctx.moveTo(-20,0);
   ctx.lineTo(88,0);
   ctx.stroke();
-  ctx.strokeStyle = "#aeaeae";
+  ctx.strokeStyle = "#dedede";
   ctx.lineWidth = 3;
   ctx.beginPath();
   ctx.moveTo(-21,0);
@@ -178,7 +179,7 @@ window.onload = function(e){
     canvas clock 2007 <br/>
     always on time
   </div>
-      <canvas id="clock" width="400" height="400"></canvas>
+      <canvas id="clock" width="400" height="400" style="background:#c2c2c2;"></canvas>
 </div>
 </body>
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvasclock</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background: #dedede;
+      font-family: monospace;
+      background: #dedede;
+    }
+    #wrapper{
+      max-width: 400px;
+      margin:80px auto;
+      overflow:auto;
+      padding:0px;
+    }
+    #description{
+      color: dodgerblue;
+      padding:10px 5px ;
+    }
+    a {
+        color: deeppink;
+        background-color: #ddd;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #ddd;
+        text-decoration: none;
+        background-color: deeppink;
+    }
+    #sunspot{
+        height:400px;
+        background:#454545;
+    }
+
+  </style>
+    <script type="text/javascript">
+    var mover = 0;
+    function initSun(){
+        drawSun();
+        setInterval(drawSun,50);
+    }
+
+    function drawSun() {
+        var sunctx = document.getElementById('sunspot').getContext('2d');
+        sunctx.fillStyle = '#454545';
+        //sunctx.fillStyle = 'rgba(222, 222, 222, 1)'; // aka #dedede, or:
+        //sunctx.fillStyle = 'rgba(30, 144, 255, 0.2)'; // aka dodgerblue
+        sunctx.fillRect(0,0,400,400);
+        sunctx.save();
+        sunctx.translate(200,200);
+        sunctx.scale(4.4,4.4);
+        // good values for max(i): 6, 11
+        for (i=2;i<6;i++){
+            sunctx.save();
+            sunctx.fillStyle = 'rgba(255,'+Math.abs(286-51*i)+',0,1)';
+            //sunctx.fillStyle = 'rgba(255,'+Math.abs(286-51*i)+',0,' + (i+3)/10 +')';
+            for (j=0;j<i*3;j++){
+                sunctx.rotate(Math.PI*3/(i*2)+ (mover/(i+j)));
+                sunctx.save();
+                sunctx.scale(1/i,1/i);
+                //sunctx.scale(i/10,i/10);
+                //sunctx.scale(1/j,1/j);
+
+                sunctx.beginPath();
+                sunctx.arc(0,i*30,20,0,Math.PI*2,true);
+                sunctx.fill();
+                sunctx.restore();
+            }
+            sunctx.restore();
+        }
+    sunctx.restore();
+    mover = mover + 0.01;
+    }
+    </script>
+</head>
+
+<body onload="initSun();">
+  <div id="wrapper">
+  <div id="description">
+    <a href="/lab/p5/mysketches"><<</a> <br/>
+    sunSpot 2007 <br/>
+    loops and iterations, an illustrated transformation stack
+  </div>
+      <canvas id="sunspot" width="400" height="400"></canvas>
+</div>
+</body>
+
+</html>

@@ -549,12 +549,15 @@
         const theTexts =document.getElementsByClassName("write-up");
         if (lightsOn){ // turn off
             sunSky = "#191919";
+           
+            theBody.style.background = "#090909";
+            theBody.style.color = "#eaeaea";
+
             document.getElementById("switch").innerHTML = "&#127770;";
             document.getElementById("switch").style.fontSize = "3.6em";
             document.getElementById("switch").style.paddingLeft = "35px";
             //document.getElementById("switch").innerHTML = "&#127773;";
-            theBody.style.background = "#090909";
-            theBody.style.color = "#eaeaea";
+            
             for (let i = 0; i < theSections.length; i++) {
                 theSections[i].style.background = "#191919";
             }
@@ -571,11 +574,14 @@
         }
         else { // turn on
             sunSky = "#eaeaea";
+            
+            theBody.style.background = "#cdcdcd";
+            theBody.style.color = "#444444";
+
             document.getElementById("switch").innerHTML = "&#127774";
             document.getElementById("switch").style.fontSize = "4.5em";
             document.getElementById("switch").style.paddingLeft = "30px";
-            theBody.style.background = "#cdcdcd";
-            theBody.style.color = "#444444";
+            
             for (let i = 0; i < theSections.length; i++) {
                 theSections[i].style.background = "#eaeaea";
             }

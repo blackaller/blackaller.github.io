@@ -14,7 +14,6 @@
         padding:0;
     }
     #switch{
-        background: none;
         -webkit-user-select: none; /* Safari */
         user-select: none; /* Standard syntax */
         cursor: pointer;
@@ -538,25 +537,25 @@
     <div id="switch" onclick="switchLights()">&#127774;</div>
     <script>
     var lightsOn=true;
+    const theSwitch = document.getElementById("switch");
+    const theBody = document.getElementsByTagName("body")[0];
+    const theH1s = document.getElementsByTagName("h1");
+    const theH2s = document.getElementsByTagName("h2");
+    const theH3s = document.getElementsByTagName("h3");
+    const theHeaders = [...theH1s,...theH2s,...theH3s]; 
+    const theSections =document.getElementsByClassName("section");
+    const theDividers =document.getElementsByClassName("divider");
+    const theTexts =document.getElementsByClassName("write-up");
     function switchLights() {
-        document.getElementById("switch").style.background = "none";
-        const theBody = document.getElementsByTagName("body")[0];
-        const theH1s = document.getElementsByTagName("h1");
-        const theH2s = document.getElementsByTagName("h2");
-        const theH3s = document.getElementsByTagName("h3");
-        const theHeaders = [...theH1s,...theH2s,...theH3s]; 
-        const theSections =document.getElementsByClassName("section");
-        const theDividers =document.getElementsByClassName("divider");
-        const theTexts =document.getElementsByClassName("write-up");
         if (lightsOn){ // turn off
             sunSky = "#191919";
            
             theBody.style.background = "#090909";
             theBody.style.color = "#eaeaea";
 
-            document.getElementById("switch").innerHTML = "&#127770;";
-            document.getElementById("switch").style.fontSize = "3.6em";
-            document.getElementById("switch").style.paddingLeft = "35px";
+            theSwitch.innerHTML = "&#127770;";
+            theSwitch.style.fontSize = "3.6em";
+            theSwitch.style.paddingLeft = "35px";
             //document.getElementById("switch").innerHTML = "&#127773;";
             
             for (let i = 0; i < theSections.length; i++) {
@@ -579,9 +578,9 @@
             theBody.style.background = "#cdcdcd";
             theBody.style.color = "#444444";
 
-            document.getElementById("switch").innerHTML = "&#127774";
-            document.getElementById("switch").style.fontSize = "4.5em";
-            document.getElementById("switch").style.paddingLeft = "30px";
+            theSwitch.innerHTML = "&#127774";
+            theSwitch.style.fontSize = "4.5em";
+            theSwitch.style.paddingLeft = "30px";
             
             for (let i = 0; i < theSections.length; i++) {
                 theSections[i].style.background = "#eaeaea";

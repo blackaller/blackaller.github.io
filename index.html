@@ -10,6 +10,20 @@
         color:#444444;
         line-height: 18pt;
         background:#cdcdcd;
+        margin:0;
+        padding:0;
+    }
+    #switch{
+        cursor: pointer;
+        text-align:center;
+        width:48px;
+        height:48px;
+        font-weight:bold;
+        position:fixed;
+        top:0px;
+        margin:0;
+        padding:20px 6px 0 6px;
+        font-size:3.5em;
     }
     h1{
         color:#444444;
@@ -82,6 +96,7 @@
     </style>
     <script type="text/javascript">
     var mover = 0;
+    var sunSky = "#eaeaea";
     function initSun(){
         drawSun();
         setInterval(drawSun,50);
@@ -89,7 +104,7 @@
 
     function drawSun() {
         var sunctx = document.getElementById('sunspot').getContext('2d');
-        sunctx.fillStyle = '#eaeaea';
+        sunctx.fillStyle = sunSky;
         sunctx.fillRect(0,0,640,200);
         sunctx.save();
         sunctx.translate(320,100);
@@ -119,9 +134,8 @@
 </head>
 
 <body onload="initSun();">
-    
+    <div id="switch" onclick="switchLights()">&#127774;</div>
     <div id="wrapper">
-
         <div class="section"id="about"> <!----------------------ABOUT-->
             <div class="header">
                 <h2>Luis E. Blackaller</h2>
@@ -516,10 +530,62 @@
         </div> <!----------------------misc-->
 
 
-
-
-
-
     </div>
+    <script>
+    var lightsOn=true;
+    function switchLights() {
+        const theBody = document.getElementsByTagName("body")[0];
+        const theH1s = document.getElementsByTagName("h1");
+        const theH2s = document.getElementsByTagName("h2");
+        const theH3s = document.getElementsByTagName("h3");
+        const theHeaders = [...theH1s,...theH2s,...theH3s]; 
+        const theSections =document.getElementsByClassName("section");
+        const theDividers =document.getElementsByClassName("divider");
+        const theTexts =document.getElementsByClassName("write-up");
+        if (lightsOn){ // turn off
+            sunSky = "#131313";
+            document.getElementById("switch").innerHTML = "&#127770;";
+            document.getElementById("switch").style.fontSize = "2.8em";
+            //document.getElementById("switch").innerHTML = "&#127773;";
+            theBody.style.background = "#0c0c0c";
+            theBody.style.color = "#eaeaea";
+            for (let i = 0; i < theSections.length; i++) {
+                theSections[i].style.background = "#131313";
+            }
+            for (let i = 0; i < theDividers.length; i++) {
+                theDividers[i].style.background = "#131313";
+            }
+            for (let i = 0; i < theTexts.length; i++) {
+                theTexts[i].style.color = "#868686";
+            }
+            for (let i = 0; i < theHeaders.length; i++) {
+                theHeaders[i].style.color = "#aaa";
+            }
+            //alert(theHeaders.length);
+        }
+        else { // turn on
+            sunSky = "#eaeaea";
+            document.getElementById("switch").innerHTML = "&#127774";
+            document.getElementById("switch").style.fontSize = "3.5em";
+            theBody.style.background = "#cdcdcd";
+            theBody.style.color = "#444444";
+            for (let i = 0; i < theSections.length; i++) {
+                theSections[i].style.background = "#eaeaea";
+            }
+            for (let i = 0; i < theDividers.length; i++) {
+                theDividers[i].style.background = "#eaeaea";
+            }
+            for (let i = 0; i < theTexts.length; i++) {
+                theTexts[i].style.color = "#777777";
+            }
+            for (let i = 0; i < theHeaders.length; i++) {
+                theHeaders[i].style.color = "#444444";
+            }
+        }
+
+        lightsOn = !lightsOn;
+    }
+    </script>
 </body>
+
 </html>

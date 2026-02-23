@@ -62,7 +62,7 @@ var personajes = {
 		},
 	'novia': {
 			'titulo': '-Lo de la novia-',
-			'testimonio': 'Duerme desnuda en su lecho la novia, repleta, consumida, satisfecha. Ese otoño será madre. Afuera la boda pinta de aromas la noche, de guirnaldas de rosas, gardenias, claveles, naranjos y jazmines, de leña quemada y barbacoa de borrego, de miel, de vino de ciruela y de pulque de maguey, la empapa de murmullos, del fuego que baila sin música en la hoguera, de los grillos, tecolotes, macacos y otros bichos que se ocultan en la sombra, de intoxicados necios que resisten el peso del cansancio, no termina de apagarse.' + 
+			'testimonio': 'Duerme la novia desnuda en su lecho, repleta, consumida, satisfecha. Ese otoño será madre. Afuera, la boda no termina de apagarse. Aromas delicados y tenues murmullos empapan la noche, la decoran. Guirnaldas de rosas, gardenias, madreselvas y jazmines, leña quemada y barbacoa de borrego, vino de ciruela y pulque de maguey, grillos, tecolotes, macacos y otros bichos, ocultos en el negro follaje de la madrugada, el fuego que baila sin música en la hoguera, los necios comensales que resisten el peso del cansancio.' + 
 			'<br /><br />' + 
 			'En sueños la novia revive su boda. Las doncellas y los querubines, el baño de leche tibia, la ceremonia, la bendición del decano, el paseo por los jardines, los juegos, la danza, el banquete, la unión: recinto nupcial, batallas de amor: esposo espuma, campo de pluma. Del mar emerge su cuerpo hecho arena, litoral que se abre a la embestida de su amante, tormenta salvaje, un forastero elegante que nadie conoce.' + 
 			'<br /><br />' +

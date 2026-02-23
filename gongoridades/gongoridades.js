@@ -82,7 +82,7 @@ var personajes = {
 		},
 	'castillo': {
 			'titulo': '-Lo del castillo-',
-			'testimonio': 'En su prisión de poder enferma de soledad el príncipe, de aburrimiento que a falta de guerras aplaca con elaboradas campañas de caza, exploración y cetrería.' + 
+			'testimonio': 'Enferma de soledad en su prisión de poder el príncipe, de aburrimiento que a falta de guerras aplaca con elaboradas campañas de caza, exploración y cetrería.' + 
 			'<br /><br />' + 
 			'Un oficial anuncia con su catalejo. Un regalo del mar se aproxima. Es otro navegante solitario que se acerca entre las olas. Un aventurero desconocido con quien ir a cazar, organizar banquetes, y compartir cuentos y canciones de andanzas y hazañas en tierras remotas. El príncipe lo sabe. Pasarán los días, con suerte será semanas, e inevitablemente su huésped querrá echarse a la mar de nuevo, a continuar su saga errante, su peregrinaje sin destino.' + 
 			'<br /><br />' +

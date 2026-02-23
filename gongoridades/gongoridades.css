@@ -23,6 +23,7 @@ body{
 }
 #anaquel{
 	max-width: 100%;
+	min-width:760px;
 	margin:0px;
 	overflow:auto;
 	padding:0px;
@@ -64,6 +65,7 @@ p{
 	font-family: courier new;
 }
 pre{
+	font-size: 1em;
 	tab-size:6;
 	color:#444;
 	margin:0;

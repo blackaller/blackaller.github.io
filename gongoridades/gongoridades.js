@@ -62,11 +62,11 @@ var personajes = {
 		},
 	'novia': {
 			'titulo': '-Lo de la novia-',
-			'testimonio': 'Duerme la novia desnuda en su lecho, repleta, consumida, satisfecha. Ese otoño será madre. Afuera, la boda no termina de apagarse. Aromas delicados y tenues murmullos empapan la noche, la decoran. Guirnaldas de rosas, gardenias, madreselvas y jazmines, leña quemada y barbacoa de borrego, vino de ciruela y pulque de maguey, grillos, tecolotes, macacos y otros bichos, ocultos en el negro follaje de la madrugada, el fuego que baila sin música en la hoguera, los necios comensales que resisten el peso del cansancio.' + 
+			'testimonio': 'Duerme la novia desnuda en su lecho, repleta, consumida, satisfecha. Ese otoño será madre. Afuera, la boda no termina de apagarse. Aromas delicados y tenues murmullos empapan la noche, la decoran. Guirnaldas de rosas, gardenias, madreselvas y jazmines, leña quemada y barbacoa de borrego, vino de ciruela y pulque de agave, grillos, tecolotes, macacos y otros bichos, ocultos en el negro follaje de la madrugada, el fuego que baila sin música en la hoguera, los necios comensales que resisten el peso del cansancio.' + 
 			'<br /><br />' + 
 			'En sueños la novia revive su boda. Las doncellas y los querubines, el baño de leche tibia, la ceremonia, la bendición del decano, el paseo por los jardines, los juegos, la danza, el banquete, la unión: recinto nupcial, batallas de amor: esposo espuma, campo de pluma. Del mar emerge su cuerpo hecho arena, litoral que se abre a la embestida de su amante, tormenta salvaje, un forastero elegante que nadie conoce.' + 
 			'<br /><br />' +
-			'En un lodazal cercano el desposado se bate con sus amigos en duradera lucha. Detrás de la montaña en silencio se avecina el sol.',
+			' Detrás de la montaña se avecina el sol. En un lodazal cercano el desposado se bate con sus amigos en competencia de lucha, sus cuerpos anudados, salamandras en la hiedra que se aferran a la noche.',
 			'imagen': 'https://live.staticflickr.com/65535/51964945226_485fe33364_w.jpg'
 		},
 	'nereidas': {

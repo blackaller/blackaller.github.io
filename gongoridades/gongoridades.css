@@ -97,6 +97,8 @@ pre{
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 }
+@supports (-webkit-overflow-scrolling: touch) {.tapa *: {background-attachment: scroll;}}
+
 .tapa-inner{
 	position:relative;
 }
@@ -204,11 +206,13 @@ pre{
 	padding:1380px 0 0px 0;
 	background:#111;
 	background:url('https://live.staticflickr.com/65535/55100323938_fed106ed87_b.jpg') no-repeat top fixed;
+	background-attachment:scroll;
 	background-size: cover;
 	moz-background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 }
+@supports (-webkit-overflow-scrolling: touch) {.tapa *: {background-attachment: scroll;}}
 
 /*================ los popups ================*/
 #bg-popup{

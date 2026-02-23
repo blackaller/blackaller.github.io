@@ -23,7 +23,6 @@ body{
 }
 #anaquel{
 	max-width: 100%;
-	min-width:760px;
 	margin:0px;
 	overflow:auto;
 	padding:0px;

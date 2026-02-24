@@ -34,14 +34,14 @@ body{
 #libro{
 	margin:auto;
 	padding:0;
-	width:760px;
+	max-width:760px;
 }
 .panel{
 	background:#999; /* color claro */
 	// background:#0c0c0c; /* color oscuro */
 	margin:40px 0 40px 0;
 	padding:40px 0px 120px 100px;
-	width:760px;
+	//width:760px;
 }
 h1{
 	margin:0px;
@@ -64,8 +64,8 @@ h4{
 p{
 	color:#222;
 	font-size: 0.9em;
-	margin:0;
-	padding:20px 40px 20px 0px;
+	margin:0 90px 0 0;
+	padding:20px 0px 20px 0px;
 	font-family: courier new;
 }
 pre{
@@ -77,16 +77,12 @@ pre{
 	font-family: courier new;
 }
 @media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3){
-		p{font-size: 0.4em;}
-		pre{font-size: 0.5em;}
+		p{font-size: 0.7em;}
+		pre{font-size: 0.8em;}
 }
 @media only screen and (max-width: 600px){
-		p{font-size: 0.4em;}
-		pre{font-size: 0.5em;}
-}
-@supports (-webkit-touch-callout: none) {
-		p{font-size: 0.4em;}
-		pre{font-size: 0.5em;}
+		p{font-size: 0.7em;}
+		pre{font-size: 0.8em;}
 }
 
 /*================ los estiki menu ================*/

@@ -77,8 +77,8 @@ pre{
 	font-family: courier new;
 }
 @media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3){
-		p{font-size: 0.7em;}
-		pre{font-size: 0.8em;}
+		p{font-size: 0.4em;}
+		pre{font-size: 0.5em;}
 }
 @media only screen and (max-width: 600px){
 		p{font-size: 0.4em;}

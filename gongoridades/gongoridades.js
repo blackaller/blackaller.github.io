@@ -119,5 +119,9 @@ $("#close-button").click(function() {
 	$("#bg-popup").fadeOut('slow');
 	$("#story-wrapper").fadeOut('slow');
 });
+$("#footer-button").click(function() {
+	$("#bg-popup").fadeOut('slow');
+	$("#story-wrapper").fadeOut('slow');
+});
 
 //-------------------------- muchas gracias

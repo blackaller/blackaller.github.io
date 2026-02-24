@@ -236,7 +236,7 @@ pre{
 	display:none;
 	width:100%;
 	position:fixed;
-	top:90px;
+	top:60px; /* originally 90px */
 	left:0;
 }
 #story-header{

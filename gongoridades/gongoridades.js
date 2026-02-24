@@ -97,7 +97,6 @@ for (var personaje in personajes) {
 };
 */
 
-
 function fillInfo(ID){
 	imageURL = personajes[ID].imagen; 
 	$('#story-pic').css( 'background-image', 'url(' + imageURL + ')' );
@@ -120,4 +119,5 @@ $("#close-button").click(function() {
 	$("#bg-popup").fadeOut('slow');
 	$("#story-wrapper").fadeOut('slow');
 });
+
 //-------------------------- muchas gracias

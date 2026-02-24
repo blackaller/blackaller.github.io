@@ -107,12 +107,12 @@ function fillInfo(ID){
 };
 
 $(".personaje").click(function() {
-	fillInfo($(this).attr('id'));	
+	fillInfo($(this).attr('id'));
 	$("#bg-popup").fadeIn('slow');
 	$("#story-wrapper").fadeIn('slow');
 });
 $(".personaje-arena").click(function() {
-	fillInfo($(this).attr('id').split("-")[0]);	
+	fillInfo($(this).attr('id').split("-")[0]);
 	$("#bg-popup").fadeIn('slow');
 	$("#story-wrapper").fadeIn('slow');
 });

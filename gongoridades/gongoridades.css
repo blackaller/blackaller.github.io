@@ -1,6 +1,7 @@
 *{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
 
 /*================ reset/cleanup of browser css =============*/
+
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
 fieldset,img{border:0;}
@@ -15,6 +16,7 @@ select, input, textarea {font:99% arial,helvetica,clean,sans-serif;}
 // pre, code {font:115% monospace;*font-size:100%;}
 
 /*================ estilos basicos ================*/
+
 body{
 	background:#1a1a1a;
 	margin:0;
@@ -74,8 +76,9 @@ pre{
 }
 
 /*================ los estiki menu ================*/
+
 ::-webkit-scrollbar{
-	display:none;	
+	display:none;
 }
 .tapa{
 	position:relative;
@@ -108,7 +111,9 @@ pre{
 	position:relative;
 	opacity:1;
 }
+
 /*================ la navegación ================*/
+
 .submenu{
 	background:#111;
 	width:100%;
@@ -215,6 +220,7 @@ pre{
 @supports (-webkit-overflow-scrolling: touch) {.tapa *: {background-attachment: scroll;}}
 
 /*================ los popups ================*/
+
 #bg-popup{
 	display:none;
 	position:fixed;

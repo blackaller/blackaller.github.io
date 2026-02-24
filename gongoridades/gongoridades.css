@@ -76,10 +76,10 @@ pre{
 	padding:0px;
 	font-family: courier new;
 }
-@media only screen 
-	and (min-device-width: 375px) 
-	and (max-device-width: 812px) 
-	and (-webkit-min-device-pixel-ratio: 3){
+@media only screen
+	and (width: 390px) 
+	and (height: 844px) 
+	and (-webkit-device-pixel-ratio: 3){
 		p{font-size: 0.7em;}
 		pre{font-size: 0.8em;}
 }

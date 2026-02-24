@@ -81,8 +81,8 @@ pre{
 		pre{font-size: 0.8em;}
 }
 @media only screen and (max-width: 600px){
-		p{font-size: 0.7em;}
-		pre{font-size: 0.8em;}
+		p{font-size: 0.4em;}
+		pre{font-size: 0.5em;}
 }
 
 /*================ los estiki menu ================*/

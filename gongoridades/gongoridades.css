@@ -80,7 +80,7 @@ pre{
 		p{font-size: 0.7em;}
 		pre{font-size: 0.8em;}
 }
-@media only screen and (max-width: 600px){
+@media only screen (-webkit-device-pixel-ratio: 3){
 		p{font-size: 0.7em;}
 		pre{font-size: 0.8em;}
 }

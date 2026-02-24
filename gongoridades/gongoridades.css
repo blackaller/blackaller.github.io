@@ -81,11 +81,15 @@ pre{
 		p{font-size: 0.7em;}
 		pre{font-size: 0.8em;}
 }
-@media only screen (-webkit-device-pixel-ratio: 3){
+@media only screen and (-webkit-device-pixel-ratio: 3){
 		p{font-size: 0.7em;}
 		pre{font-size: 0.8em;}
 }
 */
+@media not (device-width: 768px) and (hover:none){
+		p{font-size: 0.7em;}
+		pre{font-size: 0.8em;}
+}
 
 /*================ los estiki menu ================*/
 

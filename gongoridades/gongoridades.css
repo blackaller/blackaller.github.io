@@ -76,6 +76,10 @@ pre{
 	padding:0px;
 	font-family: courier new;
 }
+@supports (-webkit-touch-callout: none ) and (-webkit-device-pixel-ratio: 3){
+	p{font-size: 0.7em;}
+	pre{font-size: 0.8em;}
+}
 
 /*================ los estiki menu ================*/
 

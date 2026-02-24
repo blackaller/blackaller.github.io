@@ -101,6 +101,7 @@ pre{
 }
 
 @supports (-webkit-overflow-scrolling: touch) {.tapa{background-attachment:scroll;}}
+@supports (-webkit-touch-callout: none) {.tapa{background-attachment:scroll;}}
 
 .tapa-inner{
 	position:relative;
@@ -218,6 +219,7 @@ pre{
 	-o-background-size: cover;
 }
 @supports (-webkit-overflow-scrolling: touch) {#arena{background-attachment: scroll;}}
+@supports (-webkit-touch-callout: none) {#arena{background-attachment:scroll;}}
 
 /*================ los popups ================*/
 

@@ -86,9 +86,13 @@ pre{
 		pre{font-size: 0.8em;}
 }
 */
-@media not (device-width: 768px) and (hover:none){
+@media (hover:none){
 		p{font-size: 0.7em;}
 		pre{font-size: 0.8em;}
+}
+@media (hover:none) and (device-width: 768px) {
+		p{font-size: 0.9em;}
+		pre{font-size: 1.0em;}
 }
 
 /*================ los estiki menu ================*/

@@ -7,6 +7,7 @@ Aclaraciones, recomendaciones, y requerimientos:
 * Dimensiones mínimas de la ventana del navegador: 1280 x 1024 pixeles
 * Debido a un defecto de programación se recomienda no ajustar las dimensiones de la ventana una vez que ha sido cargado el sitio. La barra de navegación tiende a reposicionarse y a veces desaparece
 * Evitar dispositivos móbiles. Por lo pronto el sitio no funciona en ellos
+* Elementos de navegación secretos se han ocultado en el cuerpo del texto
 * Este prototipo se encuentra en desarrollo. Estado actual: pre-alpha
 * Próximamante disponible en https://gongoridades.com
 

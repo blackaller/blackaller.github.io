@@ -147,7 +147,7 @@ $(".personaje").click(function() {
 	$("#bg-popup").fadeIn('slow');
 	$("#story-wrapper").fadeIn('slow');
 });
-$(".personaje-arena").click(function() {
+$(".personaje-dos").click(function() {
 	fillInfo($(this).attr('id').split("-")[0]);
 	$("#bg-popup").fadeIn('slow');
 	$("#story-wrapper").fadeIn('slow');

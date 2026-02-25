@@ -4,7 +4,7 @@ Una invitación a explorar las Soledades de Góngora
 Aclaraciones, recomendaciones, y requerimientos:
 * Hacer uso de una computadora, es decir, un ordenador
 * Navegadores recomendados: Safari, Google Chrome, o Firefox
-* La ventana del navegador debe contar con una altura mínima de 1414 pixeles
+* Dimensiones mínimas de la ventana del navegador: 1280 x 1024 pixeles
 * Debido a un defecto de programación se recomienda no ajustar las dimensiones de la ventana una vez que ha sido cargado el sitio. La barra de navegación tiende a reposicionarse y a veces desaparece
 * Evitar dispositivos móbiles. Por lo pronto el sitio no funciona en ellos
 * Este prototipo se encuentra en desarrollo. Estado actual: pre-alpha

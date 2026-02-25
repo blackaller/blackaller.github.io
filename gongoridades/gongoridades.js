@@ -2,7 +2,6 @@
 //-------------------------- los esticki menus
 	if(!$(".stick").length)return;
 	$(function(){
-
 		var el=$(".stick");
 		var above=$(".tapa");
 		var top = $(el).offset().top;
@@ -35,10 +34,16 @@ $("a[href*=#]").click(function(e){
 	if(s.length){ //------------- bump below the submenu a bit more
 		t-=s.height()+20;
 	}
-	$("html,body").animate({
-		scrollTop:t
-	})
+	//console.log(hsh + ', t=' + t);
+	//$("html,body").animate({scrollTop:t});//------------- default
+	//------------- scroll speed as a function of scroll distance. baby steps, much to do there
+	if(t<3000){
+				$("html,body").animate({scrollTop:t}, 400 + (t/100));
+			}else{
+				$("html,body").animate({scrollTop:t}, 400 + (t/10));
+			}
 	return false;
+	
 });
 
 //-------------------------- los popups

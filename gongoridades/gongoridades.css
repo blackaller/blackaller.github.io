@@ -330,12 +330,17 @@ pre{
 	height:20px;
 	margin-top:23%;
 }
+
+#story-panel #story-information h2{
+	font-size:1.4em;
+}
+
 #story-panel #story-information{
 	float:right;
 	width:85%;
 	margin:20px; 
 	padding:30px 0 60px 0;
-	font-size:1.0em; /* was 1.1em */
+	font-size:0.95em; /* was 1.1em */
 }
 
 #story-panel #story-pic{

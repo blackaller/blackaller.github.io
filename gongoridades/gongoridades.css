@@ -260,7 +260,7 @@ pre{
 	-o-background-size: cover;
 }
 
-@supports (-webkit-touch-callout: none) {#arena{background-attachment:scroll;}}
+@supports (-webkit-touch-callout: none) {#arena{background-attachment:scroll;} #intermedio{background-attachment:scroll;}}
 
 /*================ los popups ================*/
 

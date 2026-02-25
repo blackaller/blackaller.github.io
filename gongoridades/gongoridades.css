@@ -1,5 +1,11 @@
 *{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
 
+/*================================imágenes disponibles============================
+maguey: https://live.staticflickr.com/65535/55116171375_612bb122e2_h.jpg
+bosque: https://live.staticflickr.com/65535/55100350968_15d2236cc5_o.jpg
+islote: https://live.staticflickr.com/65535/55100323938_fed106ed87_b.jpg
+==================================================================================*/
+
 /*================ reset/cleanup of browser css =============*/
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
@@ -229,9 +235,25 @@ pre{
 	color:#aaa;
 	font-size:2.4em;
 	margin:0;
-	padding:1380px 0 0px 0; /* originally 1380 */
+	padding:1300px 0 80px 0; /* originally 1380 */
 	background:#111;
 	background:url('https://live.staticflickr.com/65535/55100323938_fed106ed87_b.jpg') no-repeat top fixed;
+	background-size: cover;
+	moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+
+#intermedio{
+	box-sizing:border-box;
+	width:100%;
+	text-align:center;
+	color:#aaa;
+	font-size:2.4em;
+	margin:0;
+	padding:240px 0px 240px 0px;
+	background:#111;
+	background:url('https://live.staticflickr.com/65535/55116171375_612bb122e2_h.jpg') no-repeat top fixed;
 	background-size: cover;
 	moz-background-size: cover;
 	-webkit-background-size: cover;

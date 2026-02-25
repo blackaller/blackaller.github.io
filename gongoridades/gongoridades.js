@@ -46,7 +46,39 @@ $("a[href*=#]").click(function(e){
 	
 });
 
-//-------------------------- los popups
+//-------------------------- los paisajes
+
+/*================================imágenes disponibles============================
+maguey: https://live.staticflickr.com/65535/55116171375_612bb122e2_h.jpg
+bosque: https://live.staticflickr.com/65535/55100350968_15d2236cc5_o.jpg
+islote: https://live.staticflickr.com/65535/55100323938_fed106ed87_b.jpg
+==================================================================================*/
+
+var paisajes = [
+		{	
+			'nombre': 'maguey',
+			'imagen': 'https://live.staticflickr.com/65535/55116171375_612bb122e2_h.jpg'
+		},
+		{
+			'nombre': 'bosque',
+			'imagen': 'https://live.staticflickr.com/65535/55100350968_15d2236cc5_o.jpg'
+		},
+		{
+			'nombre': 'islote',
+			'imagen': 'https://live.staticflickr.com/65535/55100323938_fed106ed87_b.jpg'
+		}
+];
+
+function fillBackgrounds(){
+	const revueltos = paisajes.sort(function() { return .5 - Math.random();});
+	const elUltimoDeLaFila = revueltos.length - 1;
+	$('.tapa').css( 'background-image', 'url(' + revueltos[0].imagen + ')' );
+	$('#intermedio').css( 'background-image', 'url(' + revueltos[1].imagen + ')' );
+	$('#arena').css( 'background-image', 'url(' + revueltos[elUltimoDeLaFila].imagen + ')' );
+};
+fillBackgrounds();
+
+//-------------------------- los relatos
 var personajes = {
 	'cabrero': {
 			'titulo': '-Lo del cabrero-',

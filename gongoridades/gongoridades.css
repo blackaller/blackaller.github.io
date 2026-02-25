@@ -250,13 +250,18 @@ pre{
 	background:rgba(0,0,0,0.8);
 	width:100%;
 	height:100%;
+	z-index:1000;
 }
 #story-wrapper{
 	display:none;
 	width:100%;
 	position:fixed;
-	top:60px; /* originally 90px */
-	left:0;
+	/*top:60px;*/ /* originally 90px, and 60px was good */
+	/*left:0px;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:1001;
 }
 #story-header{
 	position:relative;
@@ -297,8 +302,8 @@ pre{
 	background:#222;
 	border:2px solid #ddd;
 	position:absolute;
-	/* right:-20px; top:40px; */ /* top right corner */
-	left: 50%; top:40px;  /* top center */
+	right:-20px; top:40px; /* top right corner */
+	/* left: 50%; top:40px;*/ /* top center */
 	box-shadow: -5px 5px 20px 0 rgba(0,0,0,0.4);
 }
 #story-header #close-button img{

@@ -392,4 +392,117 @@ pre{
 	padding:0;
 }
 
+/*================ top modal ================*/
+
+#top-modal{
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.85);
+	width:100%;
+	height:100%;
+	z-index:1000;
+}
+#modal-wrapper{
+	display:block;
+	width:50%;
+	max-width:660px;
+	position:fixed;
+	/*top:60px;*/ /* originally 90px, and 60px was good */
+	/*left:0px;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:1001;
+}
+#modal-header{
+	position:relative;
+	height:60px;
+	margin:auto;
+	z-index:2;
+}
+#modal-panel{
+	position:relative;
+	margin:auto;
+	overflow:auto;
+	box-shadow: 0 5px 30px 0 rgba(0,0,0,0.9);
+	background:#999;
+	color:#444;
+}
+#modal-footer{
+	position:relative;
+	height:50px;
+	margin:auto;
+	z-index:2;
+}
+#modal-header #modal-close-button{
+	box-sizing: border-box;
+	text-align:center;
+	cursor:pointer;
+	width:40px;
+	height:40px;
+	border-radius:20px;
+	background:#222;
+	border:2px solid #ddd;
+	position:absolute;
+	right:-20px; top:40px; /* top right corner */
+	/* left: 50%; top:40px;*/ /* top center */
+	box-shadow: -5px 5px 20px 0 rgba(0,0,0,0.4);
+}
+#modal-header #modal-close-button img{
+	width:20px;
+	height:20px;
+	margin-top:23%;
+}
+#modal-footer #modal-footer-button{
+	box-sizing: border-box;
+	text-align:center;
+	cursor:pointer;
+	width:40px;
+	height:40px;
+	border-radius:20px;
+	background:#222;
+	border:2px solid #ddd;
+	position:absolute;
+	/* right:-20px; top:40px; */ /* top right corner */
+	left: 50%; top:-20px; /* top center */
+	box-shadow: -5px 5px 20px 0 rgba(0,0,0,0.4);
+}
+#modal-footer #modal-footer-button img{
+	width:20px;
+	height:20px;
+	margin-top:23%;
+}
+
+#modal-panel #modal-information h2{
+	font-size:1.4em;
+}
+
+#modal-panel #modal-information{
+	margin:20px; 
+	padding:30px 0 30px 0;
+	font-size:1.95em; /* was 1.1em */
+	text-align:center;
+}
+
+#modal-information .modal-info-button{
+	text-decoration: none;
+	font-size: 2.6em;
+	padding:20px;
+	cursor:pointer;
+}
+
+
+#modal-panel #modal-pic{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	float:left;
+	width:160px;
+	height:160px;
+	background:#222;
+	margin:40px  0 40px 40px;
+	border-radius:110px;
+	/* border:4px solid deeppink;  */
+}
 /*================ muchas gracias ================*/

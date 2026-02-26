@@ -7,6 +7,26 @@
 	<link rel="stylesheet" href="gongoridades.css" />
 </head>
 <body>
+<div id="top-modal"></div>
+<div id="modal-wrapper">
+	<div id="modal-header">
+		<div id="modal-close-button"><img src="equis_35px.png"></div><!--top right button-->
+	</div>
+	<div id="modal-panel">
+		<div id="modal-information">
+			<span class="modal-info-button" id="tecolote">🦉</span>
+			<span class="modal-info-button" id="alacrán">🦂</span>
+			<span class="modal-info-button" id="perezoso">🦥</span>
+			<span class="modal-info-button" id="lagartija">🦎</span>
+			<span class="modal-info-button" id="hojarasca">🍂</span>
+			<span class="modal-info-button" id="guajolote">🦃</span>
+			<span class="modal-info-button" id="mosca">🪰</span>
+		</div>
+	</div>
+	<div id="modal-footer">
+		<!--<div id="modal-footer-button"><img src="equis_35px.png"></div>--><!--bottom center button-->
+	</div>
+</div>
 <div id="anaquel">
 		<div class="tapa">
 			<div id="cubierta" style="text-align:left; color:white; margin:auto; background:none; width:70%; height:100%; text-align:left;">
@@ -16,7 +36,7 @@
 				<p style="color:#999; font-size:0.54em;">
 					El poema de Góngora es un laberinto repleto de acertijos, ensoñación, y misterio. En forma similar al hilo de Ariadne, a las migajas de pan de Hansel y Gretel, o al Gato de Chesire de Alicia, los personajes que habitan el paisaje de las Soledades orientan —o desorientan— al extranjero errante a lo largo de su peregrinaje, y ofrecen camino a la especulación del lector, sus nombres palabras clave que conducen a otros laberintos y a otros acertijos.
 				</p>
-				<p style="width:100%; text-align:center;">
+				<p id="atajos" style="width:100%; text-align:center;">
 					<a href="#cabrero" style="text-decoration:none">🐐</a>
 					<a href="#serrano" style="text-decoration:none">👴🏽</a>
 					<a href="#novia" style="text-decoration:none">👰🏽‍♀️</a>
@@ -26,8 +46,10 @@
 				<p style="color:#999; font-size:0.54em;">
 					Cinco microrrelatos escapan del cuento de Góngora en manos de algunos personajes que han llamado la atención del peregrino. Para encontrarlos es necesaria la observación detenida de las veinte centenas de versos que componen el poema, presentado a continuación en su totalidad.
 				</p>
+				<p id="mensaje" style="color:#999; font-size:0.54em;">
+				</p>
 				<p style="color:#999; font-size:0.54em; text-align:right;">
-					Luis E. Blackaller, primero de marzo 2026.
+					Luis E. Blackaller, tres de marzo de 2026.
 				</p>
 			</div>
 		</div>
@@ -1386,6 +1408,7 @@ al duque de Béjar</h4>
 		<span class="personaje-dos" id="novia-intermedio">👰🏽‍♀️</span>
 		<span class="personaje-dos" id="nereidas-intermedio">🧜🏽‍♀️</span>
 		<span class="personaje-dos" id="castillo-intermedio">🏰</span>
+		<span class="personaje-dos" id="mi-atajo-intermedio"></span>
 	</p>
 </div><!--arena-->
 
@@ -2470,6 +2493,7 @@ al duque de Béjar</h4>
 		<span class="personaje-dos" id="novia-arena">👰🏽‍♀️</span>
 		<span class="personaje-dos" id="nereidas-arena">🧜🏽‍♀️</span>
 		<span class="personaje-dos" id="castillo-arena">🏰</span>
+		<span class="personaje-dos" id="mi-atajo-arena"></span>
 	</p>
 </div><!--arena-->
 </div><!--anaquel-->
@@ -2487,7 +2511,6 @@ al duque de Béjar</h4>
 		<div id="footer-button"><img src="equis_35px.png"></div><!--bottom center button-->
 	</div>
 </div>
-
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="gongoridades.js"></script>

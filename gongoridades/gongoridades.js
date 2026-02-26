@@ -161,4 +161,36 @@ $("#footer-button").click(function() {
 	$("#story-wrapper").fadeOut('slow');
 });
 
+//-------------------------- modal
+
+$("#modal-close-button").click(function() {
+	$("#top-modal").fadeOut('slow');
+	$("#modal-wrapper").fadeOut('slow');
+	$('#mensaje').html( 'En este pergamino electrónico eres tú quien se encarga de navegar, de naufragar, de andar sin rumbo, y de perderse.');	
+});
+$("#modal-footer-button").click(function() {
+	$("#top-modal").fadeOut('slow');
+	$("#modal-wrapper").fadeOut('slow');
+});
+$(".modal-info-button").click(function() {
+	$("#top-modal").fadeOut('slow');
+	$("#modal-wrapper").fadeOut('slow');
+	$('#mensaje').html( 'En este pergamino electrónico eres tú, ' + $(this).html() +' '+ $(this).attr('id') +', quien se encarga de navegar, de naufragar, de andar sin rumbo, y de perderse.');
+
+	/****** necesito averiguar como pegarle el scroll click event a estos elementos después de haberlos generado. mientras tanto los escondo
+	$('#atajos').append('<a href="#' + $(this).attr('id') + '" style="text-decoration:none"> ' + $(this).html() +' </a>');
+	*/
+	/******
+	<a id="mi-atajo" href="#" style="text-decoration:none"></a>
+	$('#mi-atajo').html($(this).html());
+	$('#mi-atajo').attr('href', '#' + $(this).attr('id'));
+	*/
+	/******
+	$('#mi-atajo-intermedio').html($(this).html());
+	$('#mi-atajo-intermedio').attr('id', $(this).attr('id'));
+	$('#mi-atajo-arena').html($(this).html());
+	$('#mi-atajo-arena').attr('id', $(this).attr('id'));
+	*/
+});
+
 //-------------------------- muchas gracias

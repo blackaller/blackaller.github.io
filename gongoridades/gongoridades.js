@@ -133,13 +133,29 @@ for (var personaje in personajes) {
 	console.log(personajes[personaje]);
 };
 */
+let animalito = "";
+let min = 5;
+let max = 85;
+let randomito = 70;
+
+// max right 90%
+// max top 85%
 
 function fillInfo(ID){
 	imageURL = personajes[ID].imagen; 
+	$("#mi-animalito").fadeIn('slow');
 	$('#story-pic').css( 'background-image', 'url(' + imageURL + ')' );
 	$('#story-pic').css( 'background-position', 'center' );
 	$('#story-pic').css( 'background-size', 'cover' );
 	$('#story-information').html( '<h2>' + personajes[ID].titulo + '</h2>' + '<p style="font-size:1.1em; color:#444;">' + personajes[ID].testimonio + '</p>');
+	$('#mi-animalito').css( 'font-size', '3.6em' );
+	$('#mi-animalito').css( 'cursor', 'pointer' );
+	$('#mi-animalito').css( 'position', 'absolute' );
+	randomito = Math.floor(Math.random() * ((max+5) - min + 1)) + min;
+	$('#mi-animalito').css( 'right', randomito +'%' );
+	randomito = Math.floor(Math.random() * (max - min + 1)) + min;
+	$('#mi-animalito').css( 'top', randomito +'%' );
+	$('#mi-animalito').html(animalito);
 };
 
 $(".personaje").click(function() {
@@ -160,6 +176,9 @@ $("#footer-button").click(function() {
 	$("#bg-popup").fadeOut('slow');
 	$("#story-wrapper").fadeOut('slow');
 });
+$("#mi-animalito").click(function() {
+	$("#mi-animalito").fadeOut('slow');
+});
 
 //-------------------------- modal
 
@@ -176,6 +195,7 @@ $(".modal-info-button").click(function() {
 	$("#top-modal").fadeOut('slow');
 	$("#modal-wrapper").fadeOut('slow');
 	$('#mensaje').html( 'En este pergamino electrónico eres tú, ' + $(this).html() +' '+ $(this).attr('id') +', quien se encarga de navegar, de naufragar, de andar sin rumbo, y de perderse.');
+	animalito = $(this).html();
 
 	/****** necesito averiguar como pegarle el scroll click event a estos elementos después de haberlos generado. mientras tanto los escondo
 	$('#atajos').append('<a href="#' + $(this).attr('id') + '" style="text-decoration:none"> ' + $(this).html() +' </a>');

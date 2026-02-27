@@ -1,5 +1,6 @@
+/*=================================== sticky menus ========================*/
+
 (function(){
-//-------------------------- los esticki menus
 	if(!$(".stick").length)return;
 	$(function(){
 		var el=$(".stick");
@@ -23,7 +24,8 @@
 
 })();
 
-//-------------------------- smooth scrolling of anchor elements
+/*==================== smooth scrolling of anchor elements ===================*/
+
 $("a[href*=#]").click(function(e){
 	var hsh=$(this).attr("href");
 	var el=$(hsh.substring(hsh.indexOf("#"))); //-------------assume anchor is a real obj on page
@@ -46,9 +48,9 @@ $("a[href*=#]").click(function(e){
 	
 });
 
-//-------------------------- los paisajes
+/*=============================== los paisajes ===========================*/
 
-/*================================imágenes disponibles============================
+/*=============================== imágenes disponibles ===========================
 maguey: https://live.staticflickr.com/65535/55116171375_612bb122e2_h.jpg
 bosque: https://live.staticflickr.com/65535/55100350968_15d2236cc5_o.jpg
 islote: https://live.staticflickr.com/65535/55100323938_fed106ed87_b.jpg
@@ -78,7 +80,8 @@ function fillBackgrounds(){
 };
 fillBackgrounds();
 
-//-------------------------- los relatos
+/*=============================== los microrrelatos ===========================*/
+
 var personajes = {
 	'cabrero': {
 			'titulo': '-Lo del cabrero-',
@@ -133,6 +136,7 @@ for (var personaje in personajes) {
 	console.log(personajes[personaje]);
 };
 */
+
 let animalito = "";
 let min = 5;
 let max = 85;
@@ -180,7 +184,8 @@ $("#mi-animalito").click(function() {
 	$("#mi-animalito").fadeOut('slow');
 });
 
-//-------------------------- modal
+
+/*=============================== constructor modal ===========================*/
 
 $("#modal-close-button").click(function() {
 	$("#top-modal").fadeOut('slow');
@@ -197,7 +202,10 @@ $(".modal-info-button").click(function() {
 	$('#mensaje').html( 'En este pergamino electrónico eres tú, ' + $(this).attr('id') +' '+ $(this).html() +', quien se encarga de navegar, de naufragar, de andar sin rumbo, y de perderse.');
 	animalito = $(this).html();
 
-	/****** necesito averiguar como pegarle el scroll click event a estos elementos después de haberlos generado. mientras tanto los escondo
+	/****** 
+	Necesito averiguar como pegarle el scroll click event a estos elementos después de haberlos generado. Mientras tanto los escondo.
+	*/
+	/******
 	$('#atajos').append('<a href="#' + $(this).attr('id') + '" style="text-decoration:none"> ' + $(this).html() +' </a>');
 	*/
 	/******
@@ -213,4 +221,6 @@ $(".modal-info-button").click(function() {
 	*/
 });
 
-//-------------------------- muchas gracias
+/*=============================== muchas gracias ===========================*/
+
+console.log('¡Muchas gracias!');

@@ -2,14 +2,14 @@ Gongoridades de Luis E. Blackaller
 Una invitación a explorar las Soledades de Góngora
 
 Aclaraciones, recomendaciones, y requerimientos:
-* Hacer uso de una computadora, es decir, un ordenador
-* Navegadores recomendados: Safari, Google Chrome, o Firefox
-* Dimensiones mínimas de la ventana del navegador: 1280 x 1024 pixeles
-* Debido a un defecto de programación se recomienda no ajustar las dimensiones de la ventana una vez que ha sido cargado el sitio. La barra de navegación tiende a reposicionarse y a veces desaparece
-* Evitar dispositivos móbiles. Por lo pronto el sitio no funciona en ellos
-* Elementos de navegación secretos se han ocultado en el cuerpo del texto
-* Este prototipo se encuentra en desarrollo. Estado actual: pre-alpha
-* Próximamante disponible en https://gongoridades.com
+* Hacer uso de una computadora, es decir, un ordenador.
+* Navegadores recomendados: Safari, Google Chrome, o Firefox.
+* Dimensiones mínimas de la ventana del navegador: 1280 x 1024 pixeles.
+* Debido a un defecto de programación se recomienda no ajustar las dimensiones de la ventana una vez que ha sido cargado el sitio. La barra de navegación tiende a reposicionarse y a veces desaparece. Asimismo, ciertas dimensiones extremas en la ventana del navegador pueden limitar la visibilidad de algunos elementos en la portada del sitio y en las vistas de los microrrelatos.
+* Evitar dispositivos móbiles. Por lo pronto el sitio no funciona en ellos.
+* Elementos de navegación secretos se han ocultado en el cuerpo del texto.
+* Este prototipo se encuentra en desarrollo. Estado actual: pre-alpha.
+* Próximamante https://gongoridades.com
 
 #####++#######################################+#########################+###+++#++#+++++#++++#+++#++++#++++++++++++++++++++++++++++++
 +############################+######++##################+#################+#+##++++#++#++++++++++++#+++++++++++++++++++++++++++++++++

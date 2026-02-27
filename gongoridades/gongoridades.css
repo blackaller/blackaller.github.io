@@ -126,6 +126,16 @@ pre{
 	-o-background-size: cover;
 }
 
+#cubierta{
+	text-align:left;
+	color:white;
+	margin:auto;
+	background:none;
+	width:100%; /* used to be 70% */
+	height:100%;
+	text-align:left;"
+}
+
 @supports (-webkit-touch-callout: none) {.tapa{background-attachment:scroll;}}
 
 .tapa-inner{

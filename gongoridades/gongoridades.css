@@ -112,7 +112,7 @@ pre{
 	/*max-width:715px;*/
 	// min-height:500px;
 	margin:auto;
-	padding-top:6%;
+	padding-top:0%; /* used to be 6%, and found a better place to take care of this*/
 	text-align:left;
 	color:#111;
 	font-weight:normal;
@@ -130,10 +130,12 @@ pre{
 	text-align:left;
 	color:white;
 	margin:auto;
+	padding-top:calc(4vh + 2vw) ; /* 4vw, 8vh */
 	background:none;
 	width:80%; /* used to be 70% */
 	height:100%;
-	text-align:left;"
+	text-align:left;
+	overflow:scroll; /* this for now solves the problem of hidden text within here when presented with certain very wide window sizes */
 }
 
 @supports (-webkit-touch-callout: none) {.tapa{background-attachment:scroll;}}

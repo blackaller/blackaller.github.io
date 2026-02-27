@@ -419,7 +419,7 @@ pre{
 #modal-wrapper{
 	display:block;
 	width:50%;
-	max-width:660px;
+	max-width:550px;
 	position:fixed;
 	/*top:60px;*/ /* originally 90px, and 60px was good */
 	/*left:0px;*/
@@ -427,12 +427,14 @@ pre{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index:1001;
+	//background:green;
 }
 #modal-header{
 	position:relative;
 	height:60px;
 	margin:auto;
 	z-index:2;
+	//background:red;
 }
 #modal-panel{
 	position:relative;
@@ -447,6 +449,7 @@ pre{
 	height:50px;
 	margin:auto;
 	z-index:2;
+	//background:blue;
 }
 #modal-header #modal-close-button{
 	box-sizing: border-box;

@@ -131,6 +131,7 @@ pre{
 	color:white;
 	margin:auto;
 	padding-top:calc(4vh + 2vw) ; /* 4vw, 8vh */
+	padding-bottom:calc(4vh + 2vw) ; /* 4vw, 8vh */
 	background:none;
 	width:80%; /* used to be 70% */
 	height:100%;

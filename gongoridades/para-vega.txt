@@ -2,7 +2,7 @@ Los Ángeles, Alta California, a tres de marzo de 2026.
 
 Querida Vega,
 
-Entiendo que para evaluar mi trabajo con efectividad deberás leer los cinco microrrelatos que compuse a manera de expansión dentro del universo de las Soledades, y me quiero asegurar que los puedas encontrar, porque parte de mi concepto de diseño interactivo para este sitio hace uso precisamente del estilo Gongorino, o Culterano, para ocultar lo que se dice detrás de múltiples capas que solo una lectura paciente y dedicada puede de revelar.
+Entiendo que para evaluar mi trabajo con efectividad deberás leer los cinco microrrelatos que compuse a manera de expansión dentro del universo de las Soledades, y me quiero asegurar que los puedas encontrar, porque parte de mi concepto de diseño interactivo para este sitio hace uso precisamente del estilo Gongorino, o Culterano, para ocultar lo dicho detrás de mecanismos de ofuscación que solo una lectura paciente y dedicada puede revelar.
 
 Por esta razón me he permitido detallar para ti un esquema de navegación que te llevará directamente a una sección del sitio con acceso directo a todos los microrrelatos. Lo demás te lo dejo al gusto si es que deseas continuar jugando con las contradicciones y sorpresas que he puesto en el diseño de esta maquinita.
 
@@ -18,11 +18,11 @@ Por esta razón me he permitido detallar para ti un esquema de navegación que t
 4. INTERMEDIO:
 	 En el centro de la sección intermedia entre la primera y segunda Soledad encontrarás localizados los cinco iconos de mis personajes. Haz click en cada uno de ellos para activar el microrrelato correspondiente. Si encuentras que tu nahual ofusca tu lectura, simplemente hazle click y te dejará de estorbar.
 
-Otra manera de hacer lectura aislada de los microrrelatos es en el código fuente. Para esto simplemente abre el documento «gongoridades.js» y busca la variable «personajes» donde construyo los elementos que habrán de generar la ventana de cada microrrelato en el sitio.
+Otra manera de hacer lectura aislada de los microrrelatos es en el código fuente. Para esto simplemente abre el documento «gongoridades.js» y busca la variable «personajes» donde construyo los elementos que habrán de generar la presentación de cada microrrelato.
 
-En lo personal, la construcción de este sitio ha sido un ejercicio apasionante de lectura del poema como laberinto, como bitácora, y como mapa. Siento que, desde un punto de vista literario, puede hacerse un doctorado entero alrededor del desarrollo de herramientas interactivas para explorar y conversar con textos como las Soledades de Góngora. Definitivamente me siento inspirado a continuar alimentando este pequeño sitio web en el futuro.
+En lo personal, la construcción de este sitio ha sido un ejercicio apasionante de lectura del poema como laberinto, como bitácora, y como mapa. Siento que, desde un punto de vista literario, puede hacerse un doctorado entero alrededor del desarrollo de herramientas interactivas para explorar y conversar con textos como las Soledades de Góngora. Me siento inspirado a continuar alimentando este pequeño sitio web en el futuro.
 
-Espero que lo disfrutes y que te pierdas un poquito entre los versos de Góngora y el territorio de sus Soledades.
+Espero que lo disfrutes y que te pierdas un poquito entre los versos de Góngora y el territorio de sus Soledades conmigo.
 
 Muchas gracias por todo,
 

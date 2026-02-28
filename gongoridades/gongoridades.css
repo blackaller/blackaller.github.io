@@ -357,7 +357,7 @@ pre{
 	border:2px solid #ddd;
 	position:absolute;
 	/* right:-20px; top:40px; */ /* top right corner */
-	left: 50%; top:-20px; /* top center */
+	left: calc(50% - 20px); top:-20px; /* top center */
 	box-shadow: -5px 5px 20px 0 rgba(0,0,0,0.4);
 }
 #story-footer #footer-button img{
@@ -484,7 +484,7 @@ pre{
 	border:2px solid #ddd;
 	position:absolute;
 	/* right:-20px; top:40px; */ /* top right corner */
-	left: 50%; top:-20px; /* top center */
+	left: calc(50% - 20px); top:-20px; /* top center */
 	box-shadow: -5px 5px 20px 0 rgba(0,0,0,0.4);
 }
 #modal-footer #modal-footer-button img{

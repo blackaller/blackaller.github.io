@@ -2,6 +2,8 @@ Los Ángeles, Alta California, a tres de marzo de 2026.
 
 Querida Vega,
 
+Puedes visitar Gongoridades en el siguiente url: «https://blackaller.github.io/gongoridades/». También recibirás una carpeta con el sitio completo, con el propósito de que lo explores en forma local si así lo deseas.
+
 Entiendo que para evaluar mi trabajo con efectividad deberás leer los cinco microrrelatos que compuse a manera de expansión dentro del universo de las Soledades, y me quiero asegurar que los puedas encontrar, porque parte de mi concepto de diseño interactivo para este sitio hace uso precisamente del estilo Gongorino, o Culterano, para ocultar lo dicho detrás de mecanismos de ofuscación que solo una lectura paciente y dedicada puede revelar.
 
 Por esta razón me he permitido detallar para ti un esquema de navegación que te llevará directamente a una sección del sitio con acceso directo a todos los microrrelatos. Lo demás te lo dejo al gusto si es que deseas continuar jugando con las contradicciones y sorpresas que he puesto en el diseño de esta maquinita.

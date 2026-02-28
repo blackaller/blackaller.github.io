@@ -1,7 +1,9 @@
-Gongoridades de Luis E. Blackaller
+Gongoridades por Luis E. Blackaller
 Una invitación a explorar las Soledades de Góngora
 
 Aclaraciones, recomendaciones, y requerimientos:
+
+* Disponible en https://blackaller.github.io/gongoridades/
 * Hacer uso de una computadora, es decir, un ordenador.
 * Navegadores recomendados: Safari, Google Chrome, o Firefox.
 * Dimensiones mínimas de la ventana del navegador: 1280 x 1024 pixeles.
@@ -10,7 +12,7 @@ Aclaraciones, recomendaciones, y requerimientos:
 * Elementos de navegación secretos se han ocultado en el cuerpo del texto.
 * Este prototipo se encuentra en desarrollo. Estado actual: pre-alpha.
 * De momento las imágenes están jaladas de mi cuenta de flickr. Es posible que falle su carga. Esto afecta la percepción ambiental del sitio, pero no su funcionalidad.
-* Próximamante https://gongoridades.com
+* Próximamante https://gongoridades.com/
 
 #####++#######################################+#########################+###+++#++#+++++#++++#+++#++++#++++++++++++++++++++++++++++++
 +############################+######++##################+#################+#+##++++#++#++++++++++++#+++++++++++++++++++++++++++++++++

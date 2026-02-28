@@ -18,7 +18,10 @@ Por esta razón me he permitido detallar para ti un esquema de navegación que t
 	En el retrato ascii de Góngora, haz click en la liga que se halla oculta en su mirada.
 
 4. INTERMEDIO:
-	 En el centro de la sección intermedia entre la primera y segunda Soledad encontrarás localizados los cinco iconos de mis personajes. Haz click en cada uno de ellos para activar el microrrelato correspondiente. Si encuentras que tu nahual ofusca tu lectura, simplemente hazle click y te dejará de estorbar.
+	En el centro de la sección intermedia entre la primera y segunda Soledad encontrarás localizados los cinco iconos de mis personajes. Haz click en cada uno de ellos para activar el microrrelato correspondiente. Si encuentras que tu nahual ofusca tu lectura, simplemente hazle click y te dejará de estorbar.
+
+5. FINAL:
+	También puedes navegar hasta abajo del sitio. En el fondo encontrarás acceso a los mismos iconos. El click activará los microrrelatos.
 
 Otra manera de hacer lectura aislada de los microrrelatos es en el código fuente. Para esto simplemente abre el documento «gongoridades.js» y busca la variable «personajes» donde construyo los elementos que habrán de generar la presentación de cada microrrelato.
 

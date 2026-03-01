@@ -136,7 +136,9 @@ pre{
 	width:80%; /* used to be 70% */
 	height:100%;
 	text-align:left;
+	scrollbar-width: none; /* goddamit firefox */
 	overflow:scroll; /* this for now solves the problem of hidden text within here when presented with certain very wide window sizes */
+
 }
 
 @supports (-webkit-touch-callout: none) {.tapa{background-attachment:scroll;}}

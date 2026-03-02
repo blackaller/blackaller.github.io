@@ -130,7 +130,7 @@ p.salutation {
 	text-align: right;
 	padding:8px;
 	padding-right:20px;
-	cursor: pointer;
+	//cursor: pointer;
 	background:#999;
 	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
 	z-index:1002;

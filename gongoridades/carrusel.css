@@ -133,6 +133,7 @@ p.salutation {
 	cursor: pointer;
 	background:#999;
 	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
+	z-index:1002;
 }
 p.salutation:hover {
 	// font-weight:bold;

@@ -199,9 +199,12 @@ $("#modal-footer-button").click(function() {
 $(".modal-info-button").click(function() {
 	$("#top-modal").fadeOut('slow');
 	$("#modal-wrapper").fadeOut('slow');
-	$('#mensaje').html( 'En este pergamino electrónico eres tú, ' + $(this).attr('id') +' '+ $(this).html() +', quien se encarga de navegar, de naufragar, de andar sin rumbo, y de perderse.');
+	$('#mensaje').html( 'En este pergamino electrónico eres tú, <span id="nahual" style="cursor:pointer;">' + $(this).attr('id') +' '+ $(this).html() +'</span>, quien se encarga de navegar, de naufragar, de andar sin rumbo, y de perderse.');
 	animalito = $(this).html();
-
+	// console.log($('#nahual').html());
+	$("#nahual").click(function() {
+		alert($(this).html().split(" ")[1]);
+	});
 	/****** 
 	Necesito averiguar como pegarle el scroll click event a estos elementos después de haberlos generado. Mientras tanto los escondo.
 	*/

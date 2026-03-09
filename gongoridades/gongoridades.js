@@ -126,7 +126,7 @@ var personajes = {
 			'<br /><br />' + 
 			'Un oficial anuncia con su catalejo. Un regalo del mar se aproxima. Es otro navegante solitario que se acerca entre las olas. Un aventurero desconocido con quien ir a cazar, organizar banquetes, y compartir cuentos y canciones de andanzas y hazañas en tierras remotas. El príncipe lo sabe. Pasarán los días, con suerte serán semanas, e inevitablemente su huésped querrá echarse a la mar de nuevo, a continuar su saga errante, su peregrinaje sin destino.' + 
 			'<br /><br />' +
-			'Encadenado en las mazmorras otro peregrino se lamenta, maldice la ocasión que se detuvo a la puerta del pálido castillo. En silencio entre las sombras los otros prisioneros escuchan.',
+			'Encadenado en las mazmorras otro peregrino lamenta haberse detenido a pedir albergue a la puerta del pálido castillo. En silencio entre las sombras los otros prisioneros escuchan.',
 			'imagen': 'https://live.staticflickr.com/65535/51963941262_ce3e323017_w.jpg'
 		}
 };

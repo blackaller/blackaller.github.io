@@ -212,7 +212,7 @@ $(".modal-info-button").click(function() {
 	animalito = $(this).html();
 	// console.log($('#nahual').html());
 	$("#nahual").click(function() {
-		alert('Confunde el Sol y la distancia niega,\nsu orgullo esconde y su memoria pierde '+ $(this).html().split(" ")[1]);
+		alert('Confunde el Sol y la distancia niega,\nsu orgullo esconde y su memoria pierde.\nSombra que ofende, prudencia que muerde,\nreparto de miel, estrella que juega. '+ $(this).html().split(" ")[1]);
 	});
 	/****** 
 	Necesito averiguar como pegarle el scroll click event a estos elementos después de haberlos generado. Mientras tanto los escondo.

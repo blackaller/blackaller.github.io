@@ -26,6 +26,8 @@
 
 /*==================== smooth scrolling of anchor elements ===================*/
 
+let anterior = 2000;
+
 $("a[href*=#]").click(function(e){
 	var hsh=$(this).attr("href");
 	var el=$(hsh.substring(hsh.indexOf("#"))); //-------------assume anchor is a real obj on page
@@ -36,14 +38,21 @@ $("a[href*=#]").click(function(e){
 	if(s.length){ //------------- bump below the submenu a bit more
 		t-=s.height()+20;
 	}
-	//console.log(hsh + ', t=' + t);
+	// console.log('anterior=' + anterior + ', current=' + hsh + ', t=' + t );
 	//$("html,body").animate({scrollTop:t});//------------- default
 	//------------- scroll speed as a function of scroll distance. baby steps, much to do there
-	if(t<3000){
-				$("html,body").animate({scrollTop:t}, 400 + (t/100));
+	$("html,body").animate({scrollTop:t}, 400 + Math.abs(t-anterior)/6);
+
+	/* letting this stay in case I get back to it later
+	if(t!=-86 && t<3000){
+				$("html,body").animate({scrollTop:t}, 400 + (t/5));
 			}else{
 				$("html,body").animate({scrollTop:t}, 400 + (t/10));
 			}
+	*/
+
+	//------------- sets anterior for the next round
+	anterior = t;
 	return false;
 	
 });

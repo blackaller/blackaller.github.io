@@ -211,8 +211,16 @@ $(".modal-info-button").click(function() {
 	$('#mensaje').html( 'En este pergamino electrónico eres tú, <span id="nahual" style="cursor:pointer;">' + $(this).attr('id') +' '+ $(this).html() +'</span>, quien se encarga de navegar, de naufragar, de andar sin rumbo, y de perderse.');
 	animalito = $(this).html();
 	// console.log($('#nahual').html());
+	/****** aquí el cuarteto misterioso del nahual
+
+	Confunde el Sol y la distancia niega,
+	su orgullo esconde y su memoria pierde.
+	Reparte miel, es prudencia que muerde,
+	moja la piel y en la espesura juega.
+
+	*/
 	$("#nahual").click(function() {
-		alert('Confunde el Sol y la distancia niega,\nsu orgullo esconde y su memoria pierde.\nSombra que ofende, prudencia que muerde,\nreparto de miel, estrella que juega. '+ $(this).html().split(" ")[1]);
+		alert('Confunde el Sol y la distancia niega,\nsu orgullo esconde y su memoria pierde.\nReparte miel, es prudencia que muerde,\nmoja la piel y en la espesura juega. '+ $(this).html().split(" ")[1]);
 	});
 	/****** 
 	Necesito averiguar como pegarle el scroll click event a estos elementos después de haberlos generado. Mientras tanto los escondo.

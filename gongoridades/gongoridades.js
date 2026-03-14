@@ -220,7 +220,7 @@ $(".modal-info-button").click(function() {
 
 	*/
 	$("#nahual").click(function() {
-		alert('Confunde el Sol y la distancia niega,\nsu orgullo esconde y su memoria pierde.\nParto de miel, imprudencia que muerde,\ncampo de piel en que Mercurio juega. '+ $(this).html().split(" ")[1]);
+		alert('Confunde el Sol y la distancia niega,\nsu orgullo esconde y su memoria pierde.\nParto de miel, imprudencia que muerde,\ncampo de piel en que Mercurio juega '+ $(this).html().split(" ")[1]);
 	});
 	/****** 
 	Necesito averiguar como pegarle el scroll click event a estos elementos después de haberlos generado. Mientras tanto los escondo.
